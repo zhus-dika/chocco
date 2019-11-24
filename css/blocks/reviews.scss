@@ -1,0 +1,60 @@
+.reviews {
+    position: relative;
+}
+.strawberries {
+    position: absolute;
+    left: 75%;
+    bottom: 91%;
+}
+.container .reviews__container {
+    display: block;
+}
+.review__title {
+    color: #323232;
+    font-family: "Alegreya Sans Medium";
+    font-size: 30px;
+    font-weight: 500;
+    padding: 4% 0;
+}
+.reviews__content {
+    background: url(../../pictures/decorations/berries.png) no-repeat;
+    margin-bottom: 5%;
+}
+.user__review {
+    display: flex;
+    padding-top: 5%;
+    img {
+        padding: 0 5% 5%;
+        margin-right: 5%;
+    }
+}
+.review__text {
+    p {
+        color: #666666;
+        font-family: "Alegreya Sans";
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 6%;
+        width: 75%;
+    }
+}
+.review__author {
+    color: #666666;
+    font-family: "Alegreya Sans Medium";
+    font-size: 18px;
+    font-weight: 500;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .user__photo{
+        border-radius: 50%;
+        width: 68px;
+        height: 68px;
+        margin-right: 2%;
+        &-active {
+            border: 6px solid #0f5a47;
+        }
+    }
+}

@@ -2,10 +2,13 @@
     padding-top: 2em;
     background: #61c4d9;
 }
-.container .header__container {
+.header__container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
+}
+.logo {
+    margin-right: 5%;
 }
 .nav__list {
     display: flex;
@@ -27,4 +30,31 @@
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
+    z-index: 10;
+}
+.header__content {
+    margin: 5% auto;
+    text-align: center;
+    p {
+        color: #666666;
+        font-family: "Alegreya Sans";
+        font-size: 18px;
+        font-weight: 400;
+    }
+    h1 {
+        margin-bottom: 1%;
+    }
+}
+.header__info {
+    width: 45%;
+    margin: 0 auto;
+}
+.header__title {
+    text-align: center;
+    color: #0d0d0d;
+    font-family: "Alegreya Sans";
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5%;
 }
