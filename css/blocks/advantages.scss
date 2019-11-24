@@ -57,7 +57,7 @@
     font-weight: 300;
 }
 .main-advantages__item{
-    display: inline-block;
+    display: flex;
     &:before{
         content: "";
         width: 67px;

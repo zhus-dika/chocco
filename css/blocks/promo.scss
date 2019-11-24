@@ -50,18 +50,13 @@
     padding-bottom: 5%;
 }
 .promo-advantages__item {
+    display: flex;
     color: #ffffff;
     font-family: "Alegreya Sans";
     font-size: 16px;
     font-weight: 400;
-    width: 20%;
-    @each $var in (eco, deliver, figure) {
-        &-#{$var}:after {
-            content: "";
-            width: 20px;
-            height: 20px;
-            display: block;
-            background: url(../../pictures/icons/#{$var}.svg) center center cover;
-        }
+    img {
+        width: 3em;
+        margin-right: 10%;
     }
 }
