@@ -1,0 +1,69 @@
+.advantages {
+    background: #fff;
+}
+.header__content {
+    margin: 5% auto;
+    text-align: center;
+    p {
+        color: #666666;
+        font-family: "Alegreya Sans";
+        font-size: 18px;
+        font-weight: 400;
+    }
+    h1 {
+        margin-bottom: 1%;
+    }
+}
+.header__info {
+    width: 45%;
+    margin: 0 auto;
+}
+ .header__title {
+    color: #0d0d0d;
+    font-family: "Alegreya Sans";
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.main-advantages__list {
+    display: inline-flex;
+    justify-content: space-around;
+    li {
+        width: 23%;
+    }
+}
+.advantages__item-pic {
+    margin: 0 auto;
+    width: 125px;
+    height: 125px;
+    background-color: #f2f5f4;
+    padding: 6%;
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+.advantages__title {
+    text-align: center;
+    color: #000000;
+    font-family: "Alegreya Sans";
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.advantages__item-content{
+    text-align: center;
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 300;
+}
+.main-advantages__item{
+    display: inline-block;
+    &:before{
+        content: "";
+        width: 67px;
+        height: 21px;
+        background-image: url(../../pictures/disks.png);
+        display: block;
+    }
+}
+

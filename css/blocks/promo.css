@@ -1,0 +1,75 @@
+.promo {
+  background: #61c4d9; }
+
+.container .promo__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.promo-content {
+  display: flex;
+  justify-content: space-between; }
+
+.promo_left-side {
+  padding-top: 10%; }
+
+.promo__title {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+
+.promo-info p {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 33px; }
+
+.button-order {
+  width: min-content;
+  padding: 4% 5%;
+  border-radius: 45px;
+  background-color: #ffffff;
+  border-radius: 30px; }
+  .button-order__name {
+    color: #0f5a47;
+    font-family: "Alegreya Sans - Extra Bold";
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase; }
+
+.promo-advantages__list {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5%; }
+
+.promo-advantages__item {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 16px;
+  font-weight: 400;
+  width: 20%; }
+  .promo-advantages__item-eco:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../../pictures/icons/eco.svg) center center cover; }
+  .promo-advantages__item-deliver:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../../pictures/icons/deliver.svg) center center cover; }
+  .promo-advantages__item-figure:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../../pictures/icons/figure.svg) center center cover; }
+
+/*# sourceMappingURL=promo.css.map */

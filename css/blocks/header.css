@@ -1,0 +1,30 @@
+.header {
+  padding-top: 2em;
+  background: #61c4d9; }
+
+.container .header__container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%; }
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.nav__item {
+  margin-right: 2em; }
+  .nav__item a {
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400; }
+
+.contacts a {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=header.css.map */
