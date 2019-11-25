@@ -10,6 +10,9 @@
 .logo {
   margin-right: 5%; }
 
+.nav {
+  margin-right: 5%; }
+
 .nav__list {
   display: flex;
   justify-content: space-between;
@@ -22,6 +25,8 @@
     font-family: "Alegreya Sans";
     font-size: 18px;
     font-weight: 400; }
+  .nav__item:last-child {
+    margin-right: 0; }
 
 .contacts a {
   color: #ffffff;

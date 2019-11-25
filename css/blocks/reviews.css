@@ -24,8 +24,7 @@
   display: flex;
   padding-top: 5%; }
   .user__review img {
-    padding: 0 5% 5%;
-    margin-right: 5%; }
+    padding: 0 5% 5%; }
 
 .review__text p {
   color: #666666;
@@ -53,5 +52,7 @@
     margin-right: 2%; }
     .slider .user__photo-active {
       border: 6px solid #0f5a47; }
+    .slider .user__photo:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=reviews.css.map */

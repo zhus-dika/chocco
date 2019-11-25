@@ -1,5 +1,11 @@
-.wrapper__promo {
-    background-image: url(../../pictures/decorations/berries&sheets.png);
-    background-repeat: no-repeat;
-    background-position-x: 50%;
+.sheet-3__img {
+    position: absolute;
+    left: 13%;
+    top: 69%;
+}
+.berries_sheets__img{
+    position: absolute;
+    left: 55%;
+    top: 43%;
+    z-index: 5;
 }

@@ -7,7 +7,8 @@
 
 .main-advantages__list {
   display: inline-flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: baseline; }
   .main-advantages__list li {
     width: 23%; }
 
