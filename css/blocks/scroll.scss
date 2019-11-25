@@ -1,0 +1,25 @@
+.scroll {
+    position: absolute;
+    right: 22%;
+    top: 28%;
+    z-index: 5;
+    &__item {
+        margin-bottom: 85%;
+    }
+}
+.scroll__item {
+    position: relative;
+    text-align: center;
+}
+.scroll__item-active {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    img {
+        position: absolute;
+        display: block;
+        left: 30%;
+        top: 41%;
+    }
+}

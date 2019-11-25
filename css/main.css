@@ -5,6 +5,8 @@
 @import url("./blocks/promo.css");
 @import url("./blocks/advantages.css");
 @import url("./blocks/reviews.css");
+@import url("./blocks/scroll.css");
+@import url("./blocks/decorations.css");
 @font-face {
   font-family: 'Alegreya Sans';
   src: url("../fonts/alegreyasans-regular-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-regular-webfont.woff") format("woff");

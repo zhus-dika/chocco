@@ -28,15 +28,13 @@
         margin-right: 5%;
     }
 }
-.review__text {
-    p {
-        color: #666666;
-        font-family: "Alegreya Sans";
-        font-size: 18px;
-        font-weight: 400;
-        margin-bottom: 6%;
-        width: 75%;
-    }
+.review__text p {
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 6%;
+    width: 75%;
 }
 .review__author {
     color: #666666;
@@ -48,6 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
     .user__photo{
         border-radius: 50%;
         width: 68px;
