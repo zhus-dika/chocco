@@ -1,14 +1,12 @@
 .scroll {
   position: fixed;
-  right: 22%;
-  top: 28%;
+  right: 12%;
+  top: 30%;
   z-index: 5; }
   .scroll__item {
-    margin-bottom: 85%; }
-
-.scroll__item {
-  position: relative;
-  text-align: center; }
+    margin-bottom: 85%;
+    position: relative;
+    text-align: center; }
 
 .scroll__item-active {
   width: 16px;

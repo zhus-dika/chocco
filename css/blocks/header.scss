@@ -1,17 +1,13 @@
-.header {
-    padding-top: 2em;
-    background: #61c4d9;
-}
 .header__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
 }
 .logo {
     margin-right: 5%;
 }
 .nav {
-    margin-right: 5%;
+    margin-right: 2%;
 }
 .nav__list {
     display: flex;
@@ -19,6 +15,7 @@
     width: 100%;
 }
 .nav__item {
+    vertical-align: bottom;
     margin-right: 2em;
     a {
         color: #ffffff;

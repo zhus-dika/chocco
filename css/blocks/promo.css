@@ -1,19 +1,23 @@
 .promo {
   background: #61c4d9; }
 
-.container .promo__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.promo__container {
+  background: url(../../pictures/decorations/sheet.png) center right -7% no-repeat;
   position: relative; }
 
 .promo-content {
-  display: flex;
-  justify-content: space-between; }
+  padding-top: 6%;
+  display: inline-block;
+  position: relative; }
 
 .promo_left-side {
-  padding-top: 10%;
-  width: 50%; }
+  width: 60%; }
+
+.picture {
+  margin: 0 auto;
+  position: absolute;
+  left: 54%;
+  top: 6%; }
 
 .promo__title {
   color: #ffffff;
@@ -28,7 +32,8 @@
   font-family: "Alegreya Sans";
   font-size: 21px;
   font-weight: 400;
-  margin-bottom: 33px; }
+  margin-bottom: 33px;
+  width: 80%; }
 
 .button-order {
   width: min-content;
@@ -47,11 +52,10 @@
   margin-top: 15%;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 5%;
   width: 100%; }
 
 .promo-advantages__item {
-  width: 33%;
+  width: 28%;
   display: flex;
   color: #ffffff;
   font-family: "Alegreya Sans";
@@ -61,13 +65,5 @@
     width: 3em;
     height: 2.5em;
     margin-right: 10%; }
-
-.main-pic__img {
-  padding: 8%;
-  position: absolute;
-  background: url(../../pictures/decorations/sheet.png) no-repeat;
-  left: 49%;
-  top: 4%;
-  z-index: 1; }
 
 /*# sourceMappingURL=promo.css.map */
