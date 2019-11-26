@@ -1,3 +1,6 @@
+.header {
+  margin-bottom: 5%; }
+
 .header__container {
   display: flex;
   justify-content: space-evenly;
@@ -39,21 +42,6 @@
   font-weight: 400;
   text-transform: uppercase;
   z-index: 10; }
-
-.header__content {
-  margin: 5% auto;
-  text-align: center; }
-  .header__content p {
-    color: #666666;
-    font-family: "Alegreya Sans";
-    font-size: 18px;
-    font-weight: 400; }
-  .header__content h1 {
-    margin-bottom: 1%; }
-
-.header__info {
-  width: 45%;
-  margin: 0 auto; }
 
 .header__title {
   text-align: center;
