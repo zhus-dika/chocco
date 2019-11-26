@@ -28,6 +28,13 @@
   .nav__item:last-child {
     margin-right: 0; }
 
+.contacts:before {
+  content: "";
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  background: url(../../pictures/icons/phone.png) left no-repeat;
+  vertical-align: center; }
 .contacts a {
   color: #ffffff;
   font-family: "Alegreya Sans";

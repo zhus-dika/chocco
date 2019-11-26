@@ -30,13 +30,26 @@
         margin-right: 0;
     }
 }
-.contacts a {
-    color: #ffffff;
-    font-family: "Alegreya Sans";
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
+
+.contacts {
+    &:before {
+        content: "";
+        height: 18px;
+        width: 18px;
+        display: inline-block;
+        background: url(../../pictures/icons/phone.png) left no-repeat;
+        vertical-align: center;
+    }
+    a {
+        color: #ffffff;
+        font-family: "Alegreya Sans";
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        z-index: 10;
+
+    }
+
 }
 .header__content {
     margin: 5% auto;

@@ -1,5 +1,5 @@
 .scroll {
-  position: absolute;
+  position: fixed;
   right: 22%;
   top: 28%;
   z-index: 5; }
