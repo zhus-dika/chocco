@@ -1,7 +1,8 @@
 .advantages {
   background: #fff;
   background: url(../../pictures/decorations/sheet_advantages.png) left center no-repeat;
-  z-index: 5; }
+  z-index: 5;
+  margin-bottom: 30%; }
 
 .advantages__content {
   margin: 0 auto 5%; }
@@ -19,7 +20,8 @@
 .main-advantages__list {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .main-advantages__item {
   display: flex;
@@ -29,7 +31,9 @@
   width: 23%; }
   .main-advantages__item:after {
     content: '';
-    background: url(../../pictures/disks.png);
+    background: url(../../pictures/disks.png) no-repeat;
+    display: inline-block;
+    position: absolute;
     width: 67px;
     height: 21px; }
   .main-advantages__item:last-child:after {
@@ -51,19 +55,18 @@
   border-radius: 50%;
   margin-bottom: 10%; }
 
-.advantages__title {
-  text-align: center;
-  color: #000000;
-  font-family: "Alegreya Sans";
-  font-size: 27px;
-  font-weight: 700;
-  margin-bottom: 5%; }
-
 .advantages__item-content {
   text-align: center;
   color: #666666;
   font-family: "Alegreya Sans";
   font-size: 18px;
   font-weight: 300; }
+  .advantages__item-content h4 {
+    text-align: center;
+    color: #000000;
+    font-family: "Alegreya Sans";
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 5%; }
 
 /*# sourceMappingURL=advantages.css.map */
