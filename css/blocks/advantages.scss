@@ -1,8 +1,8 @@
 .advantages {
-    background: #fff;
-    background: url(../../pictures/decorations/sheet_advantages.png) left center no-repeat;
-    z-index: 5;
     margin-bottom: 30%;
+}
+.container__advantages {
+    background: url(../../pictures/decorations/sheet_advantages.png) left center no-repeat;
 }
 .advantages__content {
     margin: 0 auto 5%;
@@ -13,10 +13,10 @@
         font-weight: 400;
         text-align: center;
         margin: 0 auto;
-        width: 70%;
+        width: 60%;
     }
     h1 {
-        margin-bottom: 1%;
+        margin-bottom: 3%;
     }
 }
 .main-advantages__list {
@@ -30,12 +30,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     width: 23%;
     &:after {
         content: '';
-        background: url(../../pictures/disks.png) no-repeat;
-        display: inline-block;
+        background: url(../../pictures/disks.png);
         position: absolute;
+        right: -36%;
+        display: inline-block;
+        vertical-align: middle;
         width: 67px;
         height: 21px;
     }

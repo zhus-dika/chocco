@@ -2,12 +2,9 @@
     position: relative;
     margin-bottom: 30%;
 }
-.strawberries {
-    position: absolute;
-    left: 75%;
-    bottom: 91%;
-}
-.container .reviews__container {
+.reviews__container {
+    padding-top: 2%;
+    background: url(../../pictures/decorations/strawberries.png) right top no-repeat;
     display: block;
 }
 .review__title {
@@ -22,8 +19,10 @@
     margin-bottom: 5%;
 }
 .user__review {
+    background: url(../../pictures/decorations/ellipse.png) top center no-repeat;
     display: flex;
     padding-top: 5%;
+    margin-bottom: 5%;
     img {
         padding: 0 5% 5%;
     }
@@ -46,7 +45,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10%;
     .user__photo{
         border-radius: 50%;
         width: 68px;
