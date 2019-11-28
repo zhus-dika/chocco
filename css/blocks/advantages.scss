@@ -4,7 +4,7 @@
     &:before {
         content: '';
         background: url(../../pictures/decorations/berries&sheets.png) no-repeat;
-        left: 20%;
+        left: 22%;
         top: -47%;
         position: absolute;
         width: 1070px;
@@ -22,6 +22,7 @@
 
 }
 .container__advantages {
+    padding-left: 5%;
     background: url(../../pictures/decorations/sheet_advantages.png) left center no-repeat;
 }
 .advantages__content {
