@@ -1,9 +1,11 @@
 .promo {
+  padding-top: 5%;
   background: #61c4d9;
   margin-bottom: 5%; }
 
 .promo__container {
-  background: url(../../pictures/decorations/sheet.png) center right -7% no-repeat;
+  height: 100%;
+  background: url(../../pictures/decorations/sheet.png) top 20% right -7% no-repeat;
   position: relative; }
 
 .promo-content {
@@ -19,12 +21,13 @@
   top: 6%; }
 
 .promo__title {
+  padding-top: 10%;
   color: #ffffff;
   font-family: "Alegreya Sans";
   font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 25px; }
+  margin-bottom: 20%; }
 
 .promo-info p {
   color: #ffffff;
