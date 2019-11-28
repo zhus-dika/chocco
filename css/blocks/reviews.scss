@@ -1,19 +1,20 @@
 .reviews {
     position: relative;
     margin-bottom: 30%;
-    &:after {
-        content: '';
-        background: url(../../pictures/decorations/berrieswithsheet.png) left bottom no-repeat;
-        position: absolute;
-        left: 22%;
-        top: -15%;
-        width: 160px;
-        height: 350px;
-    }
 }
 .reviews__container {
     padding-top: 2%;
     background: url(../../pictures/decorations/strawberries.png) right top no-repeat;
+    position: relative;
+    &:after {
+        content: '';
+        background: url(../../pictures/decorations/berrieswithsheet.png) left bottom no-repeat;
+        position: absolute;
+        left: -4%;
+        top: 25%;
+        width: 160px;
+        height: 350px;
+    }
     display: block;
 }
 .review__title {

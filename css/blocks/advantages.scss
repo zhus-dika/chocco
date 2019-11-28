@@ -1,12 +1,16 @@
 .advantages {
     margin-bottom: 40%;
+}
+.container__advantages {
+    padding-left: 5%;
+    background: url(../../pictures/decorations/sheet_advantages.png) left center no-repeat;
     position: relative;
     &:before {
         content: '';
-        background: url(../../pictures/decorations/berries&sheets.png) no-repeat;
-        left: 22%;
-        top: -47%;
+        background: url(../../pictures/decorations/berries&sheets.png) bottom center no-repeat;
         position: absolute;
+        left: -1%;
+        bottom: 160%;
         width: 1070px;
         height: 350px;
     }
@@ -14,16 +18,10 @@
         content: '';
         background: url(../../pictures/decorations/bars&berries.png) left bottom no-repeat;
         position: absolute;
-        left: 22%;
-        bottom: -5%;
+        left: 0;
         width: 160px;
         height: 350px;
     }
-
-}
-.container__advantages {
-    padding-left: 5%;
-    background: url(../../pictures/decorations/sheet_advantages.png) left center no-repeat;
 }
 .advantages__content {
     margin: 0 auto 5%;
