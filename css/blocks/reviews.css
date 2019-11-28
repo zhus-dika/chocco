@@ -1,0 +1,66 @@
+.reviews {
+  position: relative;
+  margin-bottom: 30%; }
+
+.reviews__container {
+  padding-top: 2%;
+  background: url(../../pictures/decorations/strawberries.png) right top no-repeat;
+  position: relative;
+  display: block; }
+  .reviews__container:after {
+    content: '';
+    background: url(../../pictures/decorations/berrieswithsheet.png) left bottom no-repeat;
+    position: absolute;
+    left: -4%;
+    top: 25%;
+    width: 160px;
+    height: 350px; }
+
+.review__title {
+  color: #323232;
+  font-family: "Alegreya Sans Medium";
+  font-size: 30px;
+  font-weight: 500;
+  padding: 4% 0; }
+
+.reviews__content {
+  background: url(../../pictures/decorations/berries.png) no-repeat;
+  margin-bottom: 20%; }
+
+.user__review {
+  background: url(../../pictures/decorations/ellipse.png) top center no-repeat;
+  display: flex;
+  padding-top: 5%;
+  margin-bottom: 5%; }
+  .user__review img {
+    padding: 0 5% 5%; }
+
+.review__text p {
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 6%;
+  width: 75%; }
+
+.review__author {
+  color: #666666;
+  font-family: "Alegreya Sans Medium";
+  font-size: 18px;
+  font-weight: 500; }
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .slider .user__photo {
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    margin-right: 2%; }
+    .slider .user__photo-active {
+      border: 6px solid #0f5a47; }
+    .slider .user__photo:last-child {
+      margin-right: 0; }
+
+/*# sourceMappingURL=reviews.css.map */

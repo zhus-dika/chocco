@@ -3,6 +3,9 @@ html,body {
 }
 body{
     margin: 0px;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 h1,h2,h3,h4,h5 {
     margin: 0;
@@ -23,12 +26,19 @@ ul li {
     position: relative;
 }
 .container {
-    display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     width: 978px;
 }
-.section {
+section {
     height: 100vh;
-    min-height: 650px;    
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-width: 978px + 20px;
+    overflow: hidden;
   }

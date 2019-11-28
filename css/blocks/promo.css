@@ -1,32 +1,41 @@
 .promo {
-  background: #61c4d9; }
+  padding-top: 5%;
+  background: #61c4d9;
+  margin-bottom: 5%; }
 
-.container .promo__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+.promo__container {
+  height: 100%;
+  background: url(../../pictures/decorations/sheet.png) top 20% right -7% no-repeat;
+  position: relative; }
 
 .promo-content {
-  display: flex;
-  justify-content: space-between; }
+  position: relative; }
 
 .promo_left-side {
-  padding-top: 10%; }
+  width: 60%; }
+
+.picture {
+  margin: 0 auto;
+  position: absolute;
+  left: 54%;
+  top: 6%; }
 
 .promo__title {
+  padding-top: 10%;
   color: #ffffff;
   font-family: "Alegreya Sans";
   font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 25px; }
+  margin-bottom: 20%; }
 
 .promo-info p {
   color: #ffffff;
   font-family: "Alegreya Sans";
   font-size: 21px;
   font-weight: 400;
-  margin-bottom: 33px; }
+  margin-bottom: 33px;
+  width: 80%; }
 
 .button-order {
   width: min-content;
@@ -45,31 +54,18 @@
   margin-top: 15%;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 5%; }
+  width: 100%; }
 
 .promo-advantages__item {
+  width: 28%;
+  display: flex;
   color: #ffffff;
   font-family: "Alegreya Sans";
   font-size: 16px;
-  font-weight: 400;
-  width: 20%; }
-  .promo-advantages__item-eco:after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    display: block;
-    background: url(../../pictures/icons/eco.svg) center center cover; }
-  .promo-advantages__item-deliver:after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    display: block;
-    background: url(../../pictures/icons/deliver.svg) center center cover; }
-  .promo-advantages__item-figure:after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    display: block;
-    background: url(../../pictures/icons/figure.svg) center center cover; }
+  font-weight: 400; }
+  .promo-advantages__item img {
+    width: 3em;
+    height: 2.5em;
+    margin-right: 10%; }
 
 /*# sourceMappingURL=promo.css.map */

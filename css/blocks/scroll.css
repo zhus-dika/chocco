@@ -1,0 +1,22 @@
+.scroll {
+  position: fixed;
+  right: 17%;
+  top: 30%;
+  z-index: 5; }
+  .scroll__item {
+    margin-bottom: 85%;
+    position: relative;
+    text-align: center; }
+
+.scroll__item-active {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #ffffff; }
+  .scroll__item-active img {
+    position: absolute;
+    display: block;
+    left: 30%;
+    top: 30%; }
+
+/*# sourceMappingURL=scroll.css.map */

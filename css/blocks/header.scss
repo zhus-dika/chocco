@@ -1,11 +1,16 @@
 .header {
-    padding-top: 2em;
-    background: #61c4d9;
+    margin-bottom: 5%;
 }
-.container .header__container {
+.header__container {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+}
+.logo {
+    margin-right: 5%;
+}
+.nav {
+    margin-right: 2%;
 }
 .nav__list {
     display: flex;
@@ -13,6 +18,7 @@
     width: 100%;
 }
 .nav__item {
+    vertical-align: bottom;
     margin-right: 2em;
     a {
         color: #ffffff;
@@ -20,11 +26,35 @@
         font-size: 18px;
         font-weight: 400;
     }
+    &:last-child {
+        margin-right: 0;
+    }
 }
-.contacts a {
-    color: #ffffff;
+
+.contacts {
+    &:before {
+        content: "";
+        height: 18px;
+        width: 18px;
+        display: inline-block;
+        background: url(../../pictures/icons/phone.png) left no-repeat;
+        vertical-align: center;
+    }
+    a {
+        color: #ffffff;
+        font-family: "Alegreya Sans";
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        z-index: 10;
+    }
+}
+.header__title {
+    text-align: center;
+    color: #0d0d0d;
     font-family: "Alegreya Sans";
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 48px;
+    font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 5%;
 }

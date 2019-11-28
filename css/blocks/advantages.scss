@@ -1,53 +1,86 @@
 .advantages {
-    background: #fff;
+    margin-bottom: 40%;
 }
-.header__content {
-    margin: 5% auto;
-    text-align: center;
+.container__advantages {
+    padding-left: 5%;
+    background: url(../../pictures/decorations/sheet_advantages.png) left center no-repeat;
+    position: relative;
+    &:before {
+        content: '';
+        background: url(../../pictures/decorations/berries&sheets.png) bottom center no-repeat;
+        position: absolute;
+        left: -1%;
+        bottom: 160%;
+        width: 1070px;
+        height: 350px;
+    }
+    &:after {
+        content: '';
+        background: url(../../pictures/decorations/bars&berries.png) left bottom no-repeat;
+        position: absolute;
+        left: 0;
+        width: 160px;
+        height: 350px;
+    }
+}
+.advantages__content {
+    margin: 0 auto 5%;
     p {
         color: #666666;
         font-family: "Alegreya Sans";
         font-size: 18px;
         font-weight: 400;
+        text-align: center;
+        margin: 0 auto;
+        width: 60%;
     }
     h1 {
-        margin-bottom: 1%;
+        margin-bottom: 3%;
     }
-}
-.header__info {
-    width: 45%;
-    margin: 0 auto;
-}
- .header__title {
-    color: #0d0d0d;
-    font-family: "Alegreya Sans";
-    font-size: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 .main-advantages__list {
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
-    li {
-        width: 23%;
+    align-items: center;
+    position: relative;
+}
+.main-advantages__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 23%;
+    &:after {
+        content: '';
+        background: url(../../pictures/disks.png);
+        position: absolute;
+        right: -36%;
+        display: inline-block;
+        vertical-align: middle;
+        width: 67px;
+        height: 21px;
+    }
+    &:last-child:after {
+        display: none;
     }
 }
+.item-pic {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 55%;
+    height: 55%;
+}
 .advantages__item-pic {
-    margin: 0 auto;
+    position: relative;
     width: 125px;
     height: 125px;
     background-color: #f2f5f4;
-    padding: 6%;
     border-radius: 50%;
-    margin-bottom: 5%;
-}
-.advantages__title {
-    text-align: center;
-    color: #000000;
-    font-family: "Alegreya Sans";
-    font-size: 27px;
-    font-weight: 700;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+
 }
 .advantages__item-content{
     text-align: center;
@@ -55,15 +88,13 @@
     font-family: "Alegreya Sans";
     font-size: 18px;
     font-weight: 300;
-}
-.main-advantages__item{
-    display: inline-block;
-    &:before{
-        content: "";
-        width: 67px;
-        height: 21px;
-        background-image: url(../../pictures/disks.png);
-        display: block;
+    h4 {
+        text-align: center;
+        color: #000000;
+        font-family: "Alegreya Sans";
+        font-size: 27px;
+        font-weight: 700;
+        margin-bottom: 5%;
     }
 }
 
