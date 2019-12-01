@@ -1,0 +1,25 @@
+.menu {
+    background: url(../../pictures/menu/menu.png);
+    background-size: cover;
+}
+.menu__title {
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.accordeon__item {
+    h4 {
+        color: #ffffff;
+        font-family: "Alegreya Sans";
+        font-size: 48px;
+        font-weight: 500;
+    }
+    p {
+        color: #ffffff;
+        font-family: "Alegreya Sans";
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
