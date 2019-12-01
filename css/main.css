@@ -9,6 +9,7 @@
 @import url("./blocks/decorations.css");
 @import url("./blocks/team.css");
 @import url("./blocks/menu.css");
+@import url("./blocks/form.css");
 @font-face {
   font-family: 'Alegreya Sans';
   src: url("../fonts/alegreyasans-regular-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-regular-webfont.woff") format("woff");

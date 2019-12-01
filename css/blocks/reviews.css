@@ -1,7 +1,6 @@
 .reviews {
   padding: 5%;
-  position: relative;
-  margin-bottom: 30%; }
+  position: relative; }
 
 .reviews__container {
   padding-top: 2%;
@@ -13,7 +12,7 @@
     background: url(../../pictures/decorations/berrieswithsheet.png) left bottom no-repeat;
     position: absolute;
     left: -4%;
-    top: 25%;
+    top: 82%;
     width: 160px;
     height: 350px; }
 
@@ -25,8 +24,7 @@
   padding: 4% 0; }
 
 .reviews__content {
-  background: url(../../pictures/decorations/berries.png) no-repeat;
-  margin-bottom: 20%; }
+  background: url(../../pictures/decorations/berries.png) no-repeat; }
 
 .user__review {
   background: url(../../pictures/decorations/ellipse.png) top center no-repeat;
