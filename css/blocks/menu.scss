@@ -1,25 +1,68 @@
 .menu {
     background: url(../../pictures/menu/menu.png);
     background-size: cover;
+    background-color: black;
 }
 .menu__title {
     color: #ffffff;
-    font-family: "Alegreya Sans";
+    font-family: "Alegreya Sans - Extra Bold";
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
+    position: absolute;
+    left: 21%;
+    top: 58%;
+}
+.menu__accordeon {
+    display: flex;
+    justify-content: flex-end;
 }
 .accordeon__item {
-    h4 {
-        color: #ffffff;
-        font-family: "Alegreya Sans";
-        font-size: 48px;
-        font-weight: 500;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    background-color: #2f3234;
+    opacity: 0.93;
+    a {
+        display: block;
+        width: 100px;
+        position: relative;
     }
     p {
         color: #ffffff;
         font-family: "Alegreya Sans";
         font-size: 16px;
         font-weight: 400;
+        line-height: 23.97px;
+        background-color: #2f3234;
+        opacity: 0.93;
+        width: 0;
+        overflow: hidden;
     }
+}
+.accordeon__item-title-content {
+    display: block;
+    position: absolute;
+    top: 100%;
+    height: 100px;
+    width: 100vh;
+    transform: rotate(-90deg) translateX(-100%);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    color: #fff;
+    font-family: "Alegreya Sans Medium";
+    font-size: 48px;
+    font-weight: 500;
+    &__milk {
+        background: url(../../pictures/menu/coconut.png) no-repeat;
+        background-size: cover;
+    }
+    &__fruits {
+        background: url(../../pictures/menu/with-fruits.png) no-repeat;
+        background-size: cover;
+    }
+    &__berries {
+        background: url(../../pictures/menu/with-berries.png) no-repeat;
+        background-size: cover;
+    } 
 }
