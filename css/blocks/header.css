@@ -8,9 +8,9 @@ Error: Undefined mixin 'tablets'.
 3:     @include tablets {
 4:         margin-bottom: 0;
 5:     }
-6:     &:after {
-7:         content: '';
-8:         background: url(../../pictures/decorations/berries&sheets_promo_adapted.png) bottom center no-repeat;
+6: }
+7: .header__container {
+8:     display: flex;
 
 Backtrace:
 /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/header.scss:3:in `tablets'
@@ -63,4 +63,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 3 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/header.scss, in `tablets'\A         from line 3 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/header.scss\A \A 1: .header {\A 2:     margin-bottom: 5%;\A 3:     @include tablets {\A 4:         margin-bottom: 0;\A 5:     }\A 6:     &:after {\A 7:         content: '';\A 8:         background: url(../../pictures/decorations/berries&sheets_promo_adapted.png) bottom center no-repeat;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 3 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/header.scss, in `tablets'\A         from line 3 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/header.scss\A \A 1: .header {\A 2:     margin-bottom: 5%;\A 3:     @include tablets {\A 4:         margin-bottom: 0;\A 5:     }\A 6: }\A 7: .header__container {\A 8:     display: flex;"; }

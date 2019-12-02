@@ -1,10 +1,10 @@
 .container__advantages {
     padding-left: 5%;
-    background: url(../../pictures/decorations/sheet_advantages.png) left center no-repeat;
+    background: url(./../../pictures/decorations/sheet_advantages.png) left center no-repeat;
     position: relative;
     &:before {
         content: '';
-        background: url(../../pictures/decorations/berries&sheets.png) bottom center no-repeat;
+        background: url(./../../pictures/decorations/berries&sheets.png) bottom center no-repeat;
         position: absolute;
         left: -1%;
         bottom: 160%;
@@ -16,7 +16,7 @@
     }
     &:after {
         content: '';
-        background: url(../../pictures/decorations/bars&berries.png) left bottom no-repeat;
+        background: url(./../../pictures/decorations/bars&berries.png) left bottom no-repeat;
         position: absolute;
         left: 0;
         width: rem(160px);
@@ -40,7 +40,7 @@
 }
 .main-advantages__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }
@@ -53,7 +53,7 @@
     width: 23%;
     &:after {
         content: '';
-        background: url(../../pictures/disks.png);
+        background: url(./../../pictures/disks.png);
         position: absolute;
         right: -36%;
         display: inline-block;

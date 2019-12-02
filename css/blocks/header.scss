@@ -3,19 +3,6 @@
     @include tablets {
         margin-bottom: 0;
     }
-    &:after {
-        content: '';
-        background: url(../../pictures/decorations/berries&sheets_promo_adapted.png) bottom center no-repeat;
-        position: absolute;
-        left: 17%;
-        top: 329%;
-        width: rem(500px);
-        height: rem(300px);
-        display: none;
-        @include tablets {
-            display: block;
-        }
-    }
 }
 .header__container {
     display: flex;
@@ -58,7 +45,7 @@
         height: rem(18px);
         width: rem(18px);
         display: inline-block;
-        background: url(../../pictures/icons/phone.png) left no-repeat;
+        background: url(./../../pictures/icons/phone.png) left no-repeat;
         vertical-align: center;
     }
     a {
