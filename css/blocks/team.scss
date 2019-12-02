@@ -39,10 +39,9 @@
     text-align: center;
     width: 23%;
     img {
-        widows: 100%;
         margin-bottom: 6%;
         @include tablets{
-            width: 45%;
+            width: 50%;
         }
         @include phones{
             width: 80%;

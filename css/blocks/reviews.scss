@@ -11,10 +11,13 @@
         background: url("./../../pictures/decorations/berrieswithsheet.png") left bottom no-repeat;
         position: absolute;
         left: -4%;
-        bottom: -57%;
+        bottom: -79%;
         width: rem(160px);
         height: rem(350px);
         z-index: 10;
+        @include tablets {
+            display: none;
+        }
     }
     display: block;
 }
@@ -33,6 +36,9 @@
     display: flex;
     padding-top: 5%;
     margin-bottom: 5%;
+    @include tablets {
+        flex-direction: column;
+    }
     img {
         padding: 0 5% 5%;
     }

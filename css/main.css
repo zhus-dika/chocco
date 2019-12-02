@@ -735,10 +735,13 @@ footer {
     background: url("./../../pictures/decorations/berrieswithsheet.png") left bottom no-repeat;
     position: absolute;
     left: -4%;
-    bottom: -57%;
+    bottom: -79%;
     width: 10rem;
     height: 21.875rem;
     z-index: 10; }
+    @media screen and (max-width: 768px) {
+      .reviews__container:after {
+        display: none; } }
 
 .review__title {
   color: #323232;
@@ -755,6 +758,9 @@ footer {
   display: flex;
   padding-top: 5%;
   margin-bottom: 5%; }
+  @media screen and (max-width: 768px) {
+    .user__review {
+      flex-direction: column; } }
   .user__review img {
     padding: 0 5% 5%; }
 
@@ -846,11 +852,10 @@ footer {
   text-align: center;
   width: 23%; }
   .team__member img {
-    widows: 100%;
     margin-bottom: 6%; }
     @media screen and (max-width: 768px) {
       .team__member img {
-        width: 45%; } }
+        width: 50%; } }
     @media screen and (max-width: 480px) {
       .team__member img {
         width: 80%; } }
@@ -923,7 +928,7 @@ footer {
     display: block;
     width: 6.25rem;
     position: relative; }
-  .accordeon__item p {
+  .accordeon__item-content {
     color: #ffffff;
     font-family: "Alegreya Sans";
     font-size: 1rem;
@@ -969,7 +974,7 @@ footer {
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 5%; }
+    margin: 10% 0; }
   .order:before {
     content: '';
     position: absolute;
@@ -987,6 +992,7 @@ footer {
     bottom: 10%; }
 
 .order__form {
+  padding: 5%;
   margin-left: -5%; }
   @media screen and (max-width: 768px) {
     .order__form {

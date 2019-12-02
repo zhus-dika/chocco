@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 37 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss, in `tablets'
-        from line 37 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss
+        on line 39 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss, in `tablets'
+        from line 39 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss
 
-32: }
-33: 
-34: .order__form {
-35:   @extend %clearfix;
-36:   margin-left: -5%;
-37:   @include tablets {
-38:     margin-left: 0;
-39:     padding: 0 20%;
-40:   }
-41:   @include phones {
-42:     padding: 0;
+34: 
+35: .order__form {
+36:   padding: 5%;
+37:   @extend %clearfix;
+38:   margin-left: -5%;
+39:   @include tablets {
+40:     margin-left: 0;
+41:     padding: 0 20%;
+42:   }
+43:   @include phones {
+44:     padding: 0;
 
 Backtrace:
-/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss:37:in `tablets'
-/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss:37
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss:39:in `tablets'
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss:39
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 37 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss, in `tablets'\A         from line 37 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss\A \A 32: }\A 33: \A 34: .order__form {\A 35:   @extend %clearfix;\A 36:   margin-left: -5%;\A 37:   @include tablets {\A 38:     margin-left: 0;\A 39:     padding: 0 20%;\A 40:   }\A 41:   @include phones {\A 42:     padding: 0;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 39 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss, in `tablets'\A         from line 39 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss\A \A 34: \A 35: .order__form {\A 36:   padding: 5%;\A 37:   @extend %clearfix;\A 38:   margin-left: -5%;\A 39:   @include tablets {\A 40:     margin-left: 0;\A 41:     padding: 0 20%;\A 42:   }\A 43:   @include phones {\A 44:     padding: 0;"; }

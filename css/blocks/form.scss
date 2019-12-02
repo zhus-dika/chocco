@@ -10,7 +10,8 @@
     font-size: rem(48px);
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 5%;
+    margin: 10% 0;
+    
   }
   &:before {
     content: '';
@@ -32,6 +33,7 @@
 }
 
 .order__form {
+  padding: 5%;
   @extend %clearfix;
   margin-left: -5%;
   @include tablets {
