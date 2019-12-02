@@ -9,10 +9,10 @@
         content: '';
         background: url(../../pictures/decorations/sheet&berries2.png) top no-repeat;
         position: absolute;
-        top: -41%;
+        top: -40%;
         right: 0;
-        height: 310px;
-        width: 190px;
+        height: rem(310px);
+        width: rem(190px);
     }
     &:after {
         content: '';
@@ -20,8 +20,8 @@
         position: absolute;
         left: 0%;
         bottom: -22%;
-        width: 104px;
-        height: 114px;
+        width: rem(104px);
+        height: rem(114px);
     }
 }
 .team__member {
@@ -29,7 +29,7 @@
     h4 {
         color: #323232;
         font-family: "Alegreya Sans";
-        font-size: 21px;
+        font-size: rem(21px);
         font-weight: 500;
         margin-bottom: 4%;
     }
@@ -42,13 +42,13 @@
     margin-left: 2%;
     background: url(../../pictures/icons/icon_hidden.svg) no-repeat;
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: rem(10px);
+    height: rem(10px);
 }
 .member__status {
     color: #281e1e;
     font-family: "Alegreya Sans";
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 400;
 }
 .member__description {
@@ -57,14 +57,14 @@
     h5 {
         color: #281e1e;
         font-family: "Alegreya Sans";
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 400;
         margin-bottom: 4%;
     }
     p {
         color: #666666;
         font-family: "Alegreya Sans";
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 300;
     }
 }

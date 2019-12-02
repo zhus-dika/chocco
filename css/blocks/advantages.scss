@@ -10,6 +10,9 @@
         bottom: 160%;
         width: rem(1070px);
         height: rem(350px);
+        @include tablets {
+            display: none;
+        }
     }
     &:after {
         content: '';
@@ -25,7 +28,7 @@
     p {
         color: #666666;
         font-family: "Alegreya Sans";
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 400;
         text-align: center;
         margin: 0 auto;
@@ -83,13 +86,13 @@
     text-align: center;
     color: #666666;
     font-family: "Alegreya Sans";
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 300;
     h4 {
         text-align: center;
         color: #000000;
         font-family: "Alegreya Sans";
-        font-size: 27px;
+        font-size: rem(27px);
         font-weight: 700;
         margin-bottom: 5%;
     }

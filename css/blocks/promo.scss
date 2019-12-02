@@ -6,49 +6,69 @@
 .promo__container{
     height: 100%;
     background: url(../../pictures/decorations/sheet.png) top 20% right -7% no-repeat;
-    position: relative;
+    @include tablets {
+        text-align: center;
+    }
 }
 .promo-content {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    @include tablets {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}
+.picture, .promo__left-side {
+    @include tablets {
+        width: 100%;
+    }
 }
 .promo_left-side {
+    flex: 1;
     width: 60%;
-}
-.picture{
-    margin: 0 auto;
-    position: absolute;
-    left: 54%;
-    top: 6%;
 }
 .promo__title {
     padding-top: 10%;
     color: #ffffff;
     font-family: "Alegreya Sans";
-    font-size: 60px;
+    font-size: rem(60px);
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 20%;
+    @include tablets {
+        text-align: center;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
 }
-.promo-info p {
-    color: #ffffff;
-    font-family: "Alegreya Sans";
-    font-size: 21px;
-    font-weight: 400;
-    margin-bottom: 33px;
-    width: 80%;
+.promo-info {
+    p {
+        color: #ffffff;
+        font-family: "Alegreya Sans";
+        font-size: rem(21px);
+        font-weight: 400;
+        margin-bottom: rem(33px);
+        width: 80%;
+        @include tablets {
+            margin: 0 auto;;
+        }
+    }
 }
 .button-order {
     width: min-content;
     padding: 4% 5%;
-    border-radius: 45px;
+    border-radius: rem(45px);
     background-color: #ffffff;
     border-radius: 30px;
     &__name {
         color: #0f5a47;
         font-family: "Alegreya Sans - Extra Bold";
-        font-size: 19px;
+        font-size: rem(19px);
         font-weight: 400;
         text-transform: uppercase;
+    }
+    @include tablets {
+        margin: 0 auto;
     }
 }
 .promo-advantages__list {
@@ -56,18 +76,22 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @include tablets {
+        margin-top: 5%;
+    }
 }
 .promo-advantages__item {
     width: 28%;
     display: flex;
     color: #ffffff;
     font-family: "Alegreya Sans";
-    font-size: 16px;
+    font-size: rem(16px);
     font-weight: 400;
     img {
         width: 3em;
         height: 2.5em;
         margin-right: 10%;
     }
+
 }
 

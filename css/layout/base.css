@@ -41,7 +41,6 @@ section {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 998px;
   overflow: hidden; }
 
 footer {

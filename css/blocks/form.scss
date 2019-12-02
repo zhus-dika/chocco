@@ -7,7 +7,7 @@
     text-align: center;
     color: #0f5a47;
     font-family: "Alegreya Sans";
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 5%;
@@ -18,15 +18,15 @@
     background: url(../../pictures/decorations/blackberries.png) top right;
     left: 68%;
     top: -17%;
-    width: 242px;
-    height: 264px;
+    width: rem(242px);
+    height: rem(264px);
   }
   &:after {
     content: '';
     position: absolute;
     background: url(../../pictures/decorations/blackberry&sheet.png) bottom center;
-    width: 1077px;
-    height: 190px;
+    width: rem(1077px);
+    height: rem(190px);
     bottom: 10%;
   }
 }
@@ -67,9 +67,9 @@
   /*@include ubuntu();*/
   color: #0f5a47;
   font-family: "Alegreya Sans";
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 400;
-  line-height: 30.05px;
+  line-height: rem(30.05px);
   @include phones {
     margin-bottom: rem(5px);
   }
@@ -168,9 +168,9 @@
   @include inlineblock(middle);
   color: $green;
   font-family: "Alegreya Sans";
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 400;
-  line-height: 30.05px;
+  line-height: rem(30.05px);
   margin-left: rem(10px);
 }
 
@@ -203,10 +203,10 @@
   margin-right: rem(30px);
   border: 0;
   font-family: "Alegreya Sans - Extra Bold";
-  font-size: 19px;
+  font-size: rem(19px);
   font-weight: 400;
   text-transform: uppercase;
-  border-radius: 25px;
+  border-radius: rem(25px);
   color: #ffffff;
   /*@include ubuntu(middle);*/
   padding: rem(15px) rem(30px);
@@ -219,8 +219,8 @@
   text-transform: none;
   font-family: "Alegreya Sans";
   color: $green;
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 400;
-  line-height: 30.05px;
+  line-height: rem(30.05px);
   background: transparent;
 }

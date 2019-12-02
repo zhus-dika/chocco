@@ -13,14 +13,14 @@
     position: absolute;
     left: -4%;
     bottom: -57%;
-    width: 160px;
-    height: 350px;
+    width: rem(160px);
+    height: rem(350px);
     z-index: 10; }
 
 .review__title {
   color: #323232;
   font-family: "Alegreya Sans Medium";
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: 500;
   padding: 4% 0; }
 
@@ -38,7 +38,7 @@
 .review__text p {
   color: #666666;
   font-family: "Alegreya Sans";
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 400;
   margin-bottom: 6%;
   width: 75%; }
@@ -46,7 +46,7 @@
 .review__author {
   color: #666666;
   font-family: "Alegreya Sans Medium";
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 500; }
 
 .slider {
@@ -55,8 +55,8 @@
   align-items: center; }
   .slider .user__photo {
     border-radius: 50%;
-    width: 68px;
-    height: 68px;
+    width: rem(68px);
+    height: rem(68px);
     margin-right: 2%; }
     .slider .user__photo-active {
       border: 6px solid #0f5a47; }

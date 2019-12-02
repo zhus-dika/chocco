@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,aAAc;EACV,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,GAAG;EACT,GAAG,EAAE,GAAG;;AAEZ,oBAAoB;EAChB,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,GAAG;EACT,GAAG,EAAE,GAAG;EACR,OAAO,EAAE,CAAC",
-"sources": ["decorations.scss"],
-"names": [],
-"file": "decorations.css"
-}
