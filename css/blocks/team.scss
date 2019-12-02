@@ -1,18 +1,23 @@
 .team__accordeon {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 10;
 }
 .container__team {
-    padding: 5%;
-    background: url("./../../pictures/decorations/sheet_half2.png") right top no-repeat;
+    padding: 7% 5%;
     position: relative;
     &:before {
         content: '';
-        background: url("./../../pictures/decorations/sheet&berries2.png") top no-repeat;
+        background: url("./../../pictures/decorations/sheet&blackberries.png") right top no-repeat;
         position: absolute;
-        top: -40%;
+        top: -34%;
         right: 0;
-        height: rem(310px);
-        width: rem(190px);
+        height: rem(578px);
+        width: rem(196px);
+        @include tablets{
+            display: none;
+        }
     }
     &:after {
         content: '';
@@ -22,20 +27,37 @@
         bottom: -22%;
         width: rem(104px);
         height: rem(114px);
+        @include tablets{
+            display: none;
+        }
+        @include phones{
+            width: 80%;
+        }
     }
 }
 .team__member {
     text-align: center;
-    h4 {
-        color: #323232;
-        font-family: "Alegreya Sans";
-        font-size: rem(21px);
-        font-weight: 500;
-        margin-bottom: 4%;
-    }
+    width: 23%;
     img {
+        widows: 100%;
         margin-bottom: 6%;
+        @include tablets{
+            width: 45%;
+        }
+        @include phones{
+            width: 80%;
+        }
     }
+    @include tablets {
+        width: 50%;
+    }
+}
+.member__name {
+    color: #323232;
+    font-family: "Alegreya Sans";
+    font-size: rem(21px);
+    font-weight: 500;
+    margin-bottom: 4%;
 }
 .member__name:after {
     content: '';

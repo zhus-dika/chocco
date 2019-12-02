@@ -375,7 +375,7 @@ section {
   min-height: 650px;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: flex-start; }
 
 .wrapper {
   position: relative;
@@ -590,10 +590,13 @@ footer {
     margin-right: 10%; }
 
 .container__advantages {
-  padding-top: 5%;
   padding-left: 5%;
+  padding-top: 5%;
   background: url("./../../pictures/decorations/sheet_advantages.png") left center no-repeat;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .container__advantages {
+      padding-top: 0; } }
   @media screen and (max-width: 480px) {
     .container__advantages {
       background: none; } }
@@ -602,7 +605,7 @@ footer {
     background: url("./../../pictures/decorations/berries&sheets.png") bottom center no-repeat;
     position: absolute;
     left: -1%;
-    bottom: 160%;
+    bottom: 107%;
     width: 66.875rem;
     height: 21.875rem; }
     @media screen and (max-width: 768px) {
@@ -613,8 +616,12 @@ footer {
     background: url("./../../pictures/decorations/bars&berries.png") left bottom no-repeat;
     position: absolute;
     left: 0;
+    top: 131%;
     width: 10rem;
     height: 21.875rem; }
+    @media screen and (max-width: 768px) {
+      .container__advantages:after {
+        display: none; } }
 
 .advantages__content {
   margin: 0 auto 5%; }
@@ -652,8 +659,7 @@ footer {
   @media screen and (max-width: 480px) {
     .main-advantages__item {
       flex-direction: row;
-      width: 100%;
-      margin-bottom: 2%; } }
+      width: 100%; } }
   .main-advantages__item:after {
     content: '';
     background: url("./../../pictures/disks.png");
@@ -802,20 +808,25 @@ footer {
     top: 30%; }
 
 .team__accordeon {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 10; }
 
 .container__team {
-  padding: 5%;
-  background: url("./../../pictures/decorations/sheet_half2.png") right top no-repeat;
+  padding: 7% 5%;
   position: relative; }
   .container__team:before {
     content: '';
-    background: url("./../../pictures/decorations/sheet&berries2.png") top no-repeat;
+    background: url("./../../pictures/decorations/sheet&blackberries.png") right top no-repeat;
     position: absolute;
-    top: -40%;
+    top: -34%;
     right: 0;
-    height: 19.375rem;
-    width: 11.875rem; }
+    height: 36.125rem;
+    width: 12.25rem; }
+    @media screen and (max-width: 768px) {
+      .container__team:before {
+        display: none; } }
   .container__team:after {
     content: '';
     background: url("./../../pictures/decorations/strawberry.png") left bottom no-repeat;
@@ -824,17 +835,35 @@ footer {
     bottom: -22%;
     width: 6.5rem;
     height: 7.125rem; }
+    @media screen and (max-width: 768px) {
+      .container__team:after {
+        display: none; } }
+    @media screen and (max-width: 480px) {
+      .container__team:after {
+        width: 80%; } }
 
 .team__member {
-  text-align: center; }
-  .team__member h4 {
-    color: #323232;
-    font-family: "Alegreya Sans";
-    font-size: 1.3125rem;
-    font-weight: 500;
-    margin-bottom: 4%; }
+  text-align: center;
+  width: 23%; }
   .team__member img {
+    widows: 100%;
     margin-bottom: 6%; }
+    @media screen and (max-width: 768px) {
+      .team__member img {
+        width: 45%; } }
+    @media screen and (max-width: 480px) {
+      .team__member img {
+        width: 80%; } }
+  @media screen and (max-width: 768px) {
+    .team__member {
+      width: 50%; } }
+
+.member__name {
+  color: #323232;
+  font-family: "Alegreya Sans";
+  font-size: 1.3125rem;
+  font-weight: 500;
+  margin-bottom: 4%; }
 
 .member__name:after {
   content: '';

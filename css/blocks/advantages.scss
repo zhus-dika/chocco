@@ -1,7 +1,10 @@
 .container__advantages {
-    padding-top: 5%;
     padding-left: 5%;
+    padding-top: 5%;
     background: url("./../../pictures/decorations/sheet_advantages.png") left center no-repeat;
+    @include tablets {
+        padding-top: 0;
+    }
     @include phones {
         background: none;
     }
@@ -11,7 +14,7 @@
         background: url("./../../pictures/decorations/berries&sheets.png") bottom center no-repeat;
         position: absolute;
         left: -1%;
-        bottom: 160%;
+        bottom: 107%;
         width: rem(1070px);
         height: rem(350px);
         @include tablets {
@@ -23,8 +26,12 @@
         background: url("./../../pictures/decorations/bars&berries.png") left bottom no-repeat;
         position: absolute;
         left: 0;
+        top: 131%;
         width: rem(160px);
         height: rem(350px);
+        @include tablets{
+            display: none;
+        }
     }
 }
 .advantages__content {
@@ -65,7 +72,6 @@
     @include phones {
         flex-direction: row;
         width: 100%;
-        margin-bottom: 2%;
     }
     &:after {
         content: '';
