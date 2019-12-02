@@ -430,7 +430,7 @@ footer {
   height: 1.125rem;
   width: 1.125rem;
   display: inline-block;
-  background: url(./../../pictures/icons/phone.png) left no-repeat;
+  background: url("./../../pictures/icons/phone.png") left no-repeat;
   vertical-align: center; }
 .contacts a {
   color: #ffffff;
@@ -481,7 +481,7 @@ footer {
 
 .promo__container {
   height: 100%;
-  background: url(./../../pictures/decorations/sheet.png) top 20% right -7% no-repeat; }
+  background: url("./../../pictures/decorations/sheet.png") top 20% right -7% no-repeat; }
   @media screen and (max-width: 768px) {
     .promo__container {
       text-align: center; } }
@@ -512,13 +512,18 @@ footer {
   margin-bottom: 20%; }
   @media screen and (max-width: 768px) {
     .promo__title {
+      text-align: center;
+      margin-bottom: 0;
+      padding-top: 0; } }
+  @media screen and (max-width: 480px) {
+    .promo__title {
       font-size: 2.875rem;
       text-align: center;
       margin-bottom: 0;
       padding-top: 0; } }
   .promo__title:before {
     content: '';
-    background: url(./../../pictures/decorations/berries&sheets_promo_adapted.png) top center no-repeat;
+    background: url("./../../pictures/decorations/berries&sheets_promo_adapted.png") top center no-repeat;
     position: absolute;
     width: 31.25rem;
     height: 18.75rem;
@@ -585,12 +590,16 @@ footer {
     margin-right: 10%; }
 
 .container__advantages {
+  padding-top: 5%;
   padding-left: 5%;
-  background: url(./../../pictures/decorations/sheet_advantages.png) left center no-repeat;
+  background: url("./../../pictures/decorations/sheet_advantages.png") left center no-repeat;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    .container__advantages {
+      background: none; } }
   .container__advantages:before {
     content: '';
-    background: url(./../../pictures/decorations/berries&sheets.png) bottom center no-repeat;
+    background: url("./../../pictures/decorations/berries&sheets.png") bottom center no-repeat;
     position: absolute;
     left: -1%;
     bottom: 160%;
@@ -601,7 +610,7 @@ footer {
         display: none; } }
   .container__advantages:after {
     content: '';
-    background: url(./../../pictures/decorations/bars&berries.png) left bottom no-repeat;
+    background: url("./../../pictures/decorations/bars&berries.png") left bottom no-repeat;
     position: absolute;
     left: 0;
     width: 10rem;
@@ -625,6 +634,9 @@ footer {
   justify-content: space-between;
   align-items: center;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .main-advantages__list {
+      flex-direction: column; } }
 
 .main-advantages__item {
   display: flex;
@@ -633,15 +645,27 @@ footer {
   align-items: center;
   position: relative;
   width: 23%; }
+  @media screen and (max-width: 768px) {
+    .main-advantages__item {
+      width: 60%;
+      margin-bottom: 2%; } }
+  @media screen and (max-width: 480px) {
+    .main-advantages__item {
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 2%; } }
   .main-advantages__item:after {
     content: '';
-    background: url(./../../pictures/disks.png);
+    background: url("./../../pictures/disks.png");
     position: absolute;
     right: -36%;
     display: inline-block;
     vertical-align: middle;
     width: 4.1875rem;
     height: 1.3125rem; }
+    @media screen and (max-width: 768px) {
+      .main-advantages__item:after {
+        display: none; } }
   .main-advantages__item:last-child:after {
     display: none; }
 
@@ -660,6 +684,9 @@ footer {
   background-color: #f2f5f4;
   border-radius: 50%;
   margin-bottom: 10%; }
+  @media screen and (max-width: 768px) {
+    .advantages__item-pic {
+      margin-bottom: 2%; } }
 
 .advantages__item-content {
   text-align: center;
@@ -667,13 +694,26 @@ footer {
   font-family: "Alegreya Sans";
   font-size: 1.125rem;
   font-weight: 300; }
-  .advantages__item-content h4 {
+  @media screen and (max-width: 480px) {
+    .advantages__item-content {
+      text-align: left; } }
+  .advantages__item-content-title {
     text-align: center;
     color: #000000;
     font-family: "Alegreya Sans";
     font-size: 1.6875rem;
     font-weight: 700;
     margin-bottom: 5%; }
+    @media screen and (max-width: 768px) {
+      .advantages__item-content-title {
+        margin-bottom: 1%; } }
+    @media screen and (max-width: 480px) {
+      .advantages__item-content-title {
+        text-align: left; } }
+
+@media screen and (max-width: 480px) {
+  .advantages__item-img {
+    margin-right: 5%; } }
 
 .reviews {
   padding: 5%;
@@ -681,12 +721,12 @@ footer {
 
 .reviews__container {
   padding-top: 2%;
-  background: url(./../../pictures/decorations/strawberries.png) right top no-repeat;
+  background: url("./../../pictures/decorations/strawberries.png") right top no-repeat;
   position: relative;
   display: block; }
   .reviews__container:after {
     content: '';
-    background: url(./../../pictures/decorations/berrieswithsheet.png) left bottom no-repeat;
+    background: url("./../../pictures/decorations/berrieswithsheet.png") left bottom no-repeat;
     position: absolute;
     left: -4%;
     bottom: -57%;
@@ -702,10 +742,10 @@ footer {
   padding: 4% 0; }
 
 .reviews__content {
-  background: url(./../../pictures/decorations/berries.png) no-repeat; }
+  background: url("./../../pictures/decorations/berries.png") no-repeat; }
 
 .user__review {
-  background: url(./../../pictures/decorations/ellipse.png) top center no-repeat;
+  background: url("./../../pictures/decorations/ellipse.png") top center no-repeat;
   display: flex;
   padding-top: 5%;
   margin-bottom: 5%; }
@@ -766,11 +806,11 @@ footer {
 
 .container__team {
   padding: 5%;
-  background: url(./../../pictures/decorations/sheet_half2.png) right top no-repeat;
+  background: url("./../../pictures/decorations/sheet_half2.png") right top no-repeat;
   position: relative; }
   .container__team:before {
     content: '';
-    background: url(./../../pictures/decorations/sheet&berries2.png) top no-repeat;
+    background: url("./../../pictures/decorations/sheet&berries2.png") top no-repeat;
     position: absolute;
     top: -40%;
     right: 0;
@@ -778,7 +818,7 @@ footer {
     width: 11.875rem; }
   .container__team:after {
     content: '';
-    background: url(./../../pictures/decorations/strawberry.png) left bottom no-repeat;
+    background: url("./../../pictures/decorations/strawberry.png") left bottom no-repeat;
     position: absolute;
     left: 0%;
     bottom: -22%;
@@ -799,7 +839,7 @@ footer {
 .member__name:after {
   content: '';
   margin-left: 2%;
-  background: url(./../../pictures/icons/icon_hidden.svg) no-repeat;
+  background: url("./../../pictures/icons/icon_hidden.svg") no-repeat;
   display: inline-block;
   width: 0.625rem;
   height: 0.625rem; }
@@ -879,13 +919,13 @@ footer {
   font-size: 3rem;
   font-weight: 500; }
   .accordeon__item-title-content__milk {
-    background: url(./../../pictures/menu/coconut.png) no-repeat;
+    background: url("./../../pictures/menu/coconut.png") no-repeat;
     background-size: cover; }
   .accordeon__item-title-content__fruits {
-    background: url(./../../pictures/menu/with-fruits.png) no-repeat;
+    background: url("./../../pictures/menu/with-fruits.png") no-repeat;
     background-size: cover; }
   .accordeon__item-title-content__berries {
-    background: url(./../../pictures/menu/with-berries.png) no-repeat;
+    background: url("./../../pictures/menu/with-berries.png") no-repeat;
     background-size: cover; }
 
 .order {
@@ -904,7 +944,7 @@ footer {
   .order:before {
     content: '';
     position: absolute;
-    background: url(./../../pictures/decorations/blackberries.png) top right;
+    background: url("./../../pictures/decorations/blackberries.png") top right;
     left: 68%;
     top: -17%;
     width: 15.125rem;
@@ -912,7 +952,7 @@ footer {
   .order:after {
     content: '';
     position: absolute;
-    background: url(./../../pictures/decorations/blackberry&sheet.png) bottom center;
+    background: url("./../../pictures/decorations/blackberry&sheet.png") bottom center;
     width: 67.3125rem;
     height: 11.875rem;
     bottom: 10%; }

@@ -5,7 +5,7 @@
 }
 .promo__container{
     height: 100%;
-    background: url(./../../pictures/decorations/sheet.png) top 20% right -7% no-repeat;
+    background: url("./../../pictures/decorations/sheet.png") top 20% right -7% no-repeat;
     @include tablets {
         text-align: center;
     }
@@ -33,6 +33,11 @@
     font-family: "Alegreya Sans";
     font-size: rem(60px);
     @include tablets {
+        text-align: center;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    @include phones {
         font-size: rem(46px);
         text-align: center;
         margin-bottom: 0;
@@ -43,7 +48,7 @@
     margin-bottom: 20%;
     &:before {
         content: '';
-        background: url(./../../pictures/decorations/berries&sheets_promo_adapted.png) top center no-repeat;
+        background: url("./../../pictures/decorations/berries&sheets_promo_adapted.png") top center no-repeat;
         position: absolute;
         width: rem(500px);
         height: rem(300px);

@@ -15,7 +15,7 @@
   &:before {
     content: '';
     position: absolute;
-    background: url(./../../pictures/decorations/blackberries.png) top right;
+    background: url("./../../pictures/decorations/blackberries.png") top right;
     left: 68%;
     top: -17%;
     width: rem(242px);
@@ -24,7 +24,7 @@
   &:after {
     content: '';
     position: absolute;
-    background: url(./../../pictures/decorations/blackberry&sheet.png) bottom center;
+    background: url("./../../pictures/decorations/blackberry&sheet.png") bottom center;
     width: rem(1077px);
     height: rem(190px);
     bottom: 10%;

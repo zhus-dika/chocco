@@ -1,10 +1,14 @@
 .container__advantages {
+    padding-top: 5%;
     padding-left: 5%;
-    background: url(./../../pictures/decorations/sheet_advantages.png) left center no-repeat;
+    background: url("./../../pictures/decorations/sheet_advantages.png") left center no-repeat;
+    @include phones {
+        background: none;
+    }
     position: relative;
     &:before {
         content: '';
-        background: url(./../../pictures/decorations/berries&sheets.png) bottom center no-repeat;
+        background: url("./../../pictures/decorations/berries&sheets.png") bottom center no-repeat;
         position: absolute;
         left: -1%;
         bottom: 160%;
@@ -16,7 +20,7 @@
     }
     &:after {
         content: '';
-        background: url(./../../pictures/decorations/bars&berries.png) left bottom no-repeat;
+        background: url("./../../pictures/decorations/bars&berries.png") left bottom no-repeat;
         position: absolute;
         left: 0;
         width: rem(160px);
@@ -43,6 +47,9 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    @include tablets {
+        flex-direction: column;
+    }
 }
 .main-advantages__item {
     display: flex;
@@ -51,15 +58,27 @@
     align-items: center;
     position: relative;
     width: 23%;
+    @include tablets {
+        width: 60%;
+        margin-bottom: 2%;
+    }
+    @include phones {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 2%;
+    }
     &:after {
         content: '';
-        background: url(./../../pictures/disks.png);
+        background: url("./../../pictures/disks.png");
         position: absolute;
         right: -36%;
         display: inline-block;
         vertical-align: middle;
         width: rem(67px);
         height: rem(21px);
+        @include tablets {
+            display: none;
+        }
     }
     &:last-child:after {
         display: none;
@@ -80,7 +99,9 @@
     background-color: #f2f5f4;
     border-radius: 50%;
     margin-bottom: 10%;
-
+    @include tablets {
+        margin-bottom: 2%;
+    }
 }
 .advantages__item-content{
     text-align: center;
@@ -88,13 +109,26 @@
     font-family: "Alegreya Sans";
     font-size: rem(18px);
     font-weight: 300;
-    h4 {
+    @include phones {
+        text-align: left;
+    }
+    &-title {
         text-align: center;
         color: #000000;
         font-family: "Alegreya Sans";
         font-size: rem(27px);
         font-weight: 700;
         margin-bottom: 5%;
+        @include tablets {
+            margin-bottom: 1%;
+        }
+        @include phones {
+            text-align: left;
+        }
     }
 }
-
+.advantages__item-img {
+    @include phones {
+        margin-right: 5%;
+    }
+}

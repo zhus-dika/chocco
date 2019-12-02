@@ -54,15 +54,15 @@
     font-size: rem(48px);
     font-weight: 500;
     &__milk {
-        background: url(./../../pictures/menu/coconut.png) no-repeat;
+        background: url("./../../pictures/menu/coconut.png") no-repeat;
         background-size: cover;
     }
     &__fruits {
-        background: url(./../../pictures/menu/with-fruits.png) no-repeat;
+        background: url("./../../pictures/menu/with-fruits.png") no-repeat;
         background-size: cover;
     }
     &__berries {
-        background: url(./../../pictures/menu/with-berries.png) no-repeat;
+        background: url("./../../pictures/menu/with-berries.png") no-repeat;
         background-size: cover;
     } 
 }

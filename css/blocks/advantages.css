@@ -1,39 +1,27 @@
 /*
-Error: Undefined mixin 'tablets'.
-        on line 13 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss, in `tablets'
-        from line 13 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss
+Error: Undefined mixin 'phones'.
+        on line 5 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss, in `phones'
+        from line 5 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss
 
-8:         position: absolute;
-9:         left: -1%;
-10:         bottom: 160%;
-11:         width: rem(1070px);
-12:         height: rem(350px);
-13:         @include tablets {
-14:             display: none;
-15:         }
-16:     }
-17:     &:after {
-18:         content: '';
+1: .container__advantages {
+2:     padding-top: 5%;
+3:     padding-left: 5%;
+4:     background: url("./../../pictures/decorations/sheet_advantages.png") left center no-repeat;
+5:     @include phones {
+6:         background: none;
+7:     }
+8:     position: relative;
+9:     &:before {
+10:         content: '';
 
 Backtrace:
-/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss:13:in `tablets'
-/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss:13
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss:5:in `phones'
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss:5
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -77,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 13 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss, in `tablets'\A         from line 13 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss\A \A 8:         position: absolute;\A 9:         left: -1%;\A 10:         bottom: 160%;\A 11:         width: rem(1070px);\A 12:         height: rem(350px);\A 13:         @include tablets {\A 14:             display: none;\A 15:         }\A 16:     }\A 17:     &:after {\A 18:         content: '';"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 5 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss, in `phones'\A         from line 5 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss\A \A 1: .container__advantages {\A 2:     padding-top: 5%;\A 3:     padding-left: 5%;\A 4:     background: url(\"./../../pictures/decorations/sheet_advantages.png\") left center no-repeat;\A 5:     @include phones {\A 6:         background: none;\A 7:     }\A 8:     position: relative;\A 9:     &:before {\A 10:         content: '';"; }

@@ -4,11 +4,11 @@
 }
 .reviews__container {
     padding-top: 2%;
-    background: url(./../../pictures/decorations/strawberries.png) right top no-repeat;
+    background: url("./../../pictures/decorations/strawberries.png") right top no-repeat;
     position: relative;
     &:after {
         content: '';
-        background: url(./../../pictures/decorations/berrieswithsheet.png) left bottom no-repeat;
+        background: url("./../../pictures/decorations/berrieswithsheet.png") left bottom no-repeat;
         position: absolute;
         left: -4%;
         bottom: -57%;
@@ -26,10 +26,10 @@
     padding: 4% 0;
 }
 .reviews__content {
-    background: url(./../../pictures/decorations/berries.png) no-repeat;
+    background: url("./../../pictures/decorations/berries.png") no-repeat;
 }
 .user__review {
-    background: url(./../../pictures/decorations/ellipse.png) top center no-repeat;
+    background: url("./../../pictures/decorations/ellipse.png") top center no-repeat;
     display: flex;
     padding-top: 5%;
     margin-bottom: 5%;

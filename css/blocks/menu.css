@@ -52,13 +52,13 @@
   font-size: rem(48px);
   font-weight: 500; }
   .accordeon__item-title-content__milk {
-    background: url(./../../pictures/menu/coconut.png) no-repeat;
+    background: url("./../../pictures/menu/coconut.png") no-repeat;
     background-size: cover; }
   .accordeon__item-title-content__fruits {
-    background: url(./../../pictures/menu/with-fruits.png) no-repeat;
+    background: url("./../../pictures/menu/with-fruits.png") no-repeat;
     background-size: cover; }
   .accordeon__item-title-content__berries {
-    background: url(./../../pictures/menu/with-berries.png) no-repeat;
+    background: url("./../../pictures/menu/with-berries.png") no-repeat;
     background-size: cover; }
 
 /*# sourceMappingURL=menu.css.map */
