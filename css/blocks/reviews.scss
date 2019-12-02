@@ -11,9 +11,10 @@
         background: url(../../pictures/decorations/berrieswithsheet.png) left bottom no-repeat;
         position: absolute;
         left: -4%;
-        top: 82%;
+        bottom: -57%;
         width: 160px;
         height: 350px;
+        z-index: 10;
     }
     display: block;
 }

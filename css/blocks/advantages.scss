@@ -8,16 +8,16 @@
         position: absolute;
         left: -1%;
         bottom: 160%;
-        width: 1070px;
-        height: 350px;
+        width: rem(1070px);
+        height: rem(350px);
     }
     &:after {
         content: '';
         background: url(../../pictures/decorations/bars&berries.png) left bottom no-repeat;
         position: absolute;
         left: 0;
-        width: 160px;
-        height: 350px;
+        width: rem(160px);
+        height: rem(350px);
     }
 }
 .advantages__content {
@@ -55,8 +55,8 @@
         right: -36%;
         display: inline-block;
         vertical-align: middle;
-        width: 67px;
-        height: 21px;
+        width: rem(67px);
+        height: rem(21px);
     }
     &:last-child:after {
         display: none;
@@ -72,8 +72,8 @@
 }
 .advantages__item-pic {
     position: relative;
-    width: 125px;
-    height: 125px;
+    width: rem(125px);
+    height: rem(125px);
     background-color: #f2f5f4;
     border-radius: 50%;
     margin-bottom: 10%;

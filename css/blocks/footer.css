@@ -1,21 +1,28 @@
 /*
-Error: Undefined variable: "$blue".
-        on line 3 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/promo.scss
+Error: Undefined mixin 'phones'.
+        on line 14 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/footer.scss, in `phones'
+        from line 14 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/footer.scss
 
-1: .promo {
-2:     padding-top: 5%;
-3:     background: $blue;
-4:     margin-bottom: 5%;
-5: }
-6: .promo__container{
-7:     height: 100%;
-8:     background: url(../../pictures/decorations/sheet.png) top 20% right -7% no-repeat;
+9: 
+10: .footer__container {
+11:   display: flex;
+12:   flex-direction: row;
+13:   align-items: center;
+14:   @include phones {
+15:     flex-direction: column;
+16:   }
+17: }
+18: 
+19: .footer__col {
 
 Backtrace:
-/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/promo.scss:3
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/footer.scss:14:in `phones'
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/footer.scss:14
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -59,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$blue\".\A         on line 3 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/promo.scss\A \A 1: .promo {\A 2:     padding-top: 5%;\A 3:     background: $blue;\A 4:     margin-bottom: 5%;\A 5: }\A 6: .promo__container{\A 7:     height: 100%;\A 8:     background: url(../../pictures/decorations/sheet.png) top 20% right -7% no-repeat;"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 14 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/footer.scss, in `phones'\A         from line 14 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/footer.scss\A \A 9: \A 10: .footer__container {\A 11:   display: flex;\A 12:   flex-direction: row;\A 13:   align-items: center;\A 14:   @include phones {\A 15:     flex-direction: column;\A 16:   }\A 17: }\A 18: \A 19: .footer__col {"; }

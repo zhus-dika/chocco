@@ -1,48 +1,69 @@
-.order {
-  background: url(../../pictures/form/bcknd_form.png); }
+/*
+Error: Undefined mixin 'tablets'.
+        on line 37 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss, in `tablets'
+        from line 37 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss
 
-.title--centered {
-  color: #0f5a47;
-  font-family: "Alegreya Sans";
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 5%; }
+32: }
+33: 
+34: .order__form {
+35:   @extend %clearfix;
+36:   margin-left: -5%;
+37:   @include tablets {
+38:     margin-left: 0;
+39:     padding: 0 20%;
+40:   }
+41:   @include phones {
+42:     padding: 0;
 
-.form__elem {
-  display: flex; }
-
-.form__column {
-  flex: 1;
-  margin-right: 20px; }
-  .form__column:last-child {
-    margin-right: 0; }
-
-.form__row {
-  display: flex;
-  justify-content: space-around; }
-
-.form__block {
-  color: #0f5a47;
-  font-family: "Alegreya Sans";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30.05px;
-  flex: 1;
-  margin-right: 20px;
-  display: block; }
-  .form__block:last-child {
-    margin-right: 0; }
-
-.form__input {
-  background: #fff;
-  border-radius: 3px;
-  border: none;
-  padding: 8px 21px;
-  width: 100%; }
-  .form__input--textarea {
-    resize: none;
-    height: 110px; }
-
-/*# sourceMappingURL=form.css.map */
+Backtrace:
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss:37:in `tablets'
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss:37
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/home/dinara/koala/usr/share/koala/bin/sass:22:in `load'
+/home/dinara/koala/usr/share/koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 37 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss, in `tablets'\A         from line 37 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/form.scss\A \A 32: }\A 33: \A 34: .order__form {\A 35:   @extend %clearfix;\A 36:   margin-left: -5%;\A 37:   @include tablets {\A 38:     margin-left: 0;\A 39:     padding: 0 20%;\A 40:   }\A 41:   @include phones {\A 42:     padding: 0;"; }
