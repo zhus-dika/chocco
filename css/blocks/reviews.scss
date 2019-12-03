@@ -14,7 +14,6 @@
         bottom: -79%;
         width: rem(160px);
         height: rem(350px);
-        z-index: 10;
         @include tablets {
             display: none;
         }
@@ -27,20 +26,20 @@
     font-size: rem(30px);
     font-weight: 500;
     padding: 4% 0;
-}
-.reviews__content {
-    background: url("./../../pictures/decorations/berries.png") no-repeat;
+    @include tablets {
+        text-align: center;
+    }
 }
 .user__review {
-    background: url("./../../pictures/decorations/ellipse.png") top center no-repeat;
+    background-image: url("./../../pictures/decorations/ellipse.png"), url("./../../pictures/decorations/berries.png");
+    background-position: center top, right top;
+    background-repeat: no-repeat;
+    background-color: #f8faf9;
     display: flex;
     padding-top: 5%;
     margin-bottom: 5%;
     @include tablets {
         flex-direction: column;
-    }
-    img {
-        padding: 0 5% 5%;
     }
 }
 .review__text p {
@@ -50,12 +49,31 @@
     font-weight: 400;
     margin-bottom: 6%;
     width: 75%;
+    @include tablets {
+        text-align: center;
+        width: 100%;
+    }
 }
 .review__author {
     color: #666666;
     font-family: "Alegreya Sans Medium";
     font-size: rem(18px);
     font-weight: 500;
+    @include tablets {
+        text-align: center;
+    }
+}
+.user__avatar {
+    padding: 0 5% 5%;
+    width: 100%;
+    margin: 0 auto;
+    @include tablets {
+        width: 60%;
+    }
+    @include phones {
+        padding-top: 8%;
+        width: 40%;
+    }
 }
 .slider {
     display: flex;

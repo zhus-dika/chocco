@@ -65,6 +65,9 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 5%;
+    @include phones {
+        font-size: rem(40px);
+    }
 }
 .hamburger-menu-link {
 	vertical-align: middle;
