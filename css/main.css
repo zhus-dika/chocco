@@ -922,7 +922,7 @@ footer {
     font-weight: 300; }
 
 .menu {
-  background: url(./../../pictures/menu/menu.png);
+  background: url("https://zhus-dika.github.io/chocco/pictures/menu/menu.png");
   background-size: cover;
   background-color: black; }
 
@@ -936,8 +936,11 @@ footer {
   left: 21%;
   top: 47%; }
 
-.menu__accordeon {
+.menu__accordeon, .hidden-menu__accordeon {
   display: flex;
+  justify-content: flex-start; }
+
+.menu__accordeon {
   justify-content: flex-end; }
 
 .accordeon__item {
@@ -945,6 +948,7 @@ footer {
   display: flex;
   align-items: flex-start;
   background-color: #2f3234;
+  position: relative;
   opacity: 0.93; }
   .accordeon__item a {
     display: block;
@@ -961,6 +965,17 @@ footer {
     width: 0;
     overflow: hidden; }
 
+.hidden-accordeon__item-visible {
+  display: block;
+  background-color: #2f3234;
+  position: absolute;
+  left: -400%;
+  width: 700%;
+  height: 100%; }
+  .hidden-accordeon__item-visible p {
+    width: 50%;
+    padding: 5%; }
+
 .accordeon__item-title-content {
   display: block;
   position: absolute;
@@ -975,13 +990,13 @@ footer {
   font-size: 3rem;
   font-weight: 500; }
   .accordeon__item-title-content__milk {
-    background: url("./../../pictures/menu/coconut.png") no-repeat;
+    background: url("https://zhus-dika.github.io/chocco/pictures/menu/coconut.png") no-repeat;
     background-size: cover; }
   .accordeon__item-title-content__fruits {
-    background: url("./../../pictures/menu/with-fruits.png") no-repeat;
+    background: url("https://zhus-dika.github.io/chocco/pictures/menu/with-fruits.png") no-repeat;
     background-size: cover; }
   .accordeon__item-title-content__berries {
-    background: url("./../../pictures/menu/with-berries.png") no-repeat;
+    background: url("https://zhus-dika.github.io/chocco/pictures/menu/with-berries.png") no-repeat;
     background-size: cover; }
 
 .order {
