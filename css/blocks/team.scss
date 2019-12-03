@@ -9,7 +9,7 @@
     position: relative;
     &:before {
         content: '';
-        background: url("./../../pictures/decorations/sheet&blackberries.png") right top no-repeat;
+        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet&blackberries.png?raw=true") right top no-repeat;
         position: absolute;
         top: -34%;
         right: 0;
@@ -21,7 +21,7 @@
     }
     &:after {
         content: '';
-        background: url("./../../pictures/decorations/strawberry.png") left bottom no-repeat;
+        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberry.png?raw=true") left bottom no-repeat;
         position: absolute;
         left: 0%;
         bottom: -22%;
@@ -61,7 +61,7 @@
 .member__name:after {
     content: '';
     margin-left: 2%;
-    background: url("./../../pictures/icons/icon_hidden.svg") no-repeat;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_hidden.svg") no-repeat;
     display: inline-block;
     width: rem(10px);
     height: rem(10px);

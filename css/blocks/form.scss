@@ -1,5 +1,5 @@
 .order {
-  background: url("./../../pictures/form/bcknd_form.png") 50% / cover no-repeat;
+  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/form/bcknd_form.png?raw=true") 50% / cover no-repeat;
   display: flex;
   align-items: center;
   position: relative;
@@ -16,7 +16,7 @@
   &:before {
     content: '';
     position: absolute;
-    background: url("./../../pictures/decorations/blackberries.png") top right;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/blackberries.png?raw=true") top right;
     left: 68%;
     top: -17%;
     width: rem(242px);
@@ -25,7 +25,7 @@
   &:after {
     content: '';
     position: absolute;
-    background: url("./../../pictures/decorations/blackberry&sheet.png") bottom center;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/blackberry&sheet.png?raw=true") bottom center;
     width: rem(1077px);
     height: rem(190px);
     bottom: 10%;

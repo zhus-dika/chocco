@@ -1,5 +1,5 @@
 .menu {
-  background: url("https://zhus-dika.github.io/chocco/pictures/menu/menu.png");
+  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/bcknd_menu.png?raw=true");
   background-size: cover;
   background-color: black; }
 
@@ -67,13 +67,13 @@
   font-size: rem(48px);
   font-weight: 500; }
   .accordeon__item-title-content__milk {
-    background: url("https://zhus-dika.github.io/chocco/pictures/menu/coconut.png") no-repeat;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/coconut.png?raw=true") no-repeat;
     background-size: cover; }
   .accordeon__item-title-content__fruits {
-    background: url("https://zhus-dika.github.io/chocco/pictures/menu/with-fruits.png") no-repeat;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/with-fruits.png?raw=true") no-repeat;
     background-size: cover; }
   .accordeon__item-title-content__berries {
-    background: url("https://zhus-dika.github.io/chocco/pictures/menu/with-berries.png") no-repeat;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/with-berries.png?raw=true") no-repeat;
     background-size: cover; }
 
 /*# sourceMappingURL=menu.css.map */
