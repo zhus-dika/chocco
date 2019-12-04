@@ -44,6 +44,11 @@
         text-align: center;
         margin: 0 auto;
         width: 60%;
+        @include phones {
+            font-size: rem(16px);
+            width: 100%;
+            margin: 0;
+        }
     }
     h1 {
         margin-bottom: 3%;
@@ -129,6 +134,7 @@
             margin-bottom: 1%;
         }
         @include phones {
+            font-size: rem(16px);
             text-align: left;
         }
     }

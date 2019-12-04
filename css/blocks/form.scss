@@ -11,7 +11,10 @@
     font-weight: 700;
     text-transform: uppercase;
     margin: 10% 0;
-    
+    @include phones {
+      font-size: rem(34px);
+      margin-bottom: 0;
+    }
   }
   &:before {
     content: '';
@@ -71,19 +74,23 @@
   font-family: "Alegreya Sans";
   font-size: rem(18px);
   font-weight: 400;
-  line-height: rem(30.05px);
   @include phones {
     margin-bottom: rem(5px);
+    font-size: rem(14px);
+    line-height: rem(25.05px);
   }
 }
 
 .order__form-input {
   font-size: rem(14px);
-  height: 50%;;
+  height: 50%;
   padding: rem(5px) rem(10px);
   border: rem(1px) solid #d1cfcb;
   border-radius: rem(5px);
   width: 100%;
+  @include phones {
+    height: 40%;
+  }
 }
 
 .order__form-block {
@@ -111,6 +118,9 @@
 .order__form-input_textarea {
   height: rem(110px);
   resize: none;
+  @include phones {
+    height: rem(70px);
+  }
 }
 
 .order__form-buttons {
