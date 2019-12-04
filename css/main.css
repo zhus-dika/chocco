@@ -521,7 +521,7 @@ footer {
       padding-top: 0; } }
   @media screen and (max-width: 480px) {
     .promo__title {
-      font-size: 2.5rem;
+      font-size: 1.75rem;
       text-align: center;
       margin-bottom: 0;
       padding-top: 0; } }
@@ -537,13 +537,15 @@ footer {
         display: block;
         width: 21.25rem;
         height: 13.75rem;
-        left: 25%;
-        top: 3%; } }
+        left: 13%;
+        top: 2%; } }
     @media screen and (max-width: 480px) {
       .promo__title:before {
+        width: 15rem;
+        height: 10rem;
         display: block;
-        left: 0%;
-        top: 3%; } }
+        left: 21%;
+        top: 2%; } }
 
 @media screen and (max-width: 768px) {
   .main-pic__img {
@@ -552,13 +554,16 @@ footer {
 .promo-info p {
   color: #ffffff;
   font-family: "Alegreya Sans";
-  font-size: 1.3125rem;
+  font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 2.0625rem;
   width: 80%; }
   @media screen and (max-width: 768px) {
     .promo-info p {
       margin: 0 auto; } }
+  @media screen and (max-width: 480px) {
+    .promo-info p {
+      width: 100%; } }
 
 .button-order {
   width: min-content;
@@ -598,6 +603,13 @@ footer {
     width: 3em;
     height: 2.5em;
     margin-right: 10%; }
+    @media screen and (max-width: 480px) {
+      .promo-advantages__item img {
+        height: 50%;
+        width: 40%; } }
+  @media screen and (max-width: 480px) {
+    .promo-advantages__item p {
+      font-size: 0.875rem; } }
 
 .container__advantages {
   padding-left: 5%;
