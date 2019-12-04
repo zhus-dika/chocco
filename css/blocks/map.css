@@ -1,6 +1,6 @@
-.yandex-map {
-  height: 100vh;
-  text-align: center;
-  left: 10%; }
+.yandex-map img {
+  width: 100vw;
+  height: 70%;
+  text-align: center; }
 
 /*# sourceMappingURL=map.css.map */

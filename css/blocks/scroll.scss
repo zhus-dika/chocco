@@ -8,6 +8,9 @@
         position: relative;
         text-align: center;
     }
+    @include tablets {
+        display: none;
+    }
 }
 .scroll__item-active {
     width: rem(16px);
