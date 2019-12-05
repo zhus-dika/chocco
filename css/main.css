@@ -927,7 +927,7 @@ footer {
 .member__name:after {
   content: '';
   margin-left: 2%;
-  background: url("../../pictures/icons/icon_hidden.svg") no-repeat;
+  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_hidden.png?raw=true") no-repeat;
   display: inline-block;
   z-index: 10;
   width: 0.625rem;
@@ -960,7 +960,7 @@ footer {
 .member__description__visible .member__name:after {
   content: '';
   margin-left: 2%;
-  background: url("../../pictures/icons/icon_visible.svg") no-repeat;
+  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_visible.png?raw=true") no-repeat;
   display: inline-block;
   z-index: 10;
   width: 0.625rem;
