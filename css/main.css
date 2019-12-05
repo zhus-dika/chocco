@@ -538,7 +538,7 @@ footer {
         display: block;
         width: 21.25rem;
         height: 13.75rem;
-        left: 13%;
+        left: 28%;
         top: 2%; } }
     @media screen and (max-width: 480px) {
       .promo__title:before {
@@ -920,12 +920,16 @@ footer {
   font-size: 1.3125rem;
   font-weight: 500;
   margin-bottom: 4%; }
+  @media screen and (max-width: 480px) {
+    .member__name {
+      font-size: 1.125rem; } }
 
 .member__name:after {
   content: '';
   margin-left: 2%;
-  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_hidden.svg") no-repeat;
+  background: url("../../pictures/icons/icon_hidden.svg") no-repeat;
   display: inline-block;
+  z-index: 10;
   width: 0.625rem;
   height: 0.625rem; }
 
@@ -936,8 +940,8 @@ footer {
   font-weight: 400; }
 
 .member__description {
-  /*height: 0;
-  overflow: hidden;*/ }
+  height: 0;
+  overflow: hidden; }
   .member__description h5 {
     color: #281e1e;
     font-family: "Alegreya Sans";
@@ -949,6 +953,18 @@ footer {
     font-family: "Alegreya Sans";
     font-size: 1.125rem;
     font-weight: 300; }
+
+.member__description__test {
+  height: auto; }
+
+.member__description__visible .member__name:after {
+  content: '';
+  margin-left: 2%;
+  background: url("../../pictures/icons/icon_visible.svg") no-repeat;
+  display: inline-block;
+  z-index: 10;
+  width: 0.625rem;
+  height: 0.625rem; }
 
 .menu {
   background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/menu.png?raw=true") no-repeat;
@@ -993,11 +1009,11 @@ footer {
     background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/with-berries.png?raw=true.png");
     background-size: cover; }
   .accordeon__item a {
-    width: 11vh;
+    width: 10vh;
     position: relative; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
       .accordeon__item a {
-        width: 3.75rem; } }
+        width: 6vh; } }
   .accordeon__item-content {
     color: #ffffff;
     font-family: "Alegreya Sans";
@@ -1031,9 +1047,9 @@ footer {
   right: 22%;
   top: 5%;
   z-index: 10; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .close__button {
-      right: 41%; } }
+      right: 30%; } }
 
 .accordeon__item-text {
   height: 95vh;
@@ -1044,15 +1060,20 @@ footer {
   font-weight: 400;
   line-height: 23.97px;
   padding: 5% 5% 0; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .accordeon__item-text {
-      width: 40%; } }
+      width: 50%; } }
 
 .accordeon__item-hidden {
   display: none; }
   .accordeon__item-hidden__test {
     display: flex;
-    position: absolute; }
+    left: 15%;
+    position: absolute;
+    justify-content: flex-end; }
+    @media screen and (max-width: 768px) {
+      .accordeon__item-hidden__test {
+        left: 0; } }
 
 .order {
   background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/form/bcknd_form.png?raw=true") 50%/cover no-repeat;
@@ -1320,8 +1341,6 @@ footer {
 
 .socials__link {
   display: inline-block;
-  max-width: 1.5625rem;
-  max-height: 1.5625rem;
   opacity: .3;
   transition: .3s; }
   .socials__link:hover {
@@ -1330,5 +1349,9 @@ footer {
 .socials__link-icon {
   width: 1.875rem;
   height: 1.875rem; }
+  @media screen and (max-width: 480px) {
+    .socials__link-icon {
+      max-width: 1.5625rem;
+      max-height: 1.5625rem; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -58,12 +58,16 @@
     font-size: rem(21px);
     font-weight: 500;
     margin-bottom: 4%;
+    @include phones{
+        font-size: rem(18px);
+    }
 }
 .member__name:after {
     content: '';
     margin-left: 2%;
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_hidden.svg") no-repeat;
+    background: url("../../pictures/icons/icon_hidden.svg") no-repeat;
     display: inline-block;
+    z-index: 10;
     width: rem(10px);
     height: rem(10px);
 }
@@ -74,8 +78,8 @@
     font-weight: 400;
 }
 .member__description {
-    /*height: 0;
-    overflow: hidden;*/
+    height: 0;
+    overflow: hidden;
     h5 {
         color: #281e1e;
         font-family: "Alegreya Sans";
@@ -88,5 +92,19 @@
         font-family: "Alegreya Sans";
         font-size: rem(18px);
         font-weight: 300;
+    }
+}
+.member__description__test {
+    height: auto;
+}
+.member__description__visible{
+    .member__name:after {
+        content: '';
+        margin-left: 2%;
+        background: url("../../pictures/icons/icon_visible.svg") no-repeat;
+        display: inline-block;
+        z-index: 10;
+        width: rem(10px);
+        height: rem(10px);
     }
 }
