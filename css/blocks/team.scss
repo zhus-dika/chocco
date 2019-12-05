@@ -27,6 +27,7 @@
         bottom: -22%;
         width: rem(104px);
         height: rem(114px);
+        z-index: 20;
         @include tablets{
             display: none;
         }

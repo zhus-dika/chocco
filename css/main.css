@@ -754,18 +754,18 @@ footer {
   position: relative; }
 
 .reviews__container {
-  padding-top: 2%;
+  padding-top: 4%;
   background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberries.png?raw=true") right top no-repeat;
-  position: relative;
-  display: block; }
+  position: relative; }
   .reviews__container:after {
     content: '';
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berrieswithsheet.png?raw=true") left bottom no-repeat;
     position: absolute;
     left: -4%;
-    bottom: -79%;
+    bottom: -34%;
     width: 10rem;
-    height: 21.875rem; }
+    height: 21.875rem;
+    z-index: 10; }
     @media screen and (max-width: 768px) {
       .reviews__container:after {
         display: none; } }
@@ -890,7 +890,8 @@ footer {
     left: 0%;
     bottom: -22%;
     width: 6.5rem;
-    height: 7.125rem; }
+    height: 7.125rem;
+    z-index: 20; }
     @media screen and (max-width: 768px) {
       .container__team:after {
         display: none; } }
@@ -950,9 +951,13 @@ footer {
     font-weight: 300; }
 
 .menu {
-  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/bcknd_menu.png?raw=true");
+  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/menu.png?raw=true") no-repeat;
   background-size: cover;
-  background-color: black; }
+  background-color: black;
+  position: relative; }
+
+.container__menu {
+  position: relative; }
 
 .menu__title {
   color: #ffffff;
@@ -961,14 +966,14 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
   position: absolute;
-  left: 21%;
-  top: 47%; }
-
-.menu__accordeon, .hidden-menu__accordeon {
-  display: flex;
-  justify-content: flex-start; }
+  left: 0%;
+  top: 23%; }
+  @media screen and (max-width: 480px) {
+    .menu__title {
+      font-size: 2.5rem; } }
 
 .menu__accordeon {
+  display: flex;
   justify-content: flex-end; }
 
 .accordeon__item {
@@ -978,10 +983,21 @@ footer {
   background-color: #2f3234;
   position: relative;
   opacity: 0.93; }
+  .accordeon__item-milk {
+    background-image: url("../../pictures/menu/coconut.png");
+    background-size: cover; }
+  .accordeon__item-fruits {
+    background-image: url("../../pictures/menu/with-fruits.png");
+    background-size: cover; }
+  .accordeon__item-berries {
+    background-image: url("../../pictures/menu/with-berries.png");
+    background-size: cover; }
   .accordeon__item a {
-    display: block;
     width: 6.25rem;
     position: relative; }
+    @media screen and (max-width: 768px) {
+      .accordeon__item a {
+        width: 3.75rem; } }
   .accordeon__item-content {
     color: #ffffff;
     font-family: "Alegreya Sans";
@@ -990,25 +1006,11 @@ footer {
     line-height: 1.498125rem;
     background-color: #2f3234;
     opacity: 0.93;
-    width: 0;
     overflow: hidden; }
-
-.hidden-accordeon__item-visible {
-  display: block;
-  background-color: #2f3234;
-  position: absolute;
-  left: -400%;
-  width: 700%;
-  height: 100%; }
-  .hidden-accordeon__item-visible p {
-    width: 50%;
-    padding: 5%; }
 
 .accordeon__item-title-content {
   display: block;
   position: absolute;
-  top: 100%;
-  height: 6.25rem;
   width: 100vh;
   transform: rotate(-90deg) translateX(-100%);
   transform-origin: 0 0;
@@ -1016,16 +1018,35 @@ footer {
   color: #fff;
   font-family: "Alegreya Sans Medium";
   font-size: 3rem;
-  font-weight: 500; }
-  .accordeon__item-title-content__milk {
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/coconut.png?raw=true") no-repeat;
-    background-size: cover; }
-  .accordeon__item-title-content__fruits {
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/with-fruits.png?raw=true") no-repeat;
-    background-size: cover; }
-  .accordeon__item-title-content__berries {
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/with-berries.png?raw=true") no-repeat;
-    background-size: cover; }
+  font-weight: 500;
+  margin-top: -25%; }
+  @media screen and (max-width: 480px) {
+    .accordeon__item-title-content {
+      font-size: 2.5rem; } }
+
+.close__button {
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  right: 22%;
+  top: 5%;
+  z-index: 20; }
+
+.accordeon__item-text {
+  height: 95vh;
+  width: 60%;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 23.97px;
+  padding: 5% 5% 0; }
+
+.accordeon__item-hidden {
+  display: none; }
+  .accordeon__item-hidden__test {
+    display: flex;
+    position: absolute; }
 
 .order {
   background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/form/bcknd_form.png?raw=true") 50%/cover no-repeat;

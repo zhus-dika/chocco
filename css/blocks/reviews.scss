@@ -2,7 +2,7 @@
     position: relative;
 }
 .reviews__container {
-    padding-top: 2%;
+    padding-top: 4%;
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberries.png?raw=true") right top no-repeat;
     position: relative;
     &:after {
@@ -10,14 +10,14 @@
         background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berrieswithsheet.png?raw=true") left bottom no-repeat;
         position: absolute;
         left: -4%;
-        bottom: -79%;
+        bottom: -34%;
         width: rem(160px);
         height: rem(350px);
+        z-index: 10;
         @include tablets {
             display: none;
         }
     }
-    display: block;
 }
 .review__title {
     color: #323232;
