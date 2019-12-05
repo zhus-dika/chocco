@@ -32,19 +32,19 @@
     position: relative;
     opacity: 0.93;
     &-milk {
-        background-image: url("../../pictures/menu/coconut.png");
+        background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/coconut.png?raw=true");
         background-size: cover;
     }
     &-fruits {
-        background-image: url("../../pictures/menu/with-fruits.png");
+        background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/with-fruits.png?raw=true");
         background-size: cover;
     }
     &-berries {
-        background-image: url("../../pictures/menu/with-berries.png");
+        background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/with-berries.png?raw=true.png");
         background-size: cover;
     } 
     a {
-        width: rem(100px);
+        width: 11vh;
         position: relative;
         @include tablets {
             width: rem(60px);
@@ -74,7 +74,7 @@
     font-weight: 500;
     margin-top: -25%;
     @include phones {
-        font-size: rem(40px);
+        font-size: rem(36px);
     }
 }
 .close__button {
@@ -83,11 +83,17 @@
     height: 5%;
     right: 22%;
     top: 5%;
-    z-index: 20;
+    z-index: 10;
+    @include phones {
+        right: 41%;
+    }
 }
 .accordeon__item-text {
     height: 95vh;
     width: 60%;
+    @include phones {
+        width: 40%;
+    }
     color: #ffffff;
     font-family: "Alegreya Sans";
     font-size: rem(16px);
