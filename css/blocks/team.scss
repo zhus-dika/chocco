@@ -5,7 +5,7 @@
     z-index: 10;
 }
 .container__team {
-    padding: 7% 5%;
+    padding: 7% 5% 0;
     position: relative;
     &:before {
         content: '';
@@ -36,16 +36,20 @@
         }
     }
 }
+.team__accordeon {
+    display: flex;
+    justify-content: space-between;
+}
 .team__member {
     text-align: center;
     width: 23%;
     img {
         margin-bottom: 6%;
         @include tablets{
-            width: 50%;
+            width: 68%;
         }
         @include phones{
-            width: 80%;
+            width: 75%;
         }
     }
     @include tablets {
