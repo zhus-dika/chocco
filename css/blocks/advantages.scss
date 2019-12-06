@@ -1,10 +1,6 @@
 .container__advantages {
-    padding-left: 5%;
-    padding-top: 5%;
+    margin: auto;
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet_advantages.png?raw=true") left center no-repeat;
-    @include tablets {
-        padding-top: 0;
-    }
     @include phones {
         background: none;
     }
@@ -14,7 +10,7 @@
         background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berries&sheets.png?raw=true") bottom center no-repeat;
         position: absolute;
         left: -1%;
-        bottom: 107%;
+        bottom: 149%;
         width: rem(1070px);
         height: rem(350px);
         @include tablets {
@@ -26,7 +22,7 @@
         background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/bars&berries.png?raw=true") left bottom no-repeat;
         position: absolute;
         left: 0;
-        top: 131%;
+        top: 111%;
         width: rem(160px);
         height: rem(350px);
         @include tablets{
@@ -56,7 +52,7 @@
 }
 .main-advantages__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     @include tablets {
@@ -72,7 +68,7 @@
     width: 23%;
     @include tablets {
         width: 60%;
-        margin-bottom: 2%;
+        margin-bottom: 3%;
     }
     @include phones {
         flex-direction: row;

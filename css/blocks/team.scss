@@ -5,7 +5,7 @@
     z-index: 10;
 }
 .container__team {
-    padding: 7% 5% 0;
+    margin: auto;
     position: relative;
     &:before {
         content: '';
@@ -24,7 +24,7 @@
         background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberry.png?raw=true") left bottom no-repeat;
         position: absolute;
         left: 0%;
-        bottom: -22%;
+        bottom: -53%;
         width: rem(104px);
         height: rem(114px);
         z-index: 20;

@@ -1,22 +1,21 @@
 /*
-Error: Undefined mixin 'tablets'.
-        on line 5 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss, in `tablets'
-        from line 5 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss
+Error: Undefined mixin 'phones'.
+        on line 4 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss, in `phones'
+        from line 4 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss
 
 1: .container__advantages {
-2:     padding-left: 5%;
-3:     padding-top: 5%;
-4:     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet_advantages.png?raw=true") left center no-repeat;
-5:     @include tablets {
-6:         padding-top: 0;
-7:     }
-8:     @include phones {
-9:         background: none;
-10:     }
+2:     margin: auto;
+3:     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet_advantages.png?raw=true") left center no-repeat;
+4:     @include phones {
+5:         background: none;
+6:     }
+7:     position: relative;
+8:     &:before {
+9:         content: '';
 
 Backtrace:
-/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss:5:in `tablets'
-/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss:5
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss:4:in `phones'
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss:4
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +64,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss, in `tablets'\A         from line 5 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss\A \A 1: .container__advantages {\A 2:     padding-left: 5%;\A 3:     padding-top: 5%;\A 4:     background: url(\"https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet_advantages.png?raw=true\") left center no-repeat;\A 5:     @include tablets {\A 6:         padding-top: 0;\A 7:     }\A 8:     @include phones {\A 9:         background: none;\A 10:     }"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 4 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss, in `phones'\A         from line 4 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/advantages.scss\A \A 1: .container__advantages {\A 2:     margin: auto;\A 3:     background: url(\"https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet_advantages.png?raw=true\") left center no-repeat;\A 4:     @include phones {\A 5:         background: none;\A 6:     }\A 7:     position: relative;\A 8:     &:before {\A 9:         content: '';"; }

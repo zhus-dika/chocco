@@ -480,8 +480,7 @@ footer {
   bottom: 0; }
 
 .promo {
-  background: #61c4d9;
-  margin-bottom: 5%; }
+  background: #61c4d9; }
 
 .promo__container {
   height: 100%;
@@ -613,13 +612,9 @@ footer {
       font-size: 0.875rem; } }
 
 .container__advantages {
-  padding-left: 5%;
-  padding-top: 5%;
+  margin: auto;
   background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet_advantages.png?raw=true") left center no-repeat;
   position: relative; }
-  @media screen and (max-width: 768px) {
-    .container__advantages {
-      padding-top: 0; } }
   @media screen and (max-width: 480px) {
     .container__advantages {
       background: none; } }
@@ -628,7 +623,7 @@ footer {
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berries&sheets.png?raw=true") bottom center no-repeat;
     position: absolute;
     left: -1%;
-    bottom: 107%;
+    bottom: 149%;
     width: 66.875rem;
     height: 21.875rem; }
     @media screen and (max-width: 768px) {
@@ -639,7 +634,7 @@ footer {
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/bars&berries.png?raw=true") left bottom no-repeat;
     position: absolute;
     left: 0;
-    top: 131%;
+    top: 111%;
     width: 10rem;
     height: 21.875rem; }
     @media screen and (max-width: 768px) {
@@ -666,7 +661,7 @@ footer {
 
 .main-advantages__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: relative; }
   @media screen and (max-width: 768px) {
@@ -683,7 +678,7 @@ footer {
   @media screen and (max-width: 768px) {
     .main-advantages__item {
       width: 60%;
-      margin-bottom: 2%; } }
+      margin-bottom: 3%; } }
   @media screen and (max-width: 480px) {
     .main-advantages__item {
       flex-direction: row;
@@ -870,7 +865,7 @@ footer {
   z-index: 10; }
 
 .container__team {
-  padding: 7% 5% 0;
+  margin: auto;
   position: relative; }
   .container__team:before {
     content: '';
@@ -888,7 +883,7 @@ footer {
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberry.png?raw=true") left bottom no-repeat;
     position: absolute;
     left: 0%;
-    bottom: -22%;
+    bottom: -53%;
     width: 6.5rem;
     height: 7.125rem;
     z-index: 20; }
