@@ -1,26 +1,33 @@
-.advantages {
-    margin-bottom: 40%;
-}
 .container__advantages {
-    padding-left: 5%;
-    background: url(../../pictures/decorations/sheet_advantages.png) left center no-repeat;
+    margin: auto;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet_advantages.png?raw=true") left center no-repeat;
+    @include phones {
+        background: none;
+    }
     position: relative;
     &:before {
         content: '';
-        background: url(../../pictures/decorations/berries&sheets.png) bottom center no-repeat;
+        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berries&sheets.png?raw=true") bottom center no-repeat;
         position: absolute;
         left: -1%;
-        bottom: 160%;
-        width: 1070px;
-        height: 350px;
+        bottom: 149%;
+        width: rem(1070px);
+        height: rem(350px);
+        @include tablets {
+            display: none;
+        }
     }
     &:after {
         content: '';
-        background: url(../../pictures/decorations/bars&berries.png) left bottom no-repeat;
+        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/bars&berries.png?raw=true") left bottom no-repeat;
         position: absolute;
         left: 0;
-        width: 160px;
-        height: 350px;
+        top: 111%;
+        width: rem(160px);
+        height: rem(350px);
+        @include tablets{
+            display: none;
+        }
     }
 }
 .advantages__content {
@@ -28,11 +35,16 @@
     p {
         color: #666666;
         font-family: "Alegreya Sans";
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 400;
         text-align: center;
         margin: 0 auto;
         width: 60%;
+        @include phones {
+            font-size: rem(16px);
+            width: 100%;
+            margin: 0;
+        }
     }
     h1 {
         margin-bottom: 3%;
@@ -43,6 +55,9 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
+    @include tablets {
+        flex-direction: column;
+    }
 }
 .main-advantages__item {
     display: flex;
@@ -51,15 +66,26 @@
     align-items: center;
     position: relative;
     width: 23%;
+    @include tablets {
+        width: 60%;
+        margin-bottom: 3%;
+    }
+    @include phones {
+        flex-direction: row;
+        width: 100%;
+    }
     &:after {
         content: '';
-        background: url(../../pictures/disks.png);
+        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/disks.png?raw=true");
         position: absolute;
         right: -36%;
         display: inline-block;
         vertical-align: middle;
-        width: 67px;
-        height: 21px;
+        width: rem(67px);
+        height: rem(21px);
+        @include tablets {
+            display: none;
+        }
     }
     &:last-child:after {
         display: none;
@@ -75,26 +101,42 @@
 }
 .advantages__item-pic {
     position: relative;
-    width: 125px;
-    height: 125px;
+    width: rem(125px);
+    height: rem(125px);
     background-color: #f2f5f4;
     border-radius: 50%;
     margin-bottom: 10%;
-
+    @include tablets {
+        margin-bottom: 2%;
+    }
 }
 .advantages__item-content{
     text-align: center;
     color: #666666;
     font-family: "Alegreya Sans";
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 300;
-    h4 {
+    @include phones {
+        text-align: left;
+    }
+    &-title {
         text-align: center;
         color: #000000;
         font-family: "Alegreya Sans";
-        font-size: 27px;
+        font-size: rem(27px);
         font-weight: 700;
         margin-bottom: 5%;
+        @include tablets {
+            margin-bottom: 1%;
+        }
+        @include phones {
+            font-size: rem(16px);
+            text-align: left;
+        }
     }
 }
-
+.advantages__item-img {
+    @include phones {
+        margin-right: 5%;
+    }
+}

@@ -1,0 +1,115 @@
+.team__accordeon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 10;
+}
+.container__team {
+    margin: auto;
+    position: relative;
+    &:before {
+        content: '';
+        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet&blackberries.png?raw=true") right top no-repeat;
+        position: absolute;
+        top: -75%;
+        right: 0;
+        height: rem(578px);
+        width: rem(196px);
+        z-index: -1;
+        @include tablets{
+            display: none;
+        }
+    }
+    &:after {
+        content: '';
+        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberry.png?raw=true") left bottom no-repeat;
+        position: absolute;
+        left: 0%;
+        bottom: -53%;
+        width: rem(104px);
+        height: rem(114px);
+        z-index: 20;
+        @include tablets{
+            display: none;
+        }
+        @include phones{
+            width: 80%;
+        }
+    }
+}
+.team__accordeon {
+    display: flex;
+    justify-content: space-between;
+}
+.team__member {
+    text-align: center;
+    width: 23%;
+    img {
+        margin-bottom: 6%;
+        @include tablets{
+            width: 68%;
+        }
+        @include phones{
+            width: 75%;
+        }
+    }
+    @include tablets {
+        width: 50%;
+    }
+}
+.member__name {
+    color: #323232;
+    font-family: "Alegreya Sans";
+    font-size: rem(21px);
+    font-weight: 500;
+    margin-bottom: 4%;
+    @include phones{
+        font-size: rem(18px);
+    }
+}
+.member__name:after {
+    content: '';
+    margin-left: 2%;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_hidden.png?raw=true") no-repeat;
+    display: inline-block;
+    z-index: 10;
+    width: rem(10px);
+    height: rem(10px);
+}
+.member__status {
+    color: #281e1e;
+    font-family: "Alegreya Sans";
+    font-size: rem(18px);
+    font-weight: 400;
+}
+.member__description {
+    height: 0;
+    overflow: hidden;
+    h5 {
+        color: #281e1e;
+        font-family: "Alegreya Sans";
+        font-size: rem(18px);
+        font-weight: 400;
+        margin-bottom: 4%;
+    }
+    p {
+        color: #666666;
+        font-family: "Alegreya Sans";
+        font-size: rem(18px);
+        font-weight: 300;
+    }
+}
+.member__description__test {
+    height: auto;
+}
+.member__description__visible{
+    .member__name:after {
+        content: '';
+        margin-left: 2%;
+        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_visible.png?raw=true") no-repeat;
+        display: inline-block;
+        z-index: 10;
+        width: rem(10px);
+        height: rem(10px);
+    }
+}

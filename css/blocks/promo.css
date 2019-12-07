@@ -1,71 +1,61 @@
-.promo {
-  padding-top: 5%;
-  background: #61c4d9;
-  margin-bottom: 5%; }
+/*
+Error: Undefined variable: "$blue".
+        on line 2 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/promo.scss
 
-.promo__container {
-  height: 100%;
-  background: url(../../pictures/decorations/sheet.png) top 20% right -7% no-repeat;
-  position: relative; }
+1: .promo {
+2:     background: $blue;
+3: }
+4: .promo__container{
+5:     height: 100%;
+6:     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet.png?raw=true") top 20% right -7% no-repeat;
+7:     @include tablets {
 
-.promo-content {
-  position: relative; }
-
-.promo_left-side {
-  width: 60%; }
-
-.picture {
-  margin: 0 auto;
-  position: absolute;
-  left: 54%;
-  top: 6%; }
-
-.promo__title {
-  padding-top: 10%;
-  color: #ffffff;
-  font-family: "Alegreya Sans";
-  font-size: 60px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 20%; }
-
-.promo-info p {
-  color: #ffffff;
-  font-family: "Alegreya Sans";
-  font-size: 21px;
-  font-weight: 400;
-  margin-bottom: 33px;
-  width: 80%; }
-
-.button-order {
-  width: min-content;
-  padding: 4% 5%;
-  border-radius: 45px;
-  background-color: #ffffff;
-  border-radius: 30px; }
-  .button-order__name {
-    color: #0f5a47;
-    font-family: "Alegreya Sans - Extra Bold";
-    font-size: 19px;
-    font-weight: 400;
-    text-transform: uppercase; }
-
-.promo-advantages__list {
-  margin-top: 15%;
-  display: flex;
-  justify-content: space-between;
-  width: 100%; }
-
-.promo-advantages__item {
-  width: 28%;
-  display: flex;
-  color: #ffffff;
-  font-family: "Alegreya Sans";
-  font-size: 16px;
-  font-weight: 400; }
-  .promo-advantages__item img {
-    width: 3em;
-    height: 2.5em;
-    margin-right: 10%; }
-
-/*# sourceMappingURL=promo.css.map */
+Backtrace:
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/promo.scss:2
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/home/dinara/koala/usr/share/koala/bin/sass:22:in `load'
+/home/dinara/koala/usr/share/koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$blue\".\A         on line 2 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/promo.scss\A \A 1: .promo {\A 2:     background: $blue;\A 3: }\A 4: .promo__container{\A 5:     height: 100%;\A 6:     background: url(\"https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet.png?raw=true\") top 20% right -7% no-repeat;\A 7:     @include tablets {"; }
