@@ -11,10 +11,11 @@
         content: '';
         background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet&blackberries.png?raw=true") right top no-repeat;
         position: absolute;
-        top: -34%;
+        top: -75%;
         right: 0;
         height: rem(578px);
         width: rem(196px);
+        z-index: -1;
         @include tablets{
             display: none;
         }

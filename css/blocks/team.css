@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 18 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss, in `tablets'
-        from line 18 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss
+        on line 19 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss, in `tablets'
+        from line 19 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss
 
-13:         position: absolute;
-14:         top: -34%;
+14:         top: -75%;
 15:         right: 0;
 16:         height: rem(578px);
 17:         width: rem(196px);
-18:         @include tablets{
-19:             display: none;
-20:         }
-21:     }
-22:     &:after {
-23:         content: '';
+18:         z-index: -1;
+19:         @include tablets{
+20:             display: none;
+21:         }
+22:     }
+23:     &:after {
+24:         content: '';
 
 Backtrace:
-/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss:18:in `tablets'
-/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss:18
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss:19:in `tablets'
+/home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss:19
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /home/dinara/koala/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -77,4 +77,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 18 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss, in `tablets'\A         from line 18 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss\A \A 13:         position: absolute;\A 14:         top: -34%;\A 15:         right: 0;\A 16:         height: rem(578px);\A 17:         width: rem(196px);\A 18:         @include tablets{\A 19:             display: none;\A 20:         }\A 21:     }\A 22:     &:after {\A 23:         content: '';"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 19 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss, in `tablets'\A         from line 19 of /home/dinara/Yandex.Disk/loftschool/web_for_beginners/chocco/css/blocks/team.scss\A \A 14:         top: -75%;\A 15:         right: 0;\A 16:         height: rem(578px);\A 17:         width: rem(196px);\A 18:         z-index: -1;\A 19:         @include tablets{\A 20:             display: none;\A 21:         }\A 22:     }\A 23:     &:after {\A 24:         content: '';"; }

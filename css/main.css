@@ -871,10 +871,11 @@ footer {
     content: '';
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet&blackberries.png?raw=true") right top no-repeat;
     position: absolute;
-    top: -34%;
+    top: -75%;
     right: 0;
     height: 36.125rem;
-    width: 12.25rem; }
+    width: 12.25rem;
+    z-index: -1; }
     @media screen and (max-width: 768px) {
       .container__team:before {
         display: none; } }
@@ -1043,21 +1044,19 @@ footer {
   width: 5%;
   height: 5%;
   right: 19%;
-  top: 3%;
-  z-index: 30; }
+  top: 3%; }
   @media screen and (max-width: 768px) {
     .close__button {
       right: 9%; } }
 
 .accordeon__item-text {
-  height: 95vh;
   width: 60%;
   color: #ffffff;
   font-family: "Alegreya Sans";
   font-size: 1rem;
   font-weight: 400;
   line-height: 23.97px;
-  padding: 5% 5% 0; }
+  padding: 2% 5% 0; }
   @media screen and (max-width: 768px) {
     .accordeon__item-text {
       width: 70%; } }
@@ -1076,6 +1075,9 @@ footer {
       .accordeon__item-hidden__test {
         z-index: 10;
         left: 0; } }
+
+.accordeon__item-visible {
+  margin: auto 0; }
 
 .order {
   background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/form/bcknd_form.png?raw=true") 50%/cover no-repeat;

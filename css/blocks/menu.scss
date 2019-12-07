@@ -59,7 +59,6 @@
         background-color: #2f3234;
         opacity: 0.93;
         overflow: hidden;
-
     }
 }
 .accordeon__item-title-content{
@@ -83,13 +82,11 @@
     height: 5%;
     right: 19%;
     top: 3%;
-    z-index: 30;
     @include tablets {
         right: 9%;
     }
 }
 .accordeon__item-text {
-    height: 95vh;
     width: 60%;
     @include tablets {
         width: 70%;
@@ -102,7 +99,7 @@
     font-size: rem(16px);
     font-weight: 400;
     line-height: 23.97px;
-    padding: 5% 5% 0;
+    padding: 2% 5% 0;
 }
 .accordeon__item-hidden {
     display: none;
@@ -116,4 +113,7 @@
             left: 0;
         }
     }
+}
+.accordeon__item-visible {
+    margin: auto 0;
 }
