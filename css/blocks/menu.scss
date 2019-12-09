@@ -51,7 +51,6 @@
         }
     }
     &-content {
-        color: #ffffff;
         font-family: "Alegreya Sans";
         font-size: rem(16px);
         font-weight: 400;
@@ -103,7 +102,7 @@
     padding: 4% 8% 0;
 }
 .accordeon__item-hidden {
-    display: flex;
+    display: none;
     left: 15%;
     position: absolute;
     justify-content: flex-end;

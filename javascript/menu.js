@@ -1,12 +1,26 @@
-const menu = document.querySelector('menu'),
-menuItem = document.querySelector('.accordeon__item'),
-menuListLength = menuItem.length;
-console.log(menuListLength);
-
-menu.addEventListener('click', e => {
+const menu = document.querySelector(".menu"),
+ visibleMenuItem = document.querySelectorAll(".accordeon__item-visible"),
+ hiddenMenuItem = document.querySelectorAll(".accordeon__item-hidden"),
+ menuListLength = hiddenMenuItem.length;
+ menu.addEventListener('click', e => {
     e.preventDefault();
     e.stopPropagation();
     for (let i = 0; i < menuListLength; i++){
-        menuItem[i].classList.remove('.accordeon__item-hidden');
+        hiddenMenuItem[i].style.display = 'none';
     }
 });
+
+for (let i = 0; i < menuListLength; i++){
+    visibleMenuItem[i].addEventListener('click', e => {
+        e.preventDefault();
+        e.stopPropagation();
+        for (let j = 0; j < menuListLength; j++) {
+            if (hiddenMenuItem[j].style.display == 'flex') {
+                hiddenMenuItem[j].style.display = 'none';
+            }
+        }
+        hiddenMenuItem[i].style.display = 'flex';
+    });
+
+}
+

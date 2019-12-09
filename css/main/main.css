@@ -1015,7 +1015,6 @@ footer {
       .accordeon__item a {
         width: 6vh; } }
   .accordeon__item-content {
-    color: #ffffff;
     font-family: "Alegreya Sans";
     font-size: 1rem;
     font-weight: 400;
@@ -1066,7 +1065,7 @@ footer {
       width: 80%; } }
 
 .accordeon__item-hidden {
-  display: flex;
+  display: none;
   left: 15%;
   position: absolute;
   justify-content: flex-end; }
