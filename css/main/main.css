@@ -884,7 +884,7 @@ footer {
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberry.png?raw=true") left bottom no-repeat;
     position: absolute;
     left: 0%;
-    bottom: -53%;
+    bottom: -48%;
     width: 6.5rem;
     height: 7.125rem;
     z-index: 20; }
@@ -982,7 +982,7 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
   position: absolute;
-  left: 0%;
+  left: 5%;
   top: 23%; }
   @media screen and (max-width: 480px) {
     .menu__title {
@@ -1027,6 +1027,7 @@ footer {
 .accordeon__item-title-content {
   display: block;
   width: 100vh;
+  height: 10vh;
   transform: rotate(-90deg) translateX(-100%);
   transform-origin: 0 0;
   white-space: nowrap;
@@ -1047,16 +1048,16 @@ footer {
   top: 3%; }
   @media screen and (max-width: 768px) {
     .close__button {
-      right: 9%; } }
+      right: 6%; } }
 
 .accordeon__item-text {
-  width: 60%;
+  width: 50%;
   color: #ffffff;
   font-family: "Alegreya Sans";
   font-size: 1rem;
   font-weight: 400;
   line-height: 23.97px;
-  padding: 2% 5% 0; }
+  padding: 4% 8% 0; }
   @media screen and (max-width: 768px) {
     .accordeon__item-text {
       width: 70%; } }
@@ -1065,16 +1066,14 @@ footer {
       width: 80%; } }
 
 .accordeon__item-hidden {
-  display: none; }
-  .accordeon__item-hidden__test {
-    display: flex;
-    left: 15%;
-    position: absolute;
-    justify-content: flex-end; }
-    @media screen and (max-width: 768px) {
-      .accordeon__item-hidden__test {
-        z-index: 10;
-        left: 0; } }
+  display: flex;
+  left: 15%;
+  position: absolute;
+  justify-content: flex-end; }
+  @media screen and (max-width: 768px) {
+    .accordeon__item-hidden {
+      z-index: 10;
+      left: 0; } }
 
 .accordeon__item-visible {
   margin: auto 0; }
@@ -1275,7 +1274,8 @@ footer {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.878125rem;
-  background: transparent; }
+  background: transparent;
+  margin-right: 0; }
 
 .yandex-map {
   height: 100%; }
