@@ -82,6 +82,14 @@
     height: 5%;
     right: 19%;
     top: 3%;
+    text-align: center;
+    &-pic {
+        vertical-align: middle;
+    }
+    &:hover{
+        opacity: .5;
+        transition: .5s;
+    }
     @include tablets {
         right: 6%;
     }

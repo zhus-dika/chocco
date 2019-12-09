@@ -757,13 +757,27 @@ footer {
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berrieswithsheet.png?raw=true") left bottom no-repeat;
     position: absolute;
     left: -4%;
-    bottom: -34%;
+    bottom: -23%;
     width: 10rem;
     height: 21.875rem;
     z-index: 10; }
     @media screen and (max-width: 768px) {
       .reviews__container:after {
         display: none; } }
+
+.reviews__main-content {
+  overflow: hidden; }
+
+.reviews__list {
+  display: flex;
+  position: relative;
+  will-change: right;
+  transition: right 0.3s;
+  margin-bottom: 10%; }
+
+.reviews__content {
+  display: flex;
+  flex-direction: column; }
 
 .review__title {
   color: #323232;
@@ -776,15 +790,16 @@ footer {
       text-align: center; } }
 
 .user__review {
+  width: 68.75rem;
   background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/ellipse.png?raw=true"), url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berries.png?raw=true");
   background-position: center top, right top;
   background-repeat: no-repeat;
   background-color: #f8faf9;
   display: flex;
-  padding-top: 5%;
-  margin-bottom: 5%; }
+  padding-top: 5%; }
   @media screen and (max-width: 768px) {
     .user__review {
+      width: 48rem;
       flex-direction: column; } }
 
 .review__text p {
@@ -809,9 +824,9 @@ footer {
       text-align: center; } }
 
 .user__avatar {
-  padding: 0 5% 5%;
-  width: 100%;
-  margin: 0 auto; }
+  width: 50vw;
+  height: 20vw;
+  margin: 0 5% 5%; }
   @media screen and (max-width: 768px) {
     .user__avatar {
       width: 60%; } }
@@ -820,19 +835,22 @@ footer {
       padding-top: 8%;
       width: 40%; } }
 
-.slider {
+.slider__list {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .slider .user__photo {
-    border-radius: 50%;
-    width: 4.25rem;
-    height: 4.25rem;
-    margin-right: 2%; }
-    .slider .user__photo-active {
-      border: 6px solid #0f5a47; }
-    .slider .user__photo:last-child {
-      margin-right: 0; }
+.slider__item {
+  margin-right: 5%; }
+  .slider__item:last-child {
+    margin-right: 0; }
+.slider .user__photo {
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 6px solid transparent; }
+  .slider .user__photo:hover {
+    opacity: .7;
+    transition: .5s; }
 
 .scroll {
   position: fixed;
@@ -1044,7 +1062,13 @@ footer {
   width: 5%;
   height: 5%;
   right: 19%;
-  top: 3%; }
+  top: 3%;
+  text-align: center; }
+  .close__button-pic {
+    vertical-align: middle; }
+  .close__button:hover {
+    opacity: .5;
+    transition: .5s; }
   @media screen and (max-width: 768px) {
     .close__button {
       right: 6%; } }
