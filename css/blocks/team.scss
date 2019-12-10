@@ -15,7 +15,7 @@
         right: 0;
         height: rem(578px);
         width: rem(196px);
-        z-index: -1;
+        z-index: 1;
         @include tablets{
             display: none;
         }
@@ -44,6 +44,7 @@
 .team__member {
     text-align: center;
     width: 23%;
+    z-index: 5;
     img {
         margin-bottom: 6%;
         @include tablets{

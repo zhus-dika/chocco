@@ -893,7 +893,7 @@ footer {
     right: 0;
     height: 36.125rem;
     width: 12.25rem;
-    z-index: -1; }
+    z-index: 1; }
     @media screen and (max-width: 768px) {
       .container__team:before {
         display: none; } }
@@ -919,7 +919,8 @@ footer {
 
 .team__member {
   text-align: center;
-  width: 23%; }
+  width: 23%;
+  z-index: 5; }
   .team__member img {
     margin-bottom: 6%; }
     @media screen and (max-width: 768px) {
@@ -1380,5 +1381,100 @@ footer {
     .socials__link-icon {
       max-width: 1.5625rem;
       max-height: 1.5625rem; } }
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8faf9;
+  background-image: url(../../pictures/slider/sheets-in-slider.png);
+  background-repeat: no-repeat;
+  background-position-y: 74%;
+  background-position-x: 18%; }
+  .slider .order__form-button {
+    margin-right: 0;
+    width: auto; }
+
+.container__slider {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center; }
+
+.slider__content {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .slider__content-about {
+    width: 50%; }
+
+.slider__img {
+  background-size: cover;
+  width: 50%;
+  background: url(../../pictures/slider/ellipse_in_slider-img.svg) left bottom no-repeat; }
+
+.slider__bars-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.375rem;
+  margin-bottom: 10%;
+  width: 7vw;
+  height: 8vw;
+  color: #ffffff;
+  background-color: #61c4d9;
+  font-family: "Alegreya Sans - Black Italic";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.slider__bars-title {
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.slider__description {
+  margin-bottom: 5%; }
+  .slider__description-text {
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10%; }
+
+.data__title {
+  color: #333333;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400; }
+
+.slider__description-data {
+  display: flex;
+  margin-bottom: 15%; }
+
+.slider__description-calories {
+  margin-right: 10%; }
+
+.data__value {
+  color: #333333;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 700; }
+
+.slider__description-order_info {
+  display: flex; }
+
+.order__price {
+  margin-right: 10%;
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
