@@ -51,8 +51,8 @@
     background-size: cover;
     width: 50%;
     position: relative;
-    background: url(../../pictures/slider/ellipse_in_slider-img.svg) center bottom 20% no-repeat,
-    url(../../pictures/slider/ellipse-with-sheets.png) left 35% bottom 5% no-repeat;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/ellipse_in_slider-img.png?raw=true") center bottom 20% no-repeat,
+    url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/ellipse-with-sheets.png?raw=true") left 35% bottom 5% no-repeat;
     @include phones {
         background-size: contain;
     }
@@ -60,7 +60,7 @@
         content: '';
         width: 10vw;
         height: 10vw;
-        background: url(../../pictures/slider/left-arrow.svg) center no-repeat;
+        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/left-arrow.svg?raw=true") center no-repeat;
         display: none;
         position: absolute;
         left: -11%;
@@ -76,7 +76,7 @@
         content: '';
         width: 10vw;
         height: 10vw;
-        background: url(../../pictures/slider/right-arrow.svg) center no-repeat;
+        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/right-arrow.svg?raw=true") center no-repeat;
         display: none;
         position: absolute;
         right: -14%;
@@ -177,8 +177,11 @@
     margin-right: 10%;
     color: #0d0d0d;
     font-family: "Alegreya Sans";
-    font-size: trem(60px);
+    font-size: rem(60px);
     font-weight: 300;
     line-height: 60px;
     text-transform: uppercase;
+    @include phones {
+        font-size: rem(30px);
+    }
 }

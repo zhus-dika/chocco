@@ -840,20 +840,20 @@ footer {
       padding-top: 8%;
       width: 40%; } }
 
-.slider__list {
+.reviews__slider__list {
   display: flex;
   justify-content: center;
   align-items: center; }
-.slider__item {
+.reviews__slider__item {
   margin-right: 5%; }
-  .slider__item:last-child {
+  .reviews__slider__item:last-child {
     margin-right: 0; }
-.slider .user__photo {
+.reviews__slider .user__photo {
   border-radius: 50%;
   width: 4.25rem;
   height: 4.25rem;
   border: 6px solid transparent; }
-  .slider .user__photo:hover {
+  .reviews__slider .user__photo:hover {
     opacity: .7;
     transition: .5s; }
 
@@ -1437,7 +1437,7 @@ footer {
   background-size: cover;
   width: 50%;
   position: relative;
-  background: url(../../pictures/slider/ellipse_in_slider-img.svg) center bottom 20% no-repeat, url(../../pictures/slider/ellipse-with-sheets.png) left 35% bottom 5% no-repeat; }
+  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/ellipse_in_slider-img.png?raw=true") center bottom 20% no-repeat, url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/ellipse-with-sheets.png?raw=true") left 35% bottom 5% no-repeat; }
   @media screen and (max-width: 480px) {
     .slider__img {
       background-size: contain; } }
@@ -1445,7 +1445,7 @@ footer {
     content: '';
     width: 10vw;
     height: 10vw;
-    background: url(../../pictures/slider/left-arrow.svg) center no-repeat;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/left-arrow.svg?raw=true") center no-repeat;
     display: none;
     position: absolute;
     left: -11%;
@@ -1460,7 +1460,7 @@ footer {
     content: '';
     width: 10vw;
     height: 10vw;
-    background: url(../../pictures/slider/right-arrow.svg) center no-repeat;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/right-arrow.svg?raw=true") center no-repeat;
     display: none;
     position: absolute;
     right: -14%;
@@ -1559,9 +1559,12 @@ footer {
   margin-right: 10%;
   color: #0d0d0d;
   font-family: "Alegreya Sans";
-  font-size: trem(60px);
+  font-size: 3.75rem;
   font-weight: 300;
   line-height: 60px;
   text-transform: uppercase; }
+  @media screen and (max-width: 480px) {
+    .order__price {
+      font-size: 1.875rem; } }
 
 /*# sourceMappingURL=main.css.map */
