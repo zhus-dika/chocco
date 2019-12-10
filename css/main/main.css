@@ -1437,7 +1437,7 @@ footer {
   background-size: cover;
   width: 50%;
   position: relative;
-  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/ellipse_in_slider-img.png?raw=true") center bottom 20% no-repeat, url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/ellipse-with-sheets.png?raw=true") left 35% bottom 5% no-repeat; }
+  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/slider/ellipse_in_slider-img.png?raw=true") center bottom 20% no-repeat, url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/slider/ellipse-with-sheets.png?raw=true") left 35% bottom 5% no-repeat; }
   @media screen and (max-width: 480px) {
     .slider__img {
       background-size: contain; } }
@@ -1445,7 +1445,7 @@ footer {
     content: '';
     width: 10vw;
     height: 10vw;
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/left-arrow.svg?raw=true") center no-repeat;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/slider/left-arrow.png?raw=true") center no-repeat;
     display: none;
     position: absolute;
     left: -11%;
@@ -1460,7 +1460,7 @@ footer {
     content: '';
     width: 10vw;
     height: 10vw;
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/right-arrow.svg?raw=true") center no-repeat;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/slider/right-arrow.png?raw=true") center no-repeat;
     display: none;
     position: absolute;
     right: -14%;
