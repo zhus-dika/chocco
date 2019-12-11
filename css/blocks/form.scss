@@ -12,7 +12,7 @@
     text-transform: uppercase;
     padding: 5% 0;
     @include phones {
-      font-size: rem(34px);
+      font-size: rem(32px);
       margin-bottom: 0;
     }
   }
@@ -20,10 +20,18 @@
     content: '';
     position: absolute;
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/blackberries.png?raw=true") top right;
+    background-size: contain;
     left: 68%;
     top: -17%;
     width: rem(242px);
     height: rem(264px);
+    @include phones {
+      left: 66%;
+      top: -14%;
+      width: rem(142px);
+      height: rem(164px);
+    }
+
   }
   &:after {
     content: '';
@@ -32,19 +40,28 @@
     width: rem(1077px);
     height: rem(190px);
     bottom: 10%;
+    @include tablets {
+      height: 0;
+    }
   }
 }
-
+.order__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90vh;
+}
 .order__form {
   padding: 5% 5% 5% 10%;
+  margin: 0 auto;
   @extend %clearfix;
   margin-left: -5%;
   @include tablets {
     margin-left: 0;
-    padding: 0 20%;
-  }
-  @include phones {
     padding: 0;
+  }
+  &-tag {
+    width: 95vw;
   }
 }
 
@@ -68,7 +85,7 @@
   margin-bottom: rem(25px);
   display: flex;
   @include phones {
-    margin-bottom: rem(7px);
+    margin-bottom: rem(4px);
   }
 }
 
@@ -94,7 +111,8 @@
   border-radius: rem(5px);
   width: 100%;
   @include phones {
-    height: 40%;
+    height: 30%;
+    width: 100%;
   }
 }
 
@@ -133,6 +151,9 @@
     .order__form-row {
       justify-content: center;
       margin-bottom: rem(17px);
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

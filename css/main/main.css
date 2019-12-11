@@ -1132,16 +1132,23 @@ footer {
     padding: 5% 0; }
     @media screen and (max-width: 480px) {
       .order .section__title {
-        font-size: 2.125rem;
+        font-size: 2rem;
         margin-bottom: 0; } }
   .order:before {
     content: '';
     position: absolute;
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/blackberries.png?raw=true") top right;
+    background-size: contain;
     left: 68%;
     top: -17%;
     width: 15.125rem;
     height: 16.5rem; }
+    @media screen and (max-width: 480px) {
+      .order:before {
+        left: 66%;
+        top: -14%;
+        width: 8.875rem;
+        height: 10.25rem; } }
   .order:after {
     content: '';
     position: absolute;
@@ -1149,17 +1156,26 @@ footer {
     width: 67.3125rem;
     height: 11.875rem;
     bottom: 10%; }
+    @media screen and (max-width: 768px) {
+      .order:after {
+        height: 0; } }
+
+.order__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90vh; }
 
 .order__form {
   padding: 5% 5% 5% 10%;
+  margin: 0 auto;
   margin-left: -5%; }
   @media screen and (max-width: 768px) {
     .order__form {
       margin-left: 0;
-      padding: 0 20%; } }
-  @media screen and (max-width: 480px) {
-    .order__form {
       padding: 0; } }
+  .order__form-tag {
+    width: 95vw; }
 
 .order__form-col {
   float: left;
@@ -1180,7 +1196,7 @@ footer {
   display: flex; }
   @media screen and (max-width: 480px) {
     .order__form-row {
-      margin-bottom: 0.4375rem; } }
+      margin-bottom: 0.25rem; } }
 
 .order__form-label {
   margin-bottom: 0.625rem;
@@ -1204,7 +1220,8 @@ footer {
   width: 100%; }
   @media screen and (max-width: 480px) {
     .order__form-input {
-      height: 40%; } }
+      height: 30%;
+      width: 100%; } }
 
 .order__form-block {
   display: block;
@@ -1233,7 +1250,9 @@ footer {
 @media screen and (max-width: 768px) {
   .order__form-buttons .order__form-row {
     justify-content: center;
-    margin-bottom: 1.0625rem; } }
+    margin-bottom: 1.0625rem; }
+    .order__form-buttons .order__form-row:last-child {
+      margin-bottom: 0; } }
 
 .order__radio {
   position: relative;
