@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8faf9;
+    background-color: #f8faf9;   
     .order__form-button {
         margin-right: 0;
         width: fit-content;
@@ -21,6 +21,7 @@
     margin: auto;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .slider__content {
     padding: 0 5%;
@@ -30,9 +31,11 @@
     &-about {
         padding-top: 10%;
         width: 50%;
-        position: relative;
         @include tablets{
             width: 80%;
+        }
+        @include phones {
+            padding-top: 0;
         }
     }
     @include tablets{
@@ -88,7 +91,7 @@
 }
 .slider__bars-img {
     position: absolute;
-    bottom: 71%;
+    bottom: 90%;
     left: 58%;
     display: flex;
     flex-direction: column;
@@ -105,12 +108,12 @@
     text-transform: uppercase;
     @include tablets{
         text-align: center;
-        top: 26%;
+        top: -11%;
         left: 78%;
     }
     @include phones {
         right: -17%;
-        top: 25%;
+        top: -3%;
     }
 }
 .slider__bars-title {
@@ -184,4 +187,59 @@
     @include phones {
         font-size: rem(30px);
     }
+}
+.slider__hidden-menu {
+    background: #ffffff;
+    opacity: 0.95; 
+    padding: 3%;
+    position: absolute;
+    left: 66%;
+    bottom: 41%;
+    display: none;
+    width: 25%;
+    z-index: 20;
+    @include tablets{
+        top: -12%;
+        left: 41%;
+        width: 30%;
+        height: 35%;
+    }
+    @include phones {
+        top: 0%;
+        left: 11%;
+        width: 60%;
+        height: 35%;
+    }
+}
+.item__icon {
+    width: rem(35px);
+    height: rem(35px);
+    @include phones {
+        width: rem(25px);
+        height: rem(25px);
+    }
+}
+.hidden-menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hidden-menu__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden-menu__item-weight {
+    color: #2f3234;
+    font-family: "Alegreya Sans";
+    font-size: rem(16px);
+    font-weight: 400;
+}
+.hidden-menu__item-text {
+    color: #333333;
+    font-family: "Alegreya Sans";
+    font-size: rem(16px);
+    font-weight: 500;
+    width: 100%;
+    padding-left: 15%;
 }
