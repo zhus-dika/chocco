@@ -7,6 +7,15 @@
     @include tablets {
         text-align: center;
     }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.promo-advantages {
+    padding-bottom: 30%;
+    @include tablets {
+        padding-bottom: 10%;
+    }
 }
 .promo-content {
     display: flex;
@@ -16,14 +25,12 @@
         flex-direction: column-reverse;
     }
 }
-.picture, .promo__left-side {
-    @include tablets {
-        width: 100%;
-    }
-}
 .promo_left-side {
-    flex: 1;
-    width: 60%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5%;
 }
 .promo__title {
     padding-top: 10%;
@@ -67,22 +74,25 @@
 }
 .main-pic__img {
     @include tablets {
+        width: 90%;
+    }
+    @include phones {
         width: 50%;
     }
 }
-.promo-info {
-    @include tablets {
-        margin-bottom: 30%;
-    }  
-    p {
+.promo-info { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__text {
         color: #ffffff;
         font-family: "Alegreya Sans";
         font-size: rem(20px);
         font-weight: 400;
-        margin-bottom: rem(33px);
+        margin-bottom: 10%;
         width: 80%;
         @include tablets {
-            margin: 0 auto;;
+            margin: 0 auto 10%;
         }       
          @include phones {
             width: 100%;
@@ -104,22 +114,19 @@
         text-transform: uppercase;
     }
     @include tablets {
-        margin: 5% auto;
+        margin: auto;
     }
 }
 .promo-advantages__list {
-    margin-top: 15%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0 auto;
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
     @include tablets {
-        margin-left: -20%;
-        width: 150%;
+        justify-content: space-around;
     }
 }
 .promo-advantages__item {
-    width: 28%;
+    width: 18%;
     display: flex;
     color: #ffffff;
     font-family: "Alegreya Sans";

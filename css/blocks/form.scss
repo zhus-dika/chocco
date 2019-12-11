@@ -10,7 +10,7 @@
     font-size: rem(48px);
     font-weight: 700;
     text-transform: uppercase;
-    margin: 10% 0;
+    padding: 5% 0;
     @include phones {
       font-size: rem(34px);
       margin-bottom: 0;
@@ -36,7 +36,7 @@
 }
 
 .order__form {
-  padding: 5%;
+  padding: 5% 5% 5% 10%;
   @extend %clearfix;
   margin-left: -5%;
   @include tablets {
@@ -51,7 +51,12 @@
 .order__form-col {
   float: left;
   width: 45%;
-  margin-left: 5%;
+  &:last-child {
+    margin-left: 5%;
+    @include tablets {
+      margin-left: 0;
+    }
+  }
   @include tablets {
     width: 100%;
     float: none;
@@ -124,7 +129,7 @@
 }
 
 .order__form-buttons {
-  @include phones {
+  @include tablets {
     .order__form-row {
       justify-content: center;
       margin-bottom: rem(17px);

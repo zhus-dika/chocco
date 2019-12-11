@@ -7,7 +7,7 @@
 .header__container {
     padding-top: 5%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
 .logo {
@@ -19,8 +19,10 @@
 .nav__list {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     @include tablets {
+        width: 70vw;
+        flex-wrap: wrap;
+        align-items: stretch;
         display: none;
     }
 }
@@ -75,7 +77,6 @@
 	position: relative;
 	height: rem(22px);
 	align-items: center;
-	margin-left: rem(30px);
 	display: none;
 	@include tablets {
 		display: inline-flex;
