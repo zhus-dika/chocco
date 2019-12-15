@@ -1,11 +1,18 @@
 .reviews {
     position: relative;
+    .header__title {
+        @include phones {
+            font-size: rem(30px);
+        }
+    }
 }
 .reviews__container {
     padding-top: 4%;
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberries.png?raw=true") right top no-repeat;
     position: relative;
-
+    @include phones {
+        background-size: 30%;
+    }
     &:after {
         content: '';
         background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berrieswithsheet.png?raw=true") left bottom no-repeat;
@@ -29,10 +36,18 @@
     will-change: right;
     transition: right 0.3s;
     margin-bottom: 10%;
+    @include tablets {
+        margin-bottom: 4%;
+    }
+    @include phones {
+        margin-bottom: 0;
+        height: 75vh;
+    }
 }
 .reviews__content {
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 .review__title {
     color: #323232;
@@ -43,9 +58,12 @@
     @include tablets {
         text-align: center;
     }
+    @include phones {
+        padding-top: 0;
+    }
 }
 .user__review {
-    width: rem(1100px);
+    width: 58vw;
     background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/ellipse.png?raw=true"), url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berries.png?raw=true");
     background-position: center top, right top;
     background-repeat: no-repeat;
@@ -53,8 +71,12 @@
     display: flex;
     padding-top: 5%;
     @include tablets {
-        width: rem(768px);
         flex-direction: column;
+        align-items: center;
+        width: 95vw;
+    }
+    @include phones {
+        background-size: 20%, 180%;
     }
 }
 .review__text p {
@@ -68,6 +90,9 @@
         text-align: center;
         width: 100%;
     }
+    @include phones {
+        font-size: rem(14px);
+    }
 }
 .review__author {
     color: #666666;
@@ -76,12 +101,20 @@
     font-weight: 500;
     @include tablets {
         text-align: center;
+        padding-bottom: 5%;
     }
 }
 .user__avatar {
-    width: 50vw;
-    height: 20vw;
-    margin: 0 5% 5%;
+    padding: 5%;
+    text-align: center;
+    &-cover {
+        width: rem(250px);
+        height: rem(300px);
+        @include phones {
+            width: 40vw;
+            height: 50vw;
+        }
+    }
     @include tablets {
         width: 60%;
     }
@@ -94,7 +127,7 @@
     &__list {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
     &__item {
         margin-right: 5%;
@@ -111,6 +144,9 @@
             opacity: .7;
             transition: .5s;
         }
-
+        @include phones {
+            width: rem(48px);
+            height: rem(48px);
+        }
     }
 }

@@ -106,6 +106,10 @@
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
+    &:hover {
+        box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */
+        transition: .5s;
+    }
     @include tablets{
         text-align: center;
         top: -11%;

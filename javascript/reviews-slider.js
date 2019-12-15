@@ -1,8 +1,9 @@
 const 
  sliderItem = document.querySelectorAll(".user__photo"),
  reviewsList= document.querySelector(".reviews__list"),
+ review= document.querySelector(".user__review"),
  sliderListLength = sliderItem.length;
- const step = 1100;
+ var step = review.offsetWidth;
  var item = 0;
  sliderItem[item].style.border = "6px solid #0f5a47";
  for (let i = 0; i < sliderListLength; i++) {
