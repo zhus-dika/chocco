@@ -1673,7 +1673,7 @@ footer {
       height: 35%; } }
   @media screen and (max-width: 480px) {
     .slider__hidden-menu {
-      top: 0%;
+      top: -4%;
       left: 11%;
       width: 60%;
       height: 35%; } }
