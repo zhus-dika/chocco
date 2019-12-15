@@ -1,6 +1,49 @@
 .promo {
     background: $blue;
 }
+.promo__hidden-menu {
+    background-color: #2f3234;
+    opacity: 0.99;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    .nav__list {
+        position: relative;
+        display: flex;
+        padding-top: 20%;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        height: 80vw;
+        width: 100vw;
+        @include phones {
+            height: 100vw;
+        }
+    }
+    .nav__item a{
+        color: #ffffff;
+        font-family: "Alegreya Sans";
+        font-size: rem(36px);
+        font-weight: 400;
+    }
+    .closebtn {
+        position: absolute;
+        top: rem(20px);
+        right: rem(45px);
+        font-size: rem(60px);
+        @include phones {
+            font-size: rem(36px);
+        }
+        img {
+            width: 130%;
+        }
+    }
+}
 .promo__container{
     height: 100%;
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet.png?raw=true") top 20% right -7% no-repeat;

@@ -12,6 +12,20 @@
 <body>
     <div class="wrapper">
         <section class="promo">
+            <div class="promo__hidden-menu">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#">О нас</a></li>
+                        <li class="nav__item"><a href="#">Батончики</a></li>
+                        <li class="nav__item"><a href="#">Команда</a> </li>
+                        <li class="nav__item"><a href="#">Меню</a></li>
+                        <li class="nav__item"><a href="#">Отзывы</a> </li>
+                        <li class="nav__item"><a href="#">Как мы работаем</a></li>
+                        <li class="nav__item"><a href="#">Контакты</a></li>
+                    </ul>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./pictures/icons/close.svg" alt=""></a>
+                </nav>
+            </div>
             <div class="container promo__container">
                 <header class="header">
                     <div class="container header__container">
@@ -30,7 +44,7 @@
                         </nav>
                         <address class="contacts"><a href="+78009039090" class="contacts__phone">8 800 903 90 90</a>
                         </address>
-                        <a class="hamburger-menu-link" href="">
+                        <a class="hamburger-menu-link" onclick="openNav()" href="#">
                             <div class="hamburger-menu-link__bars"></div>
                         </a>
                     </div>
@@ -39,7 +53,8 @@
                     <div class="promo_left-side">
                         <div class="promo-info">
                             <h1 class="promo__title">натуральные шоколадные батончики</h1>
-                            <div class = "promo-info__text">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
+                            <div class="promo-info__text">Наши батончики идеально подходят для тех, кто следит за своим
+                                здоровьем</div>
                             <div class="button-order">
                                 <a href="#" class="button-order__name">Заказать</a>
                             </div>
@@ -60,8 +75,7 @@
                             <p>3-5 дней доставка по Казахстану</p>
                         </li>
                         <li class="promo-advantages__item">
-                            <img src="./pictures/info/figure-save.png" alt=""
-                                class="promo-advantages__item-pic">
+                            <img src="./pictures/info/figure-save.png" alt="" class="promo-advantages__item-pic">
                             <p>Не портит фигуру</p>
                         </li>
                     </ul>
@@ -117,99 +131,192 @@
         </section>
         <section class="slider">
             <div class="container container__slider">
-                <div class="slider__bars-img">
-                    <img src="./pictures/slider/chocolate-bar.png" alt="">
-                    <p class="img_title"> Состав </p>
-                </div>
                 <a href="#" class="left-arrow"><img src="./pictures/slider/left-arrow.svg" alt=""
                         class="left-arrow__pic">
                 </a>
-                <main class="slider__content">
-                    <div class="slider__img">
-                        <img src="./pictures/slider/bars-in-slider.png" alt="" class="slider__pic">
-                    </div>
-                    <div class="slider__content-about">
-                        <div class="slider__description">
-                            <h4 class="slider__bars-title">Батончик “Морские водоросли”</h4>
-                        </div>
-                        <div class="slider__description-content">
-                            <p class="slider__description-text">Гранола из морских водорослей с овсом, миндалем и
-                                тыквенными
-                                семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
-                            <div class="slider__description-data">
-                                <div class="slider__description-calories">
-                                    <div class="data__title">Калорийность</div>
-                                    <div class="data__value">120 ккал</div>
+                <main class="slider__list">
+                    <ul class="slider__list-content">
+                        <li class="slider__content">
+                            <div class="slider__bars-img">
+                                <img src="./pictures/slider/chocolate-bar.png" alt="">
+                                <p class="img_title"> Состав </p>
+                            </div>
+                            <div class="slider__hidden-menu">
+                                <ul class="hidden-menu__list">
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/oat.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Овес</div>
+                                        <div class="hidden-menu__item-weight">25г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/seaweed.svg" alt="" class="item__icon">
+
+                                        </div>
+                                        <div class="hidden-menu__item-text">Мор. водоросли</div>
+                                        <div class="hidden-menu__item-weight">15г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/almond2.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Миндаль</div>
+                                        <div class="hidden-menu__item-weight">20г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/washing-powder.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Сухое молоко</div>
+                                        <div class="hidden-menu__item-weight">10г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/seeds.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Тыкв. семечки</div>
+                                        <div class="hidden-menu__item-weight">20г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/apitherapy.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Зам. сахара</div>
+                                        <div class="hidden-menu__item-weight">4г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/beans.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Какао бобы</div>
+                                        <div class="hidden-menu__item-weight">4г</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="slider__img">
+                                <img src="./pictures/slider/bars-in-slider.png" alt="" class="slider__pic">
+                            </a>
+                            <div class="slider__content-about">
+                                <div class="slider__description">
+                                    <h4 class="slider__bars-title">Батончик “Морские водоросли”</h4>
                                 </div>
-                                <div class="slider__description-weight">
-                                    <div class="data__title">Вес</div>
-                                    <div class="data__value">98 грамм</div>
+                                <div class="slider__description-content">
+                                    <p class="slider__description-text">Гранола из морских водорослей с овсом, миндалем
+                                        и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и
+                                        какао бобы.
+                                    </p>
+                                    <div class="slider__description-data">
+                                        <div class="slider__description-calories">
+                                            <div class="data__title">Калорийность</div>
+                                            <div class="data__value">120 ккал</div>
+                                        </div>
+                                        <div class="slider__description-weight">
+                                            <div class="data__title">Вес</div>
+                                            <div class="data__value">98 грамм</div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__description-order_info">
+                                        <div class="order__price">140 ₽</div>
+                                        <input class="order__form-button" name="" type="submit" value="Заказать">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="slider__description-order_info">
-                                <div class="order__price">140 ₽</div>
-                                <input class="order__form-button" name="" type="submit" value="Заказать">
+                        </li>
+                        <li class="slider__content">
+                            <div class="slider__bars-img">
+                                <img src="./pictures/slider/chocolate-bar.png" alt="">
+                                <p class="img_title"> Состав </p>
                             </div>
-                        </div>
-                    </div>
+                            <div class="slider__hidden-menu">
+                                <ul class="hidden-menu__list">
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/oat.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Овес</div>
+                                        <div class="hidden-menu__item-weight">25г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/seaweed.svg" alt="" class="item__icon">
+
+                                        </div>
+                                        <div class="hidden-menu__item-text">Мед</div>
+                                        <div class="hidden-menu__item-weight">15г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/almond2.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Ягоды</div>
+                                        <div class="hidden-menu__item-weight">20г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/washing-powder.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Сухое молоко</div>
+                                        <div class="hidden-menu__item-weight">10г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/seeds.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Тыкв. семечки</div>
+                                        <div class="hidden-menu__item-weight">20г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/apitherapy.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Зам. сахара</div>
+                                        <div class="hidden-menu__item-weight">4г</div>
+                                    </li>
+                                    <li class="hidden-menu__item">
+                                        <div class="hidden-menu__item-icon">
+                                            <img src="./pictures/icons/beans.svg" alt="" class="item__icon">
+                                        </div>
+                                        <div class="hidden-menu__item-text">Какао бобы</div>
+                                        <div class="hidden-menu__item-weight">4г</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider__img">
+                                <img src="./pictures/slider/bars-in-slider.png" alt="" class="slider__pic">
+                            </div>
+                            <div class="slider__content-about">
+                                <div class="slider__description">
+                                    <h4 class="slider__bars-title">Батончик “Ягоды и мед”</h4>
+                                </div>
+                                <div class="slider__description-content">
+                                    <p class="slider__description-text">Гранола из морских водорослей с овсом, миндалем
+                                        и тыквенными семечками. В состав также входят: сухое молоко, заменитель сахара и
+                                        какао бобы.
+                                    </p>
+                                    <div class="slider__description-data">
+                                        <div class="slider__description-calories">
+                                            <div class="data__title">Калорийность</div>
+                                            <div class="data__value">120 ккал</div>
+                                        </div>
+                                        <div class="slider__description-weight">
+                                            <div class="data__title">Вес</div>
+                                            <div class="data__value">98 грамм</div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__description-order_info">
+                                        <div class="order__price">140 ₽</div>
+                                        <input class="order__form-button" name="" type="submit" value="Заказать">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </main>
                 <a href="#" class="right-arrow"><img src="./pictures/slider/right-arrow.svg" alt=""
                         class="right-arrow__pic">
                 </a>
-                <div class="slider__hidden-menu">
-                    <ul class="hidden-menu__list">
-                        <li class="hidden-menu__item">
-                            <div class="hidden-menu__item-icon">
-                                <img src="./pictures/icons/oat.svg" alt="" class="item__icon">
-                            </div>
-                            <div class="hidden-menu__item-text">Овес</div>
-                            <div class="hidden-menu__item-weight">25г</div>
-                        </li>
-                        <li class="hidden-menu__item">
-                            <div class="hidden-menu__item-icon">
-                                <img src="./pictures/icons/seaweed.svg" alt="" class="item__icon">
-    
-                            </div>
-                            <div class="hidden-menu__item-text">Мор. водоросли</div>
-                            <div class="hidden-menu__item-weight">15г</div>
-                        </li>
-                        <li class="hidden-menu__item">
-                            <div class="hidden-menu__item-icon">
-                                <img src="./pictures/icons/almond2.svg" alt="" class="item__icon">
-                            </div>
-                            <div class="hidden-menu__item-text">Миндаль</div>
-                            <div class="hidden-menu__item-weight">20г</div>
-                        </li>
-                        <li class="hidden-menu__item">
-                            <div class="hidden-menu__item-icon">
-                                <img src="./pictures/icons/washing-powder.svg" alt="" class="item__icon">
-                            </div>
-                            <div class="hidden-menu__item-text">Сухое молоко</div>
-                            <div class="hidden-menu__item-weight">10г</div>
-                        </li>
-                        <li class="hidden-menu__item">
-                            <div class="hidden-menu__item-icon">
-                                <img src="./pictures/icons/seeds.svg" alt="" class="item__icon">
-                            </div>
-                            <div class="hidden-menu__item-text">Тыкв. семечки</div>
-                            <div class="hidden-menu__item-weight">20г</div>
-                        </li>
-                        <li class="hidden-menu__item">
-                            <div class="hidden-menu__item-icon">
-                                <img src="./pictures/icons/apitherapy.svg" alt="" class="item__icon">
-                            </div>
-                            <div class="hidden-menu__item-text">Зам. сахара</div>
-                            <div class="hidden-menu__item-weight">4г</div>
-                        </li>
-                        <li class="hidden-menu__item">
-                            <div class="hidden-menu__item-icon">
-                                <img src="./pictures/icons/beans.svg" alt="" class="item__icon">
-                            </div>
-                            <div class="hidden-menu__item-text">Какао бобы</div>
-                            <div class="hidden-menu__item-weight">4г</div>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </section>
         <section class="team">
@@ -353,7 +460,7 @@
                     <ul class="reviews__list">
                         <li class="reviews__content">
                             <div class="user__review">
-                                <div class="user__avatar">                                
+                                <div class="user__avatar">
                                     <img src="./pictures/users/user1.png" alt="" class="user__avatar-cover">
                                 </div>
                                 <div class="review__text">
@@ -378,7 +485,8 @@
                                 <div class="review__text">
                                     <h4 class="review__title">Лучшие батончики премиум уровня</h4>
                                     <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с
-                                        конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится
+                                        конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой,
+                                        нравится
                                         держать в руке ... </p>
                                     <div class="review__author">Мария Орлова</div>
                                 </div>
@@ -553,5 +661,7 @@
 </body>
 <script src="./javascript/menu.js"></script>
 <script src="./javascript/reviews-slider.js"></script>
+<script src="./javascript/slider.js"></script>
+
 
 </html>

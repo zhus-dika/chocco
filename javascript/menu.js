@@ -1,19 +1,11 @@
 /***************in promo********************/
-const navList = document.querySelector(".nav__list"),
-hamburgerMenu = document.querySelector(".hamburger-menu-link");
-var boo = 'false';
-hamburgerMenu.addEventListener('click', e => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (boo == 'false') {
-        navList.style.display = 'flex';
-        boo = 'true';
-    }
-    else {
-        navList.style.display = 'none';
-        boo = 'false';
-    }
-});
+function openNav() {
+    document.querySelector(".promo__hidden-menu").style.width = "100%";
+}
+
+function closeNav() {
+    document.querySelector(".promo__hidden-menu").style.width = "0%";
+}
 /***************in menu********************/
 const menu = document.querySelector(".menu"),
  visibleMenuItem = document.querySelectorAll(".accordeon__item-visible"),
@@ -39,20 +31,5 @@ for (let i = 0; i < menuListLength; i++){
         hiddenMenuItem[i].style.display = 'flex';
     });
 }
-/***************in slider********************/
-const sliderHiddenMenu = document.querySelector(".slider__hidden-menu"),
-content = document.querySelector(".slider__bars-img");
-boo = 'false';
-content.addEventListener('click', e => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (boo == 'false') {
-        sliderHiddenMenu.style.display = 'block';
-        boo = 'true';
-    }
-    else {
-        sliderHiddenMenu.style.display = 'none';
-        boo = 'false';
-    }
-});
+
 
