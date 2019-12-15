@@ -36,6 +36,10 @@
         top: rem(20px);
         right: rem(45px);
         font-size: rem(60px);
+        &:hover {
+            opacity: 0.5;
+            transition: .5s;
+        }
         @include phones {
             font-size: rem(36px);
         }

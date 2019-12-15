@@ -534,6 +534,9 @@ footer {
     top: 1.25rem;
     right: 2.8125rem;
     font-size: 3.75rem; }
+    .promo__hidden-menu .closebtn:hover {
+      opacity: 0.5;
+      transition: .5s; }
     @media screen and (max-width: 480px) {
       .promo__hidden-menu .closebtn {
         font-size: 2.25rem; } }
