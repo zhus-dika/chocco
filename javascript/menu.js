@@ -1,4 +1,4 @@
-/***************in promo********************/
+/***************in promo section full screen menu********************/
 function openNav() {
     document.querySelector(".promo__hidden-menu").style.width = "100%";
 }
@@ -6,7 +6,7 @@ function openNav() {
 function closeNav() {
     document.querySelector(".promo__hidden-menu").style.width = "0%";
 }
-/***************in menu********************/
+/***************in menu section********************/
 const menu = document.querySelector(".menu"),
  visibleMenuItem = document.querySelectorAll(".accordeon__item-visible"),
  hiddenMenuItem = document.querySelectorAll(".accordeon__item-hidden"),

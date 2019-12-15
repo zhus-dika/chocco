@@ -1526,16 +1526,32 @@ footer {
       .slider .order__form-button {
         font-size: 0.875rem; } }
 
-.left-arrow:hover, .right-arrow:hover {
-  opacity: .5;
-  transition: .5s; }
-@media screen and (max-width: 768px) {
-  .left-arrow, .right-arrow {
-    display: none; } }
+.left-arrow, .right-arrow {
+  position: absolute; }
+  .left-arrow:hover, .right-arrow:hover {
+    opacity: .5;
+    transition: .5s; }
 
 .right-arrow {
-  position: absolute;
   right: 0%; }
+  @media screen and (max-width: 768px) {
+    .right-arrow {
+      top: 32%;
+      right: 12%; } }
+  @media screen and (max-width: 480px) {
+    .right-arrow {
+      top: 28%; } }
+
+.left-arrow {
+  position: absolute;
+  left: -5%; }
+  @media screen and (max-width: 768px) {
+    .left-arrow {
+      top: 32%;
+      left: 12%; } }
+  @media screen and (max-width: 480px) {
+    .left-arrow {
+      top: 28%; } }
 
 .container__slider {
   display: flex;
@@ -1556,7 +1572,7 @@ footer {
   width: 104vw; }
   @media screen and (max-width: 768px) {
     .slider__list-content {
-      width: auto; } }
+      width: 190vw; } }
 
 .slider__content {
   padding: 0 5%;
@@ -1568,10 +1584,11 @@ footer {
   position: relative; }
   @media screen and (max-width: 768px) {
     .slider__content {
-      width: 80vw; } }
+      width: 95vw; } }
   @media screen and (max-width: 480px) {
     .slider__content {
-      height: 95vh; } }
+      height: 95vh;
+      width: 100vw; } }
   .slider__content-about {
     width: 50%; }
     @media screen and (max-width: 768px) {
@@ -1601,37 +1618,11 @@ footer {
   background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/slider/ellipse_in_slider-img.png?raw=true") center bottom 20% no-repeat, url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/slider/ellipse-with-sheets.png?raw=true") left 35% bottom 5% no-repeat; }
   @media screen and (max-width: 768px) {
     .slider__img {
+      margin-right: 0;
       padding: 15%; } }
   @media screen and (max-width: 480px) {
     .slider__img {
       background-size: 80%, 100%; } }
-  .slider__img::before {
-    content: '';
-    width: 10vw;
-    height: 10vw;
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/slider/left-arrow.png?raw=true") center no-repeat;
-    display: none;
-    position: absolute;
-    left: -11%;
-    top: 51%; }
-    @media screen and (max-width: 768px) {
-      .slider__img::before {
-        display: block; } }
-    @media screen and (max-width: 480px) {
-      .slider__img::before {
-        left: -16%; } }
-  .slider__img::after {
-    content: '';
-    width: 10vw;
-    height: 10vw;
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/slider/right-arrow.png?raw=true") center no-repeat;
-    display: none;
-    position: absolute;
-    right: -14%;
-    top: 51%; }
-    @media screen and (max-width: 768px) {
-      .slider__img::after {
-        display: block; } }
 
 .slider__bars-img {
   position: absolute;
@@ -1649,11 +1640,7 @@ footer {
   font-family: "Alegreya Sans - Black Italic";
   font-size: 14px;
   font-weight: 400;
-  text-transform: uppercase;
-  /*&:hover {
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-      transition: .5s;
-  }*/ }
+  text-transform: uppercase; }
   @media screen and (max-width: 768px) {
     .slider__bars-img {
       text-align: center;
@@ -1661,7 +1648,7 @@ footer {
       left: 82%; } }
   @media screen and (max-width: 480px) {
     .slider__bars-img {
-      left: -23%;
+      left: 80%;
       top: 3%;
       height: fit-content; } }
 
@@ -1754,8 +1741,8 @@ footer {
       height: 27%; } }
   @media screen and (max-width: 480px) {
     .slider__hidden-menu {
-      top: 3%;
-      left: -85%;
+      top: 2%;
+      left: 17%;
       width: 55%;
       height: min-content; } }
 
