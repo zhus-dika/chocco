@@ -12,8 +12,12 @@
 }
 .logo {
     margin-right: 5%;
+    @include phones {
+        margin-right: 0;
+    }
 }
 .nav {
+    flex: 1;
     margin-right: 2%;
 }
 .nav__list {
@@ -22,18 +26,26 @@
     @include tablets {
         width: 70vw;
         flex-wrap: wrap;
-        align-items: stretch;
         display: none;
+    }
+    @include phones {
+        width: 100%;
     }
 }
 .nav__item {
     vertical-align: bottom;
     margin-right: 2em;
+    @include tablets {
+        margin-right: 0;
+    }
     a {
         color: #ffffff;
         font-family: "Alegreya Sans";
         font-size: rem(18px);
         font-weight: 400;
+        @include phones {
+            font-size: rem(12px);
+        }
     }
     &:last-child {
         margin-right: 0;

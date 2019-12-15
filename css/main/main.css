@@ -407,8 +407,12 @@ footer {
 
 .logo {
   margin-right: 5%; }
+  @media screen and (max-width: 480px) {
+    .logo {
+      margin-right: 0; } }
 
 .nav {
+  flex: 1;
   margin-right: 2%; }
 
 .nav__list {
@@ -418,17 +422,25 @@ footer {
     .nav__list {
       width: 70vw;
       flex-wrap: wrap;
-      align-items: stretch;
       display: none; } }
+  @media screen and (max-width: 480px) {
+    .nav__list {
+      width: 100%; } }
 
 .nav__item {
   vertical-align: bottom;
   margin-right: 2em; }
+  @media screen and (max-width: 768px) {
+    .nav__item {
+      margin-right: 0; } }
   .nav__item a {
     color: #ffffff;
     font-family: "Alegreya Sans";
     font-size: 1.125rem;
     font-weight: 400; }
+    @media screen and (max-width: 480px) {
+      .nav__item a {
+        font-size: 0.75rem; } }
   .nav__item:last-child {
     margin-right: 0; }
 
