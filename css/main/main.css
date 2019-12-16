@@ -1012,7 +1012,7 @@ footer {
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberry.png?raw=true") left bottom no-repeat;
     position: absolute;
     left: 0%;
-    bottom: -48%;
+    bottom: -43%;
     width: 6.5rem;
     height: 7.125rem;
     z-index: 20; }
@@ -1030,6 +1030,7 @@ footer {
 .team__member {
   text-align: center;
   width: 23%;
+  height: 50vh;
   z-index: 5; }
   .team__member img {
     margin-bottom: 6%; }
@@ -1052,6 +1053,15 @@ footer {
   @media screen and (max-width: 480px) {
     .member__name {
       font-size: 1.125rem; } }
+
+.member__name-active:after {
+  content: '';
+  margin-left: 2%;
+  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_visible.png?raw=true") no-repeat;
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  z-index: 12; }
 
 .member__name:after {
   content: '';

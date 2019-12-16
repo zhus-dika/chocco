@@ -3,7 +3,6 @@ const sliderHiddenMenu = document.querySelectorAll(".slider__hidden-menu"),
 content = document.querySelectorAll(".slider__bars-img");
 const contentLength = content.length;
 for (let i = 0; i < contentLength; i++) {
-    var boo = 'false';
     content[i].onmouseover = function(e) {
         e.preventDefault();
         e.stopPropagation();
@@ -14,18 +13,6 @@ for (let i = 0; i < contentLength; i++) {
         e.stopPropagation();
         sliderHiddenMenu[i].style.display = 'none';
     };
-    /*content[i].addEventListener('hover', e => {
-        e.preventDefault();
-        e.stopPropagation();
-        if (boo == 'false') {
-            sliderHiddenMenu[i].style.display = 'block';
-            boo = 'true';
-        }
-        else {
-            sliderHiddenMenu[i].style.display = 'none';
-            boo = 'false';
-        }
-    });*/
 }
 
 /****** in desktop *****/

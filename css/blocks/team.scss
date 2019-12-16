@@ -25,7 +25,7 @@
         background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberry.png?raw=true") left bottom no-repeat;
         position: absolute;
         left: 0%;
-        bottom: -48%;
+        bottom: -43%;
         width: rem(104px);
         height: rem(114px);
         z-index: 20;
@@ -44,6 +44,7 @@
 .team__member {
     text-align: center;
     width: 23%;
+    height: 50vh;
     z-index: 5;
     img {
         margin-bottom: 6%;
@@ -67,6 +68,15 @@
     @include phones{
         font-size: rem(18px);
     }
+} 
+.member__name-active:after {
+    content: '';
+    margin-left: 2%;
+    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_visible.png?raw=true") no-repeat;
+    display: inline-block;
+    width: rem(10px);
+    height: rem(10px);
+    z-index: 12;
 }
 .member__name:after {
     content: '';
