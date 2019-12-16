@@ -14,7 +14,7 @@
     font-weight: 700;
     text-transform: uppercase;
     position: absolute;
-    left: 0%;
+    left: 5%;
     top: 23%;
     @include phones {
         font-size: rem(40px);
@@ -51,7 +51,6 @@
         }
     }
     &-content {
-        color: #ffffff;
         font-family: "Alegreya Sans";
         font-size: rem(16px);
         font-weight: 400;
@@ -64,6 +63,7 @@
 .accordeon__item-title-content{
     display: block;
     width: 100vh;
+    height: 10vh;
     transform: rotate(-90deg) translateX(-100%);
     transform-origin: 0 0;
     white-space: nowrap;
@@ -82,12 +82,20 @@
     height: 5%;
     right: 19%;
     top: 3%;
+    text-align: center;
+    &-pic {
+        vertical-align: middle;
+    }
+    &:hover{
+        opacity: .5;
+        transition: .5s;
+    }
     @include tablets {
-        right: 9%;
+        right: 6%;
     }
 }
 .accordeon__item-text {
-    width: 60%;
+    width: 50%;
     @include tablets {
         width: 70%;
     }
@@ -99,19 +107,16 @@
     font-size: rem(16px);
     font-weight: 400;
     line-height: 23.97px;
-    padding: 2% 5% 0;
+    padding: 4% 8% 0;
 }
 .accordeon__item-hidden {
     display: none;
-    &__test {
-        display: flex;
-        left: 15%;
-        position: absolute;
-        justify-content: flex-end;
-        @include tablets {
-            z-index: 10;
-            left: 0;
-        }
+    left: 15%;
+    position: absolute;
+    justify-content: flex-end;
+    @include tablets {
+        z-index: 10;
+        left: 0;
     }
 }
 .accordeon__item-visible {

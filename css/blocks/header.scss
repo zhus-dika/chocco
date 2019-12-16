@@ -7,31 +7,45 @@
 .header__container {
     padding-top: 5%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
 .logo {
     margin-right: 5%;
+    @include phones {
+        margin-right: 0;
+    }
 }
 .nav {
+    flex: 1;
     margin-right: 2%;
 }
 .nav__list {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     @include tablets {
+        width: 70vw;
+        flex-wrap: wrap;
         display: none;
+    }
+    @include phones {
+        width: 100%;
     }
 }
 .nav__item {
     vertical-align: bottom;
     margin-right: 2em;
+    @include tablets {
+        margin-right: 0;
+    }
     a {
         color: #ffffff;
         font-family: "Alegreya Sans";
         font-size: rem(18px);
         font-weight: 400;
+        @include phones {
+            font-size: rem(12px);
+        }
     }
     &:last-child {
         margin-right: 0;
@@ -75,7 +89,6 @@
 	position: relative;
 	height: rem(22px);
 	align-items: center;
-	margin-left: rem(30px);
 	display: none;
 	@include tablets {
 		display: inline-flex;

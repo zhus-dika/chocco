@@ -10,9 +10,9 @@
     font-size: rem(48px);
     font-weight: 700;
     text-transform: uppercase;
-    margin: 10% 0;
+    padding: 5% 0;
     @include phones {
-      font-size: rem(34px);
+      font-size: rem(32px);
       margin-bottom: 0;
     }
   }
@@ -20,10 +20,18 @@
     content: '';
     position: absolute;
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/blackberries.png?raw=true") top right;
+    background-size: contain;
     left: 68%;
     top: -17%;
     width: rem(242px);
     height: rem(264px);
+    @include phones {
+      left: 70%;
+      top: -10%;
+      width: rem(142px);
+      height: rem(164px);
+    }
+
   }
   &:after {
     content: '';
@@ -32,26 +40,40 @@
     width: rem(1077px);
     height: rem(190px);
     bottom: 10%;
+    @include tablets {
+      height: 0;
+    }
   }
 }
-
+.order__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90vh;
+}
 .order__form {
-  padding: 5%;
+  padding: 5% 5% 5% 10%;
+  margin: 0 auto;
   @extend %clearfix;
   margin-left: -5%;
   @include tablets {
     margin-left: 0;
-    padding: 0 20%;
-  }
-  @include phones {
     padding: 0;
+  }
+  &-tag {
+    width: 95vw;
   }
 }
 
 .order__form-col {
   float: left;
   width: 45%;
-  margin-left: 5%;
+  &:last-child {
+    margin-left: 5%;
+    @include tablets {
+      margin-left: 0;
+    }
+  }
   @include tablets {
     width: 100%;
     float: none;
@@ -63,7 +85,7 @@
   margin-bottom: rem(25px);
   display: flex;
   @include phones {
-    margin-bottom: rem(7px);
+    margin-bottom: rem(4px);
   }
 }
 
@@ -89,7 +111,8 @@
   border-radius: rem(5px);
   width: 100%;
   @include phones {
-    height: 40%;
+    height: 30%;
+    width: 100%;
   }
 }
 
@@ -124,10 +147,13 @@
 }
 
 .order__form-buttons {
-  @include phones {
+  @include tablets {
     .order__form-row {
       justify-content: center;
       margin-bottom: rem(17px);
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -235,4 +261,5 @@
   font-weight: 400;
   line-height: rem(30.05px);
   background: transparent;
+  margin-right: 0;
 }
