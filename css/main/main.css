@@ -1054,23 +1054,12 @@ footer {
     .member__name {
       font-size: 1.125rem; } }
 
-.member__name-active:after {
-  content: '';
-  margin-left: 2%;
-  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_visible.png?raw=true") no-repeat;
-  display: inline-block;
-  width: 0.625rem;
-  height: 0.625rem;
-  z-index: 12; }
+.member__name-link {
+  display: flex;
+  justify-content: center; }
 
-.member__name:after {
-  content: '';
-  margin-left: 2%;
-  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_hidden.png?raw=true") no-repeat;
-  display: inline-block;
-  z-index: 10;
-  width: 0.625rem;
-  height: 0.625rem; }
+.member__name-after__icon {
+  margin: 0 5%; }
 
 .member__status {
   color: #281e1e;
@@ -1092,18 +1081,6 @@ footer {
     font-family: "Alegreya Sans";
     font-size: 1.125rem;
     font-weight: 300; }
-
-.member__description__test {
-  height: auto; }
-
-.member__description__visible .member__name:after {
-  content: '';
-  margin-left: 2%;
-  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_visible.png?raw=true") no-repeat;
-  display: inline-block;
-  z-index: 10;
-  width: 0.625rem;
-  height: 0.625rem; }
 
 .menu {
   background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/menu.png?raw=true") no-repeat;
