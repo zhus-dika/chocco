@@ -52,7 +52,7 @@
   height: 90vh;
 }
 .order__form {
-  padding: 5% 5% 5% 10%;
+  padding: 5% 0%;
   margin: 0 auto;
   @extend %clearfix;
   margin-left: -5%;
@@ -61,7 +61,10 @@
     padding: 0;
   }
   &-tag {
-    width: 95vw;
+    width: 70vw;
+    @include tablets {
+      width: 95vw;
+    }
   }
 }
 
@@ -69,7 +72,7 @@
   float: left;
   width: 45%;
   &:last-child {
-    margin-left: 5%;
+    margin-left: 2%;
     @include tablets {
       margin-left: 0;
     }

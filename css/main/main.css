@@ -842,7 +842,11 @@ footer {
         display: none; } }
 
 .reviews__main-content {
-  overflow: hidden; }
+  overflow: hidden;
+  width: 60vw; }
+  @media screen and (max-width: 768px) {
+    .reviews__main-content {
+      width: 95vw; } }
 
 .reviews__list {
   display: flex;
@@ -877,7 +881,7 @@ footer {
       padding-top: 0; } }
 
 .user__review {
-  width: 58vw;
+  width: 60vw;
   background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/ellipse.png?raw=true"), url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berries.png?raw=true");
   background-position: center top, right top;
   background-repeat: no-repeat;
@@ -903,7 +907,8 @@ footer {
   @media screen and (max-width: 768px) {
     .review__text p {
       text-align: center;
-      width: 100%; } }
+      margin: 0 auto;
+      width: 80%; } }
   @media screen and (max-width: 480px) {
     .review__text p {
       font-size: 0.875rem; } }
@@ -1257,7 +1262,7 @@ footer {
   height: 90vh; }
 
 .order__form {
-  padding: 5% 5% 5% 10%;
+  padding: 5% 0%;
   margin: 0 auto;
   margin-left: -5%; }
   @media screen and (max-width: 768px) {
@@ -1265,13 +1270,16 @@ footer {
       margin-left: 0;
       padding: 0; } }
   .order__form-tag {
-    width: 95vw; }
+    width: 70vw; }
+    @media screen and (max-width: 768px) {
+      .order__form-tag {
+        width: 95vw; } }
 
 .order__form-col {
   float: left;
   width: 45%; }
   .order__form-col:last-child {
-    margin-left: 5%; }
+    margin-left: 2%; }
     @media screen and (max-width: 768px) {
       .order__form-col:last-child {
         margin-left: 0; } }
