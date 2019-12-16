@@ -1,11 +1,14 @@
 /***************in promo section full screen menu********************/
 function openNav() {
     document.querySelector(".promo__hidden-menu").style.width = "100%";
+    document.querySelector("html").style.overflow = 'hidden';
 }
 
 function closeNav() {
     document.querySelector(".promo__hidden-menu").style.width = "0%";
+    document.querySelector("html").style.overflow = 'visible';
 }
+
 /***************in menu section********************/
 const menu = document.querySelector(".menu"),
  visibleMenuItem = document.querySelectorAll(".accordeon__item-visible"),
