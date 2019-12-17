@@ -17,9 +17,9 @@ form = document.querySelector("#order-form");
 sendButton.addEventListener('click', e => {
     e.preventDefault();
     var formData = new FormData();
-    formData.append("name", form.elements.name);
-    formData.append("phone", form.elements.phone);
-    formData.append("comment", form.elements.comment);
+    formData.append("name", form.elements.name.value);
+    formData.append("phone", form.elements.phone.value);
+    formData.append("comment", form.elements.comment.value);
     formData.append("to", "zhus.dinara@gmail.com");
     var request = new XMLHttpRequest();
     request.responseType = 'json';
