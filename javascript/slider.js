@@ -30,16 +30,20 @@ const
    e.preventDefault();
    if (currentRight < maxRight) {
      currentRight += step;
-     sliders.style.right = currentRight + "px";
+   } else {
+    currentRight = 0; 
    }
+   sliders.style.right = currentRight + "px";
  });
  
  left.addEventListener("click", function(e) {
    e.preventDefault();
    if (currentRight > minRight) {
      currentRight -= step;
-     sliders.style.right = currentRight + "px";
+   } else {
+     currentRight = maxRight; 
    }
+   sliders.style.right = currentRight + "px";
  });
 
  /****** in tablets *****/

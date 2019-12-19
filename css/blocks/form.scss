@@ -153,6 +153,9 @@
   @include tablets {
     .order__form-row {
       justify-content: center;
+      @include phones {
+        justify-content: space-evenly;
+      }
       margin-bottom: rem(17px);
       &:last-child {
         margin-bottom: 0;
@@ -165,6 +168,9 @@
   position: relative;
   white-space: nowrap;
   margin-right: rem(20px);
+  @include phones {
+    margin-right: rem(10px);
+  }
   @include inlineblock(middle);
   cursor: pointer;
 }
@@ -176,12 +182,16 @@
 }
 
 .order__radio-fake {
-  width: rem(16px);
-  height: rem(16px);
+  width: rem(26px);
+  height: rem(26px);
   border-radius: 50%;
   background: #fff;
   @include inlineblock(middle);
   position: relative;
+  @include phones {
+    width: rem(18px);
+    height: rem(18px);
+  }
   &:after {
     content: "";
     display: block;
@@ -199,8 +209,13 @@
 .order__radio-elem:checked {
   &+.order__radio-fake {
     &:after {
-      width: rem(8px);
-      height: rem(8px);
+      width: rem(13px);
+      height: rem(13px);
+      background-color: $green;
+      @include phones {
+        width: rem(10px);
+        height: rem(10px);
+      }
     }
   }
 }
@@ -213,6 +228,9 @@
   font-weight: 400;
   line-height: rem(30.05px);
   margin-left: rem(10px);
+  @include phones {
+    margin-left: rem(5px);
+  }
 }
 
 .order__radio_checkbox {
@@ -229,8 +247,8 @@
   .order__radio-elem:checked {
     &+.order__radio-fake {
       &:after {
-        background: url("./../../img/icons/check.svg") 50% no-repeat transparent;
-        background-size: contain;
+        background: url("../../pictures/form/selected.png") 50% no-repeat transparent;
+        background-size: cover;
         width: rem(11px);
         height: rem(9px);
       }

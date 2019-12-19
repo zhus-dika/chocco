@@ -1335,7 +1335,11 @@ footer {
 @media screen and (max-width: 768px) {
   .order__form-buttons .order__form-row {
     justify-content: center;
-    margin-bottom: 1.0625rem; }
+    margin-bottom: 1.0625rem; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .order__form-buttons .order__form-row {
+      justify-content: space-evenly; } }
+@media screen and (max-width: 768px) {
     .order__form-buttons .order__form-row:last-child {
       margin-bottom: 0; } }
 
@@ -1346,6 +1350,9 @@ footer {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer; }
+  @media screen and (max-width: 480px) {
+    .order__radio {
+      margin-right: 0.625rem; } }
 
 .order__radio-elem {
   position: absolute;
@@ -1353,13 +1360,17 @@ footer {
   left: -624.9375rem; }
 
 .order__radio-fake {
-  width: 1rem;
-  height: 1rem;
+  width: 1.625rem;
+  height: 1.625rem;
   border-radius: 50%;
   background: #fff;
   display: inline-block;
   vertical-align: middle;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    .order__radio-fake {
+      width: 1.125rem;
+      height: 1.125rem; } }
   .order__radio-fake:after {
     content: "";
     display: block;
@@ -1373,8 +1384,13 @@ footer {
     transition: width .3s, height .3s; }
 
 .order__radio-elem:checked + .order__radio-fake:after {
-  width: 0.5rem;
-  height: 0.5rem; }
+  width: 0.8125rem;
+  height: 0.8125rem;
+  background-color: #0f5a47; }
+  @media screen and (max-width: 480px) {
+    .order__radio-elem:checked + .order__radio-fake:after {
+      width: 0.625rem;
+      height: 0.625rem; } }
 
 .order__radio-title {
   display: inline-block;
@@ -1385,14 +1401,17 @@ footer {
   font-weight: 400;
   line-height: 1.878125rem;
   margin-left: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .order__radio-title {
+      margin-left: 0.3125rem; } }
 
 .order__radio_checkbox .order__radio-fake {
   border-radius: 0rem; }
 .order__radio_checkbox .order__radio-elem + .order__radio-fake:after {
   background: transparent; }
 .order__radio_checkbox .order__radio-elem:checked + .order__radio-fake:after {
-  background: url("./../../img/icons/check.svg") 50% no-repeat transparent;
-  background-size: contain;
+  background: url("../../pictures/form/selected.png") 50% no-repeat transparent;
+  background-size: cover;
   width: 0.6875rem;
   height: 0.5625rem; }
 
