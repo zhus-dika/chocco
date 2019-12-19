@@ -17,6 +17,9 @@
   
   .content {
     width: 400px;
+    @include phones {
+      width: 75vw;
+    }
     background: #444;
     border-radius: 5px;
     padding: 10px;
