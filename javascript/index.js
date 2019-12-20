@@ -89,7 +89,6 @@ const
 
 
 /************************slider section*****************************/
-/***************in slider********************/
 const sliderHiddenMenu = document.querySelectorAll(".slider__hidden-menu"),
 content = document.querySelectorAll(".slider__bars-img");
 const contentLength = content.length;
@@ -108,54 +107,24 @@ for (let i = 0; i < contentLength; i++) {
 
 /****** in desktop *****/
 const 
- slider = document.querySelectorAll(".slider__content"),
- sliders = document.querySelector(".slider__list-content"),
- lengthItems = slider.length,
+ slider = document.querySelector(".slider__list-content"),
  left = document.querySelector(".left-arrow"),
  right = document.querySelector(".right-arrow");
- step = slider[0].offsetWidth;
- const minRight = 0;
- const maxRight = (lengthItems - 1) * step;
- let currentRight = 0; 
+
  right.addEventListener("click", function(e) {
-   e.preventDefault();
-   if (currentRight < maxRight) {
-     currentRight += step;
-   } else {
-    currentRight = 0; 
-   }
-   sliders.style.right = currentRight + "px";
+   loop("right",e);
  });
- 
  left.addEventListener("click", function(e) {
-   e.preventDefault();
-   if (currentRight > minRight) {
-     currentRight -= step;
-   } else {
-     currentRight = maxRight; 
-   }
-   sliders.style.right = currentRight + "px";
+  loop("left",e);
  });
-
- /****** in tablets *****/
-/*const 
-leftTab = document.querySelector(".slider__img:before"),
-rightTab = document.querySelector(".slider__img:after");
-rightTab.addEventListener("click", function(e) {
-  e.preventDefault();
-  if (currentRight < maxRight) {
-    currentRight += step;
-    sliders.style.right = currentRight + "px";
-  }
-});
-
-leftTab.addEventListener("click", function(e) {
-  e.preventDefault();
-  if (currentRight > minRight) {
-    currentRight -= step;
-    sliders.style.right = currentRight + "px";
-  }
-});*/
+ function loop (direction, e) {
+   e.preventDefault();
+   if (direction === "right") {
+     slider.appendChild(slider.firstElementChild);
+   } else {
+     slider.insertBefore(slider.lastElementChild, slider.firstElementChild);
+   }
+ }
  
 /************************team section*****************************/
 const memberDescription = document.querySelectorAll(".member__description"),
