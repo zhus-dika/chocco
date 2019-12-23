@@ -842,7 +842,11 @@ footer {
         display: none; } }
 
 .reviews__main-content {
-  overflow: hidden; }
+  overflow: hidden;
+  width: 60vw; }
+  @media screen and (max-width: 768px) {
+    .reviews__main-content {
+      width: 95vw; } }
 
 .reviews__list {
   display: flex;
@@ -877,7 +881,7 @@ footer {
       padding-top: 0; } }
 
 .user__review {
-  width: 58vw;
+  width: 60vw;
   background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/ellipse.png?raw=true"), url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berries.png?raw=true");
   background-position: center top, right top;
   background-repeat: no-repeat;
@@ -903,7 +907,8 @@ footer {
   @media screen and (max-width: 768px) {
     .review__text p {
       text-align: center;
-      width: 100%; } }
+      margin: 0 auto;
+      width: 80%; } }
   @media screen and (max-width: 480px) {
     .review__text p {
       font-size: 0.875rem; } }
@@ -936,14 +941,16 @@ footer {
       padding-top: 8%;
       width: 40%; } }
 
-.reviews__slider__list {
+.reviews__slider-list {
   display: flex;
   justify-content: center;
   align-items: flex-start; }
-.reviews__slider__item {
+.reviews__slider-item {
   margin-right: 5%; }
-  .reviews__slider__item:last-child {
+  .reviews__slider-item:last-child {
     margin-right: 0; }
+.reviews__slider .slider__active .user__photo {
+  border: 6px solid #0f5a47; }
 .reviews__slider .user__photo {
   border-radius: 50%;
   width: 4.25rem;
@@ -1007,7 +1014,7 @@ footer {
     background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberry.png?raw=true") left bottom no-repeat;
     position: absolute;
     left: 0%;
-    bottom: -48%;
+    bottom: -43%;
     width: 6.5rem;
     height: 7.125rem;
     z-index: 20; }
@@ -1025,17 +1032,19 @@ footer {
 .team__member {
   text-align: center;
   width: 23%;
+  height: 50vh;
   z-index: 5; }
-  .team__member img {
+  .team__member-photo {
     margin-bottom: 6%; }
     @media screen and (max-width: 768px) {
-      .team__member img {
+      .team__member-photo {
         width: 68%; } }
     @media screen and (max-width: 480px) {
-      .team__member img {
-        width: 75%; } }
+      .team__member-photo {
+        width: 65%; } }
   @media screen and (max-width: 768px) {
     .team__member {
+      height: 46vh;
       width: 50%; } }
 
 .member__name {
@@ -1048,14 +1057,14 @@ footer {
     .member__name {
       font-size: 1.125rem; } }
 
-.member__name:after {
-  content: '';
-  margin-left: 2%;
-  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_hidden.png?raw=true") no-repeat;
-  display: inline-block;
-  z-index: 10;
-  width: 0.625rem;
-  height: 0.625rem; }
+.member__name-link {
+  display: flex;
+  justify-content: center; }
+
+.member__name-after__icon {
+  margin: 2% 5%;
+  width: 5%;
+  height: 5%; }
 
 .member__status {
   color: #281e1e;
@@ -1072,23 +1081,17 @@ footer {
     font-size: 1.125rem;
     font-weight: 400;
     margin-bottom: 4%; }
+    @media screen and (max-width: 480px) {
+      .member__description h5 {
+        font-size: 0.875rem; } }
   .member__description p {
     color: #666666;
     font-family: "Alegreya Sans";
     font-size: 1.125rem;
     font-weight: 300; }
-
-.member__description__test {
-  height: auto; }
-
-.member__description__visible .member__name:after {
-  content: '';
-  margin-left: 2%;
-  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/icons/icon_visible.png?raw=true") no-repeat;
-  display: inline-block;
-  z-index: 10;
-  width: 0.625rem;
-  height: 0.625rem; }
+    @media screen and (max-width: 480px) {
+      .member__description p {
+        font-size: 0.875rem; } }
 
 .menu {
   background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/menu.png?raw=true") no-repeat;
@@ -1257,7 +1260,7 @@ footer {
   height: 90vh; }
 
 .order__form {
-  padding: 5% 5% 5% 10%;
+  padding: 5% 0%;
   margin: 0 auto;
   margin-left: -5%; }
   @media screen and (max-width: 768px) {
@@ -1265,13 +1268,16 @@ footer {
       margin-left: 0;
       padding: 0; } }
   .order__form-tag {
-    width: 95vw; }
+    width: 70vw; }
+    @media screen and (max-width: 768px) {
+      .order__form-tag {
+        width: 95vw; } }
 
 .order__form-col {
   float: left;
   width: 45%; }
   .order__form-col:last-child {
-    margin-left: 5%; }
+    margin-left: 2%; }
     @media screen and (max-width: 768px) {
       .order__form-col:last-child {
         margin-left: 0; } }
@@ -1340,7 +1346,11 @@ footer {
 @media screen and (max-width: 768px) {
   .order__form-buttons .order__form-row {
     justify-content: center;
-    margin-bottom: 1.0625rem; }
+    margin-bottom: 1.0625rem; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .order__form-buttons .order__form-row {
+      justify-content: space-evenly; } }
+@media screen and (max-width: 768px) {
     .order__form-buttons .order__form-row:last-child {
       margin-bottom: 0; } }
 
@@ -1351,6 +1361,9 @@ footer {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer; }
+  @media screen and (max-width: 480px) {
+    .order__radio {
+      margin-right: 0.625rem; } }
 
 .order__radio-elem {
   position: absolute;
@@ -1358,13 +1371,17 @@ footer {
   left: -624.9375rem; }
 
 .order__radio-fake {
-  width: 1rem;
-  height: 1rem;
+  width: 1.625rem;
+  height: 1.625rem;
   border-radius: 50%;
   background: #fff;
   display: inline-block;
   vertical-align: middle;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    .order__radio-fake {
+      width: 1.125rem;
+      height: 1.125rem; } }
   .order__radio-fake:after {
     content: "";
     display: block;
@@ -1378,8 +1395,13 @@ footer {
     transition: width .3s, height .3s; }
 
 .order__radio-elem:checked + .order__radio-fake:after {
-  width: 0.5rem;
-  height: 0.5rem; }
+  width: 0.8125rem;
+  height: 0.8125rem;
+  background-color: #0f5a47; }
+  @media screen and (max-width: 480px) {
+    .order__radio-elem:checked + .order__radio-fake:after {
+      width: 0.625rem;
+      height: 0.625rem; } }
 
 .order__radio-title {
   display: inline-block;
@@ -1390,14 +1412,17 @@ footer {
   font-weight: 400;
   line-height: 1.878125rem;
   margin-left: 0.625rem; }
+  @media screen and (max-width: 480px) {
+    .order__radio-title {
+      margin-left: 0.3125rem; } }
 
 .order__radio_checkbox .order__radio-fake {
   border-radius: 0rem; }
 .order__radio_checkbox .order__radio-elem + .order__radio-fake:after {
   background: transparent; }
 .order__radio_checkbox .order__radio-elem:checked + .order__radio-fake:after {
-  background: url("./../../img/icons/check.svg") 50% no-repeat transparent;
-  background-size: contain;
+  background: url("../../pictures/form/selected.png") 50% no-repeat transparent;
+  background-size: cover;
   width: 0.6875rem;
   height: 0.5625rem; }
 
@@ -1776,5 +1801,46 @@ footer {
   font-weight: 500;
   width: 100%;
   padding-left: 15%; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0005;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000; }
+
+.container__overlay {
+  position: relative; }
+
+.content {
+  width: 400px;
+  background: #444;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  font: 16px Helvetica, sans-serif;
+  margin: 0; }
+  @media screen and (max-width: 480px) {
+    .content {
+      width: 75vw; } }
+
+.close {
+  font: 16px Helvetica, sans-serif;
+  color: #fff;
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  background: #d00;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

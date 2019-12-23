@@ -29,6 +29,10 @@
 }
 .reviews__main-content {
     overflow: hidden;
+    width: 60vw;
+    @include tablets {
+        width: 95vw;
+    }
 }
 .reviews__list {
     display: flex;
@@ -63,7 +67,7 @@
     }
 }
 .user__review {
-    width: 58vw;
+    width: 60vw;
     background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/ellipse.png?raw=true"), url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berries.png?raw=true");
     background-position: center top, right top;
     background-repeat: no-repeat;
@@ -88,7 +92,8 @@
     width: 75%;
     @include tablets {
         text-align: center;
-        width: 100%;
+        margin: 0 auto;
+        width: 80%;
     }
     @include phones {
         font-size: rem(14px);
@@ -124,15 +129,20 @@
     }
 }
 .reviews__slider {
-    &__list {
+    &-list {
         display: flex;
         justify-content: center;
         align-items: flex-start;
     }
-    &__item {
+    &-item {
         margin-right: 5%;
         &:last-child {
             margin-right: 0;
+        }
+    }
+    .slider__active {
+        .user__photo{
+            border: 6px solid $green;
         }
     }
     .user__photo{

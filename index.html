@@ -324,10 +324,13 @@
             <div class="container container__team">
                 <h1 class=header__title>Команда</h1>
                 <ul class="team__accordeon">
-                    <li class="team__member member__description__visible">
-                        <img src="./pictures/team/boris.png" alt="">
-                        <h4 class="member__name member__description__visible">Борис Федорович</h4>
-                        <div class="member__description member__description__test">
+                    <li class="team__member">
+                        <img src="./pictures/team/boris.png" class="team__member-photo" alt="">
+                        <a href="" class="member__name-link">
+                            <h4 class="member__name">Борис Федорович</h4>
+                            <img src="./pictures/icons/icon_hidden.svg" alt="" class="member__name-after__icon">
+                        </a>
+                        <div class="member__description">
                             <a href="#" class="member__description-link">
                                 <h5 class="member__status">Оператор</h5>
                                 <p>С радостью поможет подобрать батончики и оформить заказ. </p>
@@ -335,33 +338,42 @@
                         </div>
                     </li>
                     <li class="team__member">
-                        <img src="./pictures/team/alla.png" alt="">
-                        <h4 class="member__name">Алла Иванова</h4>
+                        <img src="./pictures/team/alla.png" alt="" class="team__member-photo">
+                        <a href="" class="member__name-link">
+                            <h4 class="member__name">Алла Иванова</h4>
+                            <img src="./pictures/icons/icon_hidden.svg" alt="" class="member__name-after__icon">
+                        </a>
                         <div class="member__description">
                             <a href="#" class="member__description-link">
-
                                 <h5 class="member__status">Оператор</h5>
                                 <p>С радостью поможет подобрать батончики и оформить заказ. </p>
                             </a>
                         </div>
                     </li>
                     <li class="team__member">
-                        <img src="./pictures/team/kiril.png" alt="">
-                        <h4 class="member__name">Кирилл Матросов</h4>
+                        <img src="./pictures/team/kiril.png" alt="" class="team__member-photo">
+                        <a href="" class="member__name-link">
+                            <h4 class="member__name">Кирилл Матросов</h4>
+                            <img src="./pictures/icons/icon_hidden.svg" alt="" class="member__name-after__icon">
+                        </a>
                         <div class="member__description">
                             <a href="#" class="member__description-link">
-
                                 <h5 class="member__status">Оператор</h5>
                                 <p>С радостью поможет подобрать батончики и оформить заказ. </p>
                             </a>
                         </div>
                     </li>
                     <li class="team__member">
-                        <img src="./pictures/team/mila.png" alt="">
-                        <h4 class="member__name">Мила Рыжкова</h4>
+                        <img src="./pictures/team/mila.png" alt="" class="team__member-photo">
+                        <a href="" class="member__name-link">
+                            <h4 class="member__name">Мила Рыжкова</h4>
+                            <img src="./pictures/icons/icon_hidden.svg" alt="" class="member__name-after__icon">
+                        </a>
                         <div class="member__description">
-                            <h5 class="member__status">Оператор</h5>
-                            <p>С радостью поможет подобрать батончики и оформить заказ. </p>
+                            <a href="" class="member__description-link">
+                                <h5 class="member__status">Оператор</h5>
+                                <p>С радостью поможет подобрать батончики и оформить заказ. </p>
+                            </a>
                         </div>
                     </li>
             </div>
@@ -513,19 +525,19 @@
                         </li>
                     </ul>
                     <div class="reviews__slider">
-                        <ul class="reviews__slider__list">
-                            <li class="reviews__slider__item">
-                                <a href="#" class="reviews__slider__photo">
+                        <ul class="reviews__slider-list">
+                            <li class="reviews__slider-item slider__active">
+                                <a href="#" class="reviews__slider-photo">
                                     <img src="./pictures/users/user1.png" alt="" class="user__photo">
                                 </a>
                             </li>
-                            <li class="reviews__slider__item">
-                                <a href="#" class="reviews__slider__photo">
+                            <li class="reviews__slider-item">
+                                <a href="#" class="reviews__slider-photo">
                                     <img src="./pictures/users/user2.png" alt="" class="user__photo">
                                 </a>
                             </li>
-                            <li class="reviews__slider__item">
-                                <a href="#" class="reviews__slider__photo">
+                            <li class="reviews__slider-item">
+                                <a href="#" class="reviews__slider-photo">
                                     <img src="./pictures/users/user3.png" alt="" class="user__photo">
                                 </a>
                             </li>
@@ -547,7 +559,7 @@
                                 </label>
                                 <label class="order__form-block">
                                     <div class="order__form-label">Телефон</div>
-                                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
+                                    <input class="order__form-input phone-mask" name="phone" type="tel" placeholder="">
                                 </label>
                             </div>
                             <div class="order__form-row">
@@ -567,11 +579,11 @@
                                 </label>
                                 <label class="order__form-block">
                                     <div class="order__form-label">Квартира</div>
-                                    <input class="order__form-input" name="appt" type="text" placeholder="">
+                                    <input class="order__form-input" name="appt" type="number" placeholder="">
                                 </label>
                                 <label class="order__form-block">
                                     <div class="order__form-label">Этаж</div>
-                                    <input class="order__form-input" name="floor" type="text" placeholder="">
+                                    <input class="order__form-input" name="floor" type="number" placeholder="">
                                 </label>
                             </div>
                         </div>
@@ -604,7 +616,7 @@
                                     </label>
                                 </div>
                                 <div class="order__form-row">
-                                    <input class="order__form-button" name="" type="submit" value="Заказать">
+                                    <input class="order__form-button" id = "order__form-button" name="" type="submit" value="Заказать">
                                     <input class="order__form-button order__form-button_reset" name="" type="reset"
                                         value="Очистить">
                                 </div>
@@ -660,9 +672,7 @@
         </div>
     </div>
 </body>
-<script src="./javascript/menu.js"></script>
-<script src="./javascript/reviews-slider.js"></script>
-<script src="./javascript/slider.js"></script>
+<script src="./javascript/index.js"></script>
 
 
 </html>
