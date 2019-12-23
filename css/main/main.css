@@ -941,14 +941,16 @@ footer {
       padding-top: 8%;
       width: 40%; } }
 
-.reviews__slider__list {
+.reviews__slider-list {
   display: flex;
   justify-content: center;
   align-items: flex-start; }
-.reviews__slider__item {
+.reviews__slider-item {
   margin-right: 5%; }
-  .reviews__slider__item:last-child {
+  .reviews__slider-item:last-child {
     margin-right: 0; }
+.reviews__slider .slider__active .user__photo {
+  border: 6px solid #0f5a47; }
 .reviews__slider .user__photo {
   border-radius: 50%;
   width: 4.25rem;

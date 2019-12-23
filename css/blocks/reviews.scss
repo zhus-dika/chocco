@@ -129,15 +129,20 @@
     }
 }
 .reviews__slider {
-    &__list {
+    &-list {
         display: flex;
         justify-content: center;
         align-items: flex-start;
     }
-    &__item {
+    &-item {
         margin-right: 5%;
         &:last-child {
             margin-right: 0;
+        }
+    }
+    .slider__active {
+        .user__photo{
+            border: 6px solid $green;
         }
     }
     .user__photo{
