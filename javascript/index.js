@@ -188,8 +188,68 @@ for (let i = 0; i < menuListLength; i++){
   });
 }
 
+/*************************one page scroll***********************/
 
-
-
-
+const sections = document.querySelectorAll('section'),
+maincontent = document.querySelector('.main-content');
+let inScroll = false;
+const performTransition = sectionEq => {
+  if (!inScroll) {
+    inScroll = true;
+    const position = sectionEq * -100;
+    sections.forEach(ele => {
+      if (ele.classList.contains('active')) {
+        ele.classList.remove('active');
+      }
+    });
+    sections[sectionEq].classList.add('active');
+    maincontent.style.transform = `translateY(${position}%)`;
+  }
+  setTimeout(() => {
+    inScroll = false;
+  }, 1300);
+}
+const scrollToSection = direction => {
+  let activeSection, i = 0, num;
+  sections.forEach(ele => {
+    if (ele.classList.contains('active')) {
+      activeSection = ele;
+      num = i;
+    }
+    i++;
+  });
+  const prevSection = activeSection.previousElementSibling;
+  const nextSection = activeSection.nextElementSibling;
+  if (direction === 'next' && nextSection) {
+    performTransition(num + 1);
+  }
+  if (direction === 'prev' && prevSection) {
+    performTransition(num - 1);
+  }
+}
+window.addEventListener('wheel', e => {
+  const deltaY = e.deltaY;
+  if (deltaY > 0) {
+    scrollToSection('next');
+  }
+  if (deltaY < 0) {
+    scrollToSection('prev');
+  }
+});
+/*************for keyboard**************/
+window.addEventListener('keydown', e => {
+  const tagName = e.target.tagName.toLowerCase();
+  if (tagName != 'input' && tagName != 'textarea') {
+    switch (e.key){
+      case 'ArrowDown': {
+        scrollToSection('next');
+        break;
+      }
+      case 'ArrowUp': {
+        scrollToSection('prev');
+        break;
+      }
+    }
+  }
+});
 
