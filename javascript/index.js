@@ -296,3 +296,60 @@ for(let i = 0; i < fixedMenuLinks.length; i++) {
   });
 }
 
+/******************************yandex map************************************/
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map('map', {
+              center: [51.08, 71.26],
+              zoom: 9
+          }, {
+              searchControlProvider: 'yandex#search'
+          }),
+  
+          // Создаём макет содержимого.
+          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+              '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+          ),
+
+          
+          /*myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+              hintContent: 'Собственный значок метки',
+              balloonContent: 'Это красивая метка'
+          }, {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: 'default#image',
+              // Своё изображение иконки метки.
+              iconImageHref: '../pictures/map/map-icon.png',
+              // Размеры метки.
+              iconImageSize: [30, 42],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-5, -38]
+          }),*/
+  
+          myPlacemarkWithContent = new ymaps.Placemark([51.139375, 71.489745], {
+              hintContent: 'Добро пожалвать!',
+              balloonContent: 'Новогодняя акция!!! Спешите!',
+              iconContent: '12'
+          }, {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: 'default#imageWithContent',
+              // Своё изображение иконки метки.
+              iconImageHref: '../pictures/map/map-icon.png',
+              // Размеры метки.
+              iconImageSize: [38, 48],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-24, -24],
+              // Смещение слоя с содержимым относительно слоя с картинкой.
+              iconContentOffset: [15, 15],
+              // Макет содержимого.
+              iconContentLayout: MyIconContentLayout
+          });
+  
+      myMap.geoObjects
+          .add(myPlacemarkWithContent);
+  });

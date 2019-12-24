@@ -44,7 +44,7 @@
                                     <li class="nav__item"><a href="#">Контакты</a></li>
                                 </ul>
                             </nav>
-                            <address class="contacts"><a href="+78009039090" class="contacts__phone">8 800 903 90 90</a>
+                            <address class="contacts"><a href="+77172709500" class="contacts__phone">+7 7172 709 500</a>
                             </address>
                             <a class="hamburger-menu-link" onclick="openNav()" href="#">
                                 <div class="hamburger-menu-link__bars"></div>
@@ -647,13 +647,14 @@
                     </div>
                 </div>
             </section>
-            <section class="map">
-                <div class="yandex-map"><img src="./pictures/map/map.png" alt=""></div>
+            <section class = "yandex-map">
+                <div id = "map">
+                </div>
                 <footer class="footer">
                     <div class="container footer__container">
                         <div class="footer__col">
-                            <div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div><a class="footer__phone"
-                                href="tel:+78009039090">8 800 903 90 90</a>
+                            <div class="footer__address">Нур-Султан, проспект М.Жумабаева, д.31/12</div><a class="footer__phone"
+                                href="tel:+78009039090">+7 7172 709 500</a>
                         </div>
                         <div class="footer__col footer__col_right">
                             <ul class="socials">
@@ -721,14 +722,19 @@
                 <div class="fixed-menu__item-wrap"></div>
             </a>
         </li>
+        <li class="fixed-menu__item">
+            <a href="" class="fixed-menu__link" data-scroll-to="8">
+                <div class="fixed-menu__item-wrap"></div>
+            </a>
+        </li>
     </ul>
 </body>
 <script src="./javascript/jquery-3.4.1.min.js"></script>
 <script src="./javascript/jquery.touchSwipe.min.js"></script>
 <script src="./javascript/mobile-detect.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=74207d0d-c88e-44de-b879-a680f30b8c75&lang=ru_RU" type="text/javascript"></script>
 <script src="./javascript/index.js"></script>
 <script src="./javascript/player.js"></script>
-
 
 
 
