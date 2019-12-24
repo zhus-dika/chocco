@@ -192,9 +192,13 @@ for (let i = 0; i < menuListLength; i++){
 
 const sections = document.querySelectorAll('section'),
 maincontent = document.querySelector('.main-content'),
-scrollMenu = document.querySelectorAll('.fixed-menu__item');
+scrollMenu = document.querySelectorAll('.fixed-menu__item'),
+md = new MobileDetect(window.navigator.userAgent),
+isMobile = md.mobile();
 let inScroll = false;
 const performTransition = sectionEq => {
+  const transitionIsOver = 1000,
+  mouseInertion = 300;
   if (!inScroll) {
     inScroll = true;
     const position = sectionEq * -100;
@@ -219,7 +223,7 @@ const performTransition = sectionEq => {
       }
     });
     scrollMenu[sectionEq].classList.add('fixed-menu__item--active');
-  }, 1300);
+  }, transitionIsOver + mouseInertion);
 }
 const scrollToSection = direction => {
   let activeSection, i = 0, num;
@@ -265,19 +269,22 @@ window.addEventListener('keydown', e => {
   }
 });
 /*************************for phones**************************/
-$("body").swipe({
-  swipe: function(
-    event,
-    direction,
-    distance,
-    duration,
-    fingerCount,
-    fingerData
-  ){
-    const scrollDirection = direction == 'up' ? 'next': 'prev';
-    scrollToSection(scrollDirection);
-  }
-});
+if (isMobile) {
+  $("body").swipe({
+    swipe: function(
+      event,
+      direction,
+      distance,
+      duration,
+      fingerCount,
+      fingerData
+    ){
+      const scrollDirection = direction == 'up' ? 'next': 'prev';
+      scrollToSection(scrollDirection);
+    }
+  });
+}
+
 /********************** fixed menu ***************************/
 const fixedMenuLinks = document.querySelectorAll('.fixed-menu__link'),
 fixedMenuItems = document.querySelectorAll('.fixed-menu__item');
