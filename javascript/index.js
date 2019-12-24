@@ -264,7 +264,20 @@ window.addEventListener('keydown', e => {
     }
   }
 });
-
+/*************************for phones**************************/
+$("body").swipe({
+  swipe: function(
+    event,
+    direction,
+    distance,
+    duration,
+    fingerCount,
+    fingerData
+  ){
+    const scrollDirection = direction == 'up' ? 'next': 'prev';
+    scrollToSection(scrollDirection);
+  }
+});
 /********************** fixed menu ***************************/
 const fixedMenuLinks = document.querySelectorAll('.fixed-menu__link'),
 fixedMenuItems = document.querySelectorAll('.fixed-menu__item');

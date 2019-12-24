@@ -3,6 +3,12 @@
   top: 285px;
   right: 300px;
   z-index: $z-fixed-menu;
+  @include tablets {
+    right: rem(60px);
+  }
+  @include phones {
+    display: none;
+  }
 }
 .fixed-menu__item {
   margin-bottom: 75%;
