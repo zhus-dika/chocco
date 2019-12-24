@@ -969,29 +969,41 @@ footer {
       width: 3rem;
       height: 3rem; } }
 
-.scroll {
+.fixed-menu {
   position: fixed;
-  right: 17%;
-  top: 30%;
-  z-index: 5; }
-  .scroll__item {
-    margin-bottom: 85%;
-    position: relative;
-    text-align: center; }
-  @media screen and (max-width: 768px) {
-    .scroll {
-      display: none; } }
+  top: 285px;
+  right: 300px;
+  z-index: 100; }
 
-.scroll__item-active {
-  width: 1rem;
-  height: 1rem;
+.fixed-menu__item {
+  margin-bottom: 75%; }
+  .fixed-menu__item--active .fixed-menu__item-wrap {
+    border-color: white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    z-index: 10; }
+
+.fixed-menu__item-wrap {
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  border: 1px solid #ffffff; }
-  .scroll__item-active img {
+  border: 1px solid transparent;
+  background-color: transparent;
+  margin-bottom: 3px;
+  position: relative; }
+  .fixed-menu__item-wrap:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
     position: absolute;
-    display: block;
-    left: 30%;
-    top: 30%; }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .fixed-menu__item-wrap:last-child {
+    margin-bottom: 0; }
 
 .team__accordeon {
   display: flex;
@@ -1043,7 +1055,7 @@ footer {
     margin-bottom: 6%; }
     @media screen and (max-width: 768px) {
       .team__member-photo {
-        width: 68%; } }
+        width: 65%; } }
     @media screen and (max-width: 480px) {
       .team__member-photo {
         width: 65%; } }
@@ -1515,8 +1527,7 @@ footer {
 
 .socials {
   position: relative;
-  top: 50%;
-  z-index: 20; }
+  top: 50%; }
 
 .socials__item {
   display: inline-block;

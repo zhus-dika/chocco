@@ -191,7 +191,8 @@ for (let i = 0; i < menuListLength; i++){
 /*************************one page scroll***********************/
 
 const sections = document.querySelectorAll('section'),
-maincontent = document.querySelector('.main-content');
+maincontent = document.querySelector('.main-content'),
+scrollMenu = document.querySelectorAll('.fixed-menu__item');
 let inScroll = false;
 const performTransition = sectionEq => {
   if (!inScroll) {
@@ -207,6 +208,17 @@ const performTransition = sectionEq => {
   }
   setTimeout(() => {
     inScroll = false;
+    sections.forEach(ele => {
+      if (ele.classList.contains('visible')) {
+        ele.classList.remove('fixed-menu__item--active');
+      }
+    });
+    scrollMenu.forEach(ele => {
+      if (ele.classList.contains('fixed-menu__item--active')) {
+        ele.classList.remove('fixed-menu__item--active');
+      }
+    });
+    scrollMenu[sectionEq].classList.add('fixed-menu__item--active');
   }, 1300);
 }
 const scrollToSection = direction => {
@@ -252,4 +264,15 @@ window.addEventListener('keydown', e => {
     }
   }
 });
+
+/********************** fixed menu ***************************/
+const fixedMenuLinks = document.querySelectorAll('.fixed-menu__link'),
+fixedMenuItems = document.querySelectorAll('.fixed-menu__item');
+for(let i = 0; i < fixedMenuLinks.length; i++) {
+  fixedMenuLinks[i].addEventListener('click', e => {
+    e.preventDefault();
+    let secNum = fixedMenuLinks[i].getAttribute("data-scroll-to");
+    performTransition(secNum);
+  });
+}
 
