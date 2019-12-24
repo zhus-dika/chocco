@@ -11,8 +11,8 @@
         position: absolute;
         left: -1%;
         bottom: 145%;
-        width: rem(1070px);
-        height: rem(350px);
+        width: 1070px;
+        height: 350px;
         @include tablets {
             display: none;
         }
