@@ -1,5 +1,5 @@
 .menu {
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/menu.png?raw=true") no-repeat;
+    background: url("./pictures/menu/menu.png") no-repeat;
     background-size: cover;
     background-color: black;
     position: relative;
@@ -32,15 +32,15 @@
     position: relative;
     opacity: 0.93;
     &-milk {
-        background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/coconut.png?raw=true");
+        background-image: url("./pictures/menu/coconut.png");
         background-size: cover;
     }
     &-fruits {
-        background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/with-fruits.png?raw=true");
+        background-image: url("./pictures/menu/with-fruits.png");
         background-size: cover;
     }
     &-berries {
-        background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/menu/with-berries.png?raw=true.png");
+        background-image: url("./pictures/menu/with-berries.png");
         background-size: cover;
     } 
     a {

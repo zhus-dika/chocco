@@ -1,3 +1,5 @@
+//npm run gulp - for dev
+//npm run build - for prod
 const {src, dest, task, series, watch, parallel}= require('gulp');
 var sass = require('gulp-sass');
 var sassGlob = require('gulp-sass-glob');
@@ -14,7 +16,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var gulpif = require('gulp-if');
 const env = process.env.NODE_ENV;
 const styles = [
-   // './node_modules/normalize.css/normalize.css',
+    './node_modules/normalize.css/normalize.css',
     './src/css/main.scss'
 ]
 task('copy:js', () => {
@@ -25,6 +27,11 @@ task('copy:js', () => {
 task('copy:img', () => {
     return src("./src/pictures/**/*")
     .pipe(dest("./dist/pictures"))
+    .pipe(reload({stream: true}));
+})
+task('copy:fonts', () => {
+    return src("./src/css/fonts/*")
+    .pipe(dest("./dist/fonts"))
     .pipe(reload({stream: true}));
 })
 task('copy:html', () => {
@@ -65,11 +72,12 @@ task('watch', ()=> {
     watch('./src/*.html', series("copy:html"));
     watch('./src/javascript/*.js', series("copy:js"));
     watch('./src/pictures/*', series("copy:img"));
+    watch('./src/css/fonts/*', series("copy:fonts"));
 });
 
 
 task("default", series("clean", 
-    parallel("copy:html", "copy:js", "copy:img", "styles"),
+    parallel("copy:html", "copy:js", "copy:img", "copy:fonts", "styles"),
     parallel('watch', "server")
     )
 );
@@ -77,6 +85,6 @@ task("default", series("clean",
 task("build", 
 series(
     "clean", 
-    parallel("copy:html", "copy:js", "copy:img", "styles")
+    parallel("copy:html", "copy:js", "copy:img", "copy:fonts", "styles")
     )
 );

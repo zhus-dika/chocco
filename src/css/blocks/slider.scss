@@ -106,8 +106,8 @@
     width: 50%;
     position: relative;
     margin-right: 8%;
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/slider/ellipse_in_slider-img.png?raw=true") center bottom 20% no-repeat,
-    url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/slider/ellipse-with-sheets.png?raw=true") left 35% bottom 5% no-repeat;
+    background: url("./pictures/slider/ellipse_in_slider-img.png") center bottom 20% no-repeat,
+    url("./pictures/slider/ellipse-with-sheets.png") left 35% bottom 5% no-repeat;
     @include tablets {
         margin-right: 0;
         padding: 15%;

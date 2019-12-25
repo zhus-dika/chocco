@@ -8,14 +8,14 @@
 }
 .reviews__container {
     padding-top: 4%;
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberries.png?raw=true") right top no-repeat;
+    background: url("./pictures/decorations/strawberries.png") right top no-repeat;
     position: relative;
     @include phones {
         background-size: 30%;
     }
     &:after {
         content: '';
-        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berrieswithsheet.png?raw=true") left bottom no-repeat;
+        background: url("./pictures/decorations/berrieswithsheet.png") left bottom no-repeat;
         position: absolute;
         left: -4%;
         bottom: -23%;
@@ -68,7 +68,7 @@
 }
 .user__review {
     width: 60vw;
-    background-image: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/ellipse.png?raw=true"), url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berries.png?raw=true");
+    background-image: url("./pictures/decorations/ellipse.png"), url("./pictures/decorations/berries.png");
     background-position: center top, right top;
     background-repeat: no-repeat;
     background-color: #f8faf9;

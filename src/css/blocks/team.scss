@@ -9,7 +9,7 @@
     position: relative;
     &:before {
         content: '';
-        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet&blackberries.png?raw=true") right top no-repeat;
+        background: url("./pictures/decorations/sheet&blackberries.png") right top no-repeat;
         position: absolute;
         top: -75%;
         right: 0;
@@ -22,7 +22,7 @@
     }
     &:after {
         content: '';
-        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/strawberry.png?raw=true") left bottom no-repeat;
+        background: url("./pictures/decorations/strawberry.png") left bottom no-repeat;
         position: absolute;
         left: 0%;
         bottom: -43%;

@@ -1,13 +1,13 @@
 .container__advantages {
     margin: auto;
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/sheet_advantages.png?raw=true") left center no-repeat;
+    background: url("./pictures/decorations/sheet_advantages.png") left center no-repeat;
     @include phones {
         background: none;
     }
     position: relative;
     &:before {
         content: '';
-        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/berries&sheets.png?raw=true") bottom center no-repeat;
+        background: url("./pictures/decorations/berries&sheets.png") bottom center no-repeat;
         position: absolute;
         left: -1%;
         bottom: 145%;
@@ -19,7 +19,7 @@
     }
     &:after {
         content: '';
-        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/bars&berries.png?raw=true") left bottom no-repeat;
+        background: url("./pictures/decorations/bars&berries.png") left bottom no-repeat;
         position: absolute;
         left: 0;
         top: 111%;
@@ -76,7 +76,7 @@
     }
     &:after {
         content: '';
-        background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/disks.png?raw=true");
+        background: url("./pictures/disks.png");
         position: absolute;
         right: -36%;
         display: inline-block;

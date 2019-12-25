@@ -1,5 +1,5 @@
 .order {
-  background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/form/bcknd_form.png?raw=true") 50% / cover no-repeat;
+  background: url("./pictures/form/bcknd_form.png") 50% / cover no-repeat;
   display: flex;
   align-items: center;
   position: relative;
@@ -19,7 +19,7 @@
   &:before {
     content: '';
     position: absolute;
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/blackberries.png?raw=true") top right;
+    background: url("./pictures/decorations/blackberries.png") top right;
     background-size: contain;
     left: 68%;
     top: -17%;
@@ -36,7 +36,7 @@
   &:after {
     content: '';
     position: absolute;
-    background: url("https://github.com/zhus-dika/chocco/blob/gh-pages/pictures/decorations/blackberry&sheet.png?raw=true") bottom center;
+    background: url("./pictures/decorations/blackberry&sheet.png") bottom center;
     width: rem(1077px);
     height: rem(190px);
     bottom: 10%;
@@ -247,7 +247,7 @@
   .order__radio-elem:checked {
     &+.order__radio-fake {
       &:after {
-        background: url("../../pictures/form/selected.png") 50% no-repeat transparent;
+        background: url("./pictures/form/selected.png") 50% no-repeat transparent;
         background-size: cover;
         width: rem(11px);
         height: rem(9px);
