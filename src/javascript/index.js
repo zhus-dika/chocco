@@ -287,12 +287,33 @@ if (isMobile) {
 
 /********************** fixed menu ***************************/
 const fixedMenuLinks = document.querySelectorAll('.fixed-menu__link'),
-fixedMenuItems = document.querySelectorAll('.fixed-menu__item');
-for(let i = 0; i < fixedMenuLinks.length; i++) {
+fixedMenuItems = document.querySelectorAll('.fixed-menu__item'),
+sizeFixedMenuLinks = fixedMenuLinks.length;
+for(let i = 0; i < sizeFixedMenuLinks;  i++) {
   fixedMenuLinks[i].addEventListener('click', e => {
     e.preventDefault();
     let secNum = fixedMenuLinks[i].getAttribute("data-scroll-to");
     performTransition(secNum);
+  });
+}
+/***********************navigation in promo section*************************/
+const navItems = document.querySelectorAll('.nav__item'),
+sizeNavItems =  navItems.length;
+for(let i = 0; i < sizeNavItems; i++) {
+  navItems[i].addEventListener('click', e => {
+    e.preventDefault();
+    if (i == sizeNavItems - 1) i++;
+    performTransition(i + 1);
+  });
+}
+/***********************navigation in overlay*************************/
+const navItemsHidden = document.querySelectorAll('.nav__item-hidden'),
+sizeNavItemsHidden =  navItems.length;
+for(let i = 0; i < sizeNavItemsHidden; i++) {
+  navItemsHidden[i].addEventListener('click', e => {
+    e.preventDefault();
+    if (i == sizeNavItems - 1) i++;
+    performTransition(i + 1);
   });
 }
 
