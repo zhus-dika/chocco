@@ -73,8 +73,14 @@ const eventsInit = () => {
 $(".volume__img").on("click", e => {
   e.preventDefault();
   if (player.isMuted()) {
+    $(".volume__button").css({
+      left: player.getVolume()
+    })
     player.unMute()
   } else {
+    $(".volume__button").css({
+      left: 0
+    })
     player.mute();
   }
 });
