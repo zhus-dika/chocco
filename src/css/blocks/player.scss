@@ -78,7 +78,7 @@
   
   .player__playback {
     height: rem(16px);
-    width: 30vw;
+    width: 25vw;
     position: relative;
     @include phones {
       width: 20vw; 
@@ -114,11 +114,12 @@
   }
   .volume__bar {
     height: 16px;
-    width: 20vw;
+    width: 8vw;
     position: relative;
     margin: auto;
     @include phones {
       margin-right: 10%;  
+      width: 15vw;
     } 
     &:before {
       content: "";
@@ -133,7 +134,7 @@
     }
   }
   .volume__img {
-    margin-right: 30%;
+    margin-right: 15%;
     @include phones {
       margin-right: 10%;  
     } 
@@ -148,5 +149,5 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    right: -10%;
+    right: -5%;
   }
