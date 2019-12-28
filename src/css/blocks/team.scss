@@ -78,6 +78,9 @@
     margin: 2% 5%;
     width: 5%;
     height: 5%;
+    &-active {
+        transform: rotate(180deg);
+    }
 }
 .member__status {
     color: #281e1e;
@@ -107,5 +110,12 @@
             font-size: rem(14px);
         }
     }
-
+}
+.team__member-active {
+    .member__description {
+        height: auto;
+    }
+    .member__name-after__icon{
+        transform: rotate(180deg);
+    }
 }

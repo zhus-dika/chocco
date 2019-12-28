@@ -128,24 +128,27 @@ const
  }
  
 /************************team section*****************************/
-const memberDescription = document.querySelectorAll(".member__description"),
-memberName = document.querySelectorAll(".member__name-link"),
-afterIcon = document.querySelectorAll(".member__name-after__icon");
-membersNum = memberDescription.length;
+const memberName = document.querySelectorAll(".member__name-link"),
+teamMembers = document.querySelectorAll(".team__member");
+membersNum = teamMembers.length;
 var flag = [];
 for (let i = 0; i < membersNum; i++) {
     flag[i] = 0;
     memberName[i].addEventListener('click', e=> {
         e.preventDefault();
         e.stopPropagation();
-        if (flag[i]) {
-            memberDescription[i].style.height= '0'; 
-            afterIcon[i].style.transform = 'rotate(0deg)';           
-            flag[i] = 0;
+        if(!flag[i]){
+          for (let j = 0; j < membersNum; j++) {
+            if (flag[j]) {
+              teamMembers[j].classList.remove('team__member-active');
+              flag[j] = 0;
+            }
+          }
+          teamMembers[i].classList.add('team__member-active');
+          flag[i] = 1;
         } else {
-            memberDescription[i].style.height= 'auto';
-            afterIcon[i].style.transform = 'rotate(180deg)';
-            flag[i] = 1;
+          teamMembers[i].classList.remove('team__member-active');
+          flag[i] = 0;
         }
     });
 }
@@ -359,9 +362,9 @@ for(let i = 0; i < sizeNavItemsHidden; i++) {
               // Необходимо указать данный тип макета.
               iconLayout: 'default#imageWithContent',
               // Своё изображение иконки метки.
-              iconImageHref: '../pictures/map/map-icon.png',
+              iconImageHref: './pictures/map/map-icon.png',
               // Размеры метки.
-              iconImageSize: [38, 48],
+              iconImageSize: [45, 55],
               // Смещение левого верхнего угла иконки относительно
               // её "ножки" (точки привязки).
               iconImageOffset: [-24, -24],
@@ -370,7 +373,7 @@ for(let i = 0; i < sizeNavItemsHidden; i++) {
               // Макет содержимого.
               iconContentLayout: MyIconContentLayout
           });
-  
+          myMap.behaviors.disable('scrollZoom') 
       myMap.geoObjects
           .add(myPlacemarkWithContent);
   });
