@@ -73,8 +73,11 @@ const eventsInit = () => {
 $(".volume__img").on("click", e => {
   e.preventDefault();
   if (player.isMuted()) {
+    let computedStyle = getComputedStyle(document.querySelector('.volume__bar')),
+    volumeBarLength = parseInt(computedStyle.width,10);
+    let volumeVal = player.getVolume()*volumeBarLength/100
     $(".volume__button").css({
-      left: player.getVolume()
+      left: volumeVal
     })
     player.unMute()
   } else {
