@@ -559,10 +559,27 @@
                     </main>
                 </div>
             </section>
-            <section class="player">
-                <div class="containercontainer__player">
+            <section class="video">
+                <div class="container container__video">
                     <h1 class="header__title">Как мы работаем</h1>
-                    <div id="player"></div>
+                    <div class="player">
+                        <div class="player__wrapper">
+                            <div id="yt-player"></div>
+                            <div class="player__splash"></div>
+                        </div>
+                        <div class="player__controls">
+                            <button class="player__start"></button>
+                            <div class="player__playback">
+                                <button class="player__playback-button"></button>
+                            </div>
+                            <div class="player__volume">
+                                <a href ="#" class="volume__img"><img src="./pictures/icons/volume.png" alt=""></a>
+                                <div class="volume__bar">
+                                    <button class="volume__button"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="order">
@@ -579,7 +596,7 @@
                                     <label class="order__form-block">
                                         <div class="order__form-label">Телефон</div>
                                         <input class="order__form-input phone-mask" name="phone" type="tel"
-                                        pattern="[+][7][0-9]{10}" placeholder="+7717709500" maxlength="12">
+                                            pattern="[+][7][0-9]{10}" placeholder="+7717709500" maxlength="12">
                                     </label>
                                 </div>
                                 <div class="order__form-row">
@@ -647,19 +664,19 @@
                     </div>
                 </div>
             </section>
-            <section class = "yandex-map">
-                <div id = "map">
+            <section class="yandex-map">
+                <div id="map">
                 </div>
                 <footer class="footer">
                     <div class="container footer__container">
                         <div class="footer__col">
-                            <div class="footer__address">Нур-Султан, проспект М.Жумабаева, д.31/12</div><a class="footer__phone"
-                                href="tel:+78009039090">+7 7172 709 500</a>
+                            <div class="footer__address">Нур-Султан, проспект М.Жумабаева, д.31/12</div><a
+                                class="footer__phone" href="tel:+78009039090">+7 7172 709 500</a>
                         </div>
                         <div class="footer__col footer__col_right">
                             <ul class="socials">
                                 <li class="socials__item"><a class="socials__link" href="#">
-                                    <svg class="socials__link-icon" viewbox="0 0 40 40" style="fill: #000">
+                                        <svg class="socials__link-icon" viewbox="0 0 40 40" style="fill: #000">
                                             <use xlink:href="./pictures/sprite/sprite.svg#vk"></use>
                                         </svg></a></li>
                                 <li class="socials__item"><a class="socials__link" href="#">
@@ -732,7 +749,10 @@
 <script src="./javascript/jquery-3.4.1.min.js"></script>
 <script src="./javascript/jquery.touchSwipe.min.js"></script>
 <script src="./javascript/mobile-detect.min.js"></script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=74207d0d-c88e-44de-b879-a680f30b8c75&lang=ru_RU" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=74207d0d-c88e-44de-b879-a680f30b8c75&lang=ru_RU"
+    type="text/javascript"></script>
 <script src="./javascript/index.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
 <script src="./javascript/player.js"></script>
+
 </html>
