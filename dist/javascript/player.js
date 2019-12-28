@@ -33,10 +33,8 @@ const onPlayerReady = () => {
 };
 
 const eventsInit = () => {
-
   $(".player__start").on("click", e => {
     e.preventDefault();
-
     const btn = $(e.currentTarget);
 
     if (btn.hasClass("paused")) {
@@ -70,7 +68,6 @@ const eventsInit = () => {
       left: `${volumePosPercent}%`
     })
     player.setVolume(volumePosPercent)
-    console.log(volumePosPercent)
   })
 }
 $(".volume__img").on("click", e => {
@@ -103,9 +100,10 @@ const onPlayerStateChange = event => {
 };
 
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player("yt-player", {
-    height: "600",
-    width: "900",
+  player = new YT.Player("yt-player", 
+  {
+    height: "100%",
+    width: "100%",
     videoId: "XkZvyA69wCo",
     events: {
       onReady: onPlayerReady,
@@ -119,6 +117,6 @@ function onYouTubeIframeAPIReady() {
       autoplay: 0,
       modestbranding: 0
     }
-  });
+  })
 }
 eventsInit();

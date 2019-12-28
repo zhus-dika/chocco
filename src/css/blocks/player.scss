@@ -7,19 +7,40 @@
       opacity: 0;
       transition: opacity 0.3s;
     }
+}
+.video {
+  .header__title{
+    @include phones {
+      font-size: 28px;    } 
   }
+}
+.player__wrapper {
+  height: 50vh;
+  width: 50vw;
+  margin: 0 auto;
+  @include tablets {
+    height: 45vh;
+    width: 75vw;
+  } 
+}
   
   .player__controls {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: rem(848px);
-    height: 35px;
+    bottom: -6%;
+    width: 47vw;
+    height: rem(35px);
     background: #3e3e3e;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 25px;
+    @include tablets {
+      width: 69vw;
+    } 
+    @include phones {
+      width: 64vw;
+    } 
   }
   
   .player__start {
@@ -32,10 +53,9 @@
     background: transparent;
     outline: none;
     position: relative;
-    
     &.paused {
-      width: 14px;
-      height: 22px;
+      width: rem(14px);
+      height: rem(22px);
       border: none;
       &:after,
       &:before {
@@ -57,10 +77,12 @@
   }
   
   .player__playback {
-    height: 16px;
-    width: 446px;
+    height: rem(16px);
+    width: 30vw;
     position: relative;
-  
+    @include phones {
+      width: 20vw; 
+    } 
     &:before {
       content: "";
       height: 4px;
@@ -92,9 +114,12 @@
   }
   .volume__bar {
     height: 16px;
-    width: 100px;
+    width: 20vw;
     position: relative;
     margin: auto;
+    @include phones {
+      margin-right: 10%;  
+    } 
     &:before {
       content: "";
       height: 4px;
@@ -109,6 +134,9 @@
   }
   .volume__img {
     margin-right: 30%;
+    @include phones {
+      margin-right: 10%;  
+    } 
   }
   .volume__button {
     background: #626262;
@@ -120,5 +148,5 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    left: 0;
+    right: -10%;
   }
