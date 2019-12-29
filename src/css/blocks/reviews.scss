@@ -1,0 +1,162 @@
+.reviews {
+    position: relative;
+    .header__title {
+        @include phones {
+            font-size: rem(30px);
+        }
+    }
+}
+.reviews__container {
+    padding-top: 4%;
+    background: url("./pictures/decorations/strawberries.png") right top no-repeat;
+    position: relative;
+    @include phones {
+        background-size: 30%;
+    }
+    &:after {
+        content: '';
+        background: url("./pictures/decorations/berrieswithsheet.png") left bottom no-repeat;
+        position: absolute;
+        left: -4%;
+        bottom: -23%;
+        width: rem(160px);
+        height: rem(350px);
+        z-index: 10;
+        @include tablets {
+            display: none;
+        }
+    }
+}
+.reviews__main-content {
+    overflow: hidden;
+    width: 60vw;
+    @include tablets {
+        width: 95vw;
+    }
+}
+.reviews__list {
+    display: flex;
+    position: relative;
+    will-change: right;
+    transition: right 0.3s;
+    margin-bottom: 10%;
+    @include tablets {
+        margin-bottom: 4%;
+    }
+    @include phones {
+        margin-bottom: 0;
+        height: 75vh;
+    }
+}
+.reviews__content {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.review__title {
+    color: #323232;
+    font-family: "Alegreya Sans Medium";
+    font-size: rem(30px);
+    font-weight: 500;
+    padding: 4% 0;
+    @include tablets {
+        text-align: center;
+    }
+    @include phones {
+        padding-top: 0;
+    }
+}
+.user__review {
+    width: 60vw;
+    background-image: url("./pictures/decorations/ellipse.png"), url("./pictures/decorations/berries.png");
+    background-position: center top, right top;
+    background-repeat: no-repeat;
+    background-color: #f8faf9;
+    display: flex;
+    padding-top: 5%;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        width: 95vw;
+    }
+    @include phones {
+        background-size: 20%, 180%;
+    }
+}
+.review__text p {
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: rem(18px);
+    font-weight: 400;
+    margin-bottom: 6%;
+    width: 75%;
+    @include tablets {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+    @include phones {
+        font-size: rem(14px);
+    }
+}
+.review__author {
+    color: #666666;
+    font-family: "Alegreya Sans Medium";
+    font-size: rem(18px);
+    font-weight: 500;
+    @include tablets {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+}
+.user__avatar {
+    padding: 5%;
+    text-align: center;
+    &-cover {
+        width: rem(250px);
+        height: rem(300px);
+        @include phones {
+            width: 40vw;
+            height: 50vw;
+        }
+    }
+    @include tablets {
+        width: 60%;
+    }
+    @include phones {
+        padding-top: 8%;
+        width: 40%;
+    }
+}
+.reviews__slider {
+    &-list {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &-item {
+        margin-right: 5%;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .slider__active {
+        .user__photo{
+            border: 6px solid $green;
+        }
+    }
+    .user__photo{
+        border-radius: 50%;
+        width: rem(68px);
+        height: rem(68px);
+        border: 6px solid transparent;
+        &:hover {
+            opacity: .7;
+            transition: .5s;
+        }
+        @include phones {
+            width: rem(48px);
+            height: rem(48px);
+        }
+    }
+}
