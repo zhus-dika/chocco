@@ -1,4 +1,3 @@
-# chocco
 # CHOCCO company web-app
 > Before download make sure last versions of [Node.js & NPM](https://nodejs.org/en/download/current/), 
 [Yarn](https://yarnpkg.com/ru/docs/install) are available
